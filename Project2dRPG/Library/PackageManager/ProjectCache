@@ -1,33 +1,33 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
-    m_FilePath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Packages/manifest.json
+    m_FilePath: C:/x68/Project2dRPGgame/Project2dRPG/Packages/manifest.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638546685020000000
-    m_Hash: 4193190562
+      ticks: 638590510016761541
+    m_Hash: 2799816251
   m_LockFileStatus:
-    m_FilePath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Packages/packages-lock.json
+    m_FilePath: C:/x68/Project2dRPGgame/Project2dRPG/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638546685020000000
-    m_Hash: 763311032
+      ticks: 638590510875712270
+    m_Hash: 3416961851
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
-m_ProjectPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Packages
-m_EditorVersion: 2022.3.13f1 (5f90a5ebde0f)
+m_ProjectPath: C:/x68/Project2dRPGgame/Project2dRPG/Packages
+m_EditorVersion: 2022.3.41f1 (0f988161febf)
 m_ResolvedPackages:
-- packageId: com.unity.collab-proxy@2.3.1
+- packageId: com.unity.collab-proxy@2.4.4
   testable: 0
   isDirectDependency: 1
-  version: 2.3.1
+  version: 2.4.4
   source: 1
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.collab-proxy@2.3.1
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.collab-proxy@2.4.4
   assetPath: Packages/com.unity.collab-proxy
   name: com.unity.collab-proxy
   displayName: Version Control
@@ -115,10 +115,11 @@ m_ResolvedPackages:
     - 2.1.0
     - 2.2.0
     - 2.3.1
+    - 2.4.3
+    - 2.4.4
     compatible:
-    - 2.2.0
-    - 2.3.1
-    recommended: 2.2.0
+    - 2.4.4
+    recommended: 2.4.4
     deprecated: []
   dependencies: []
   resolvedDependencies: []
@@ -147,28 +148,29 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638448201880000000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.collab-proxy@2.3/manual/index.html
+  datePublishedTicks: 638573492230000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.collab-proxy@2.4/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.cloud.collaborate.git
-    revision: 613362ccb4468f55ee42e0a35809fb9a61f3f8f1
+    revision: 03b1de8d838eb1e427cb1b1d8bf9157f33377542
     path: 
   unityLifecycle:
-    version: 2.2.0
+    version: 2.4.4
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-- packageId: com.unity.feature.2d@2.0.0
+  fingerprint: 
+- packageId: com.unity.feature.2d@2.0.1
   testable: 0
   isDirectDependency: 1
-  version: 2.0.0
+  version: 2.0.1
   source: 2
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.feature.2d@2.0.0
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.feature.2d@2.0.1
   assetPath: Packages/com.unity.feature.2d
   name: com.unity.feature.2d
   displayName: 2D
@@ -187,10 +189,10 @@ m_ResolvedPackages:
   errors: []
   versions:
     all:
-    - 2.0.0
+    - 2.0.1
     compatible:
-    - 2.0.0
-    recommended: 2.0.0
+    - 2.0.1
+    recommended: 2.0.1
     deprecated: []
   dependencies:
   - name: com.unity.2d.animation
@@ -211,9 +213,9 @@ m_ResolvedPackages:
     version: default
   resolvedDependencies:
   - name: com.unity.2d.animation
-    version: 9.0.4
+    version: 9.1.1
   - name: com.unity.2d.common
-    version: 8.0.1
+    version: 8.0.3
   - name: com.unity.2d.sprite
     version: 1.0.0
   - name: com.unity.mathematics
@@ -229,7 +231,7 @@ m_ResolvedPackages:
   - name: com.unity.modules.animation
     version: 1.0.0
   - name: com.unity.burst
-    version: 1.8.9
+    version: 1.8.17
   - name: com.unity.collections
     version: 1.2.4
   - name: com.unity.test-framework
@@ -239,9 +241,9 @@ m_ResolvedPackages:
   - name: com.unity.2d.pixel-perfect
     version: 5.0.3
   - name: com.unity.2d.psdimporter
-    version: 8.0.2
+    version: 8.0.5
   - name: com.unity.2d.spriteshape
-    version: 9.0.2
+    version: 9.0.4
   - name: com.unity.modules.physics2d
     version: 1.0.0
   - name: com.unity.2d.tilemap
@@ -253,7 +255,7 @@ m_ResolvedPackages:
   - name: com.unity.ugui
     version: 1.0.0
   - name: com.unity.2d.aseprite
-    version: 1.0.1
+    version: 1.1.4
   keywords: []
   registry:
     id: main
@@ -274,19 +276,20 @@ m_ResolvedPackages:
     revision: 
     path: 
   unityLifecycle:
-    version: 2.0.0
+    version: 2.0.1
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-- packageId: com.unity.ide.rider@3.0.26
+  fingerprint: 
+- packageId: com.unity.ide.rider@3.0.31
   testable: 0
   isDirectDependency: 1
-  version: 3.0.26
+  version: 3.0.31
   source: 1
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.ide.rider@3.0.26
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.ide.rider@3.0.31
   assetPath: Packages/com.unity.ide.rider
   name: com.unity.ide.rider
   displayName: JetBrains Rider Editor
@@ -345,11 +348,10 @@ m_ResolvedPackages:
     - 3.0.26
     - 3.0.27
     - 3.0.28
+    - 3.0.31
     compatible:
-    - 3.0.26
-    - 3.0.27
-    - 3.0.28
-    recommended: 3.0.28
+    - 3.0.31
+    recommended: 3.0.31
     deprecated: []
   dependencies:
   - name: com.unity.ext.nunit
@@ -368,28 +370,29 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638326061920000000
+  datePublishedTicks: 638548308080000000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.ide.rider@3.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.rider.git
-    revision: 2b29b1152946c13d1ecebf6fc681a59cd8b4d399
+    revision: ccd778a2275ff09f1a83bc924cfb2fb4d5b63566
     path: 
   unityLifecycle:
-    version: 3.0.26
+    version: 3.0.31
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.ide.visualstudio@2.0.22
   testable: 0
   isDirectDependency: 1
   version: 2.0.22
   source: 1
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.ide.visualstudio@2.0.22
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.ide.visualstudio@2.0.22
   assetPath: Packages/com.unity.ide.visualstudio
   name: com.unity.ide.visualstudio
   displayName: Visual Studio Editor
@@ -473,12 +476,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.test-framework@1.1.33
   testable: 0
   isDirectDependency: 1
   version: 1.1.33
   source: 1
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.test-framework@1.1.33
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.test-framework@1.1.33
   assetPath: Packages/com.unity.test-framework
   name: com.unity.test-framework
   displayName: Test Framework
@@ -541,6 +545,7 @@ m_ResolvedPackages:
     - 1.4.2
     - 1.4.3
     - 1.4.4
+    - 1.4.5
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
@@ -561,6 +566,7 @@ m_ResolvedPackages:
     - 1.4.2
     - 1.4.3
     - 1.4.4
+    - 1.4.5
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
@@ -610,12 +616,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.textmeshpro@3.0.6
   testable: 0
   isDirectDependency: 1
   version: 3.0.6
   source: 1
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.textmeshpro@3.0.6
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.textmeshpro@3.0.6
   assetPath: Packages/com.unity.textmeshpro
   name: com.unity.textmeshpro
   displayName: TextMeshPro
@@ -805,12 +812,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.timeline@1.7.6
   testable: 0
   isDirectDependency: 1
   version: 1.7.6
   source: 1
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.timeline@1.7.6
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.timeline@1.7.6
   assetPath: Packages/com.unity.timeline
   name: com.unity.timeline
   displayName: Timeline
@@ -974,12 +982,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.ugui@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.ugui@1.0.0
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.ugui@1.0.0
   assetPath: Packages/com.unity.ugui
   name: com.unity.ugui
   displayName: Unity UI
@@ -1046,12 +1055,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-- packageId: com.unity.visualscripting@1.9.1
+  fingerprint: 
+- packageId: com.unity.visualscripting@1.9.4
   testable: 0
   isDirectDependency: 1
-  version: 1.9.1
+  version: 1.9.4
   source: 1
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.visualscripting@1.9.1
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.visualscripting@1.9.4
   assetPath: Packages/com.unity.visualscripting
   name: com.unity.visualscripting
   displayName: Visual Scripting
@@ -1099,8 +1109,6 @@ m_ResolvedPackages:
     - 1.9.2
     - 1.9.4
     compatible:
-    - 1.9.1
-    - 1.9.2
     - 1.9.4
     recommended: 1.9.4
     deprecated:
@@ -1130,28 +1138,29 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638284821510000000
+  datePublishedTicks: 638488567680000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.visualscripting.git
-    revision: 5e78e9c354ed1567dbcea08e2bd9992e4a473cfb
+    revision: 41aac2b7038c2b1259c546329890d3736ce2394e
     path: 
   unityLifecycle:
-    version: 1.9.1
+    version: 1.9.4
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.ai@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.modules.ai@1.0.0
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.modules.ai@1.0.0
   assetPath: Packages/com.unity.modules.ai
   name: com.unity.modules.ai
   displayName: AI
@@ -1201,12 +1210,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.androidjni@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.modules.androidjni@1.0.0
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.modules.androidjni@1.0.0
   assetPath: Packages/com.unity.modules.androidjni
   name: com.unity.modules.androidjni
   displayName: Android JNI
@@ -1255,12 +1265,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.animation@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.modules.animation@1.0.0
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.modules.animation@1.0.0
   assetPath: Packages/com.unity.modules.animation
   name: com.unity.modules.animation
   displayName: Animation
@@ -1310,12 +1321,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.assetbundle@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.modules.assetbundle@1.0.0
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.modules.assetbundle@1.0.0
   assetPath: Packages/com.unity.modules.assetbundle
   name: com.unity.modules.assetbundle
   displayName: Asset Bundle
@@ -1365,12 +1377,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.audio@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.modules.audio@1.0.0
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.modules.audio@1.0.0
   assetPath: Packages/com.unity.modules.audio
   name: com.unity.modules.audio
   displayName: Audio
@@ -1420,12 +1433,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.cloth@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.modules.cloth@1.0.0
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.modules.cloth@1.0.0
   assetPath: Packages/com.unity.modules.cloth
   name: com.unity.modules.cloth
   displayName: Cloth
@@ -1479,12 +1493,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.director@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.modules.director@1.0.0
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.modules.director@1.0.0
   assetPath: Packages/com.unity.modules.director
   name: com.unity.modules.director
   displayName: Director
@@ -1542,12 +1557,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.imageconversion@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.modules.imageconversion@1.0.0
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.modules.imageconversion@1.0.0
   assetPath: Packages/com.unity.modules.imageconversion
   name: com.unity.modules.imageconversion
   displayName: Image Conversion
@@ -1598,12 +1614,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.imgui@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.modules.imgui@1.0.0
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.modules.imgui@1.0.0
   assetPath: Packages/com.unity.modules.imgui
   name: com.unity.modules.imgui
   displayName: IMGUI
@@ -1653,12 +1670,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.jsonserialize@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.modules.jsonserialize@1.0.0
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.modules.jsonserialize@1.0.0
   assetPath: Packages/com.unity.modules.jsonserialize
   name: com.unity.modules.jsonserialize
   displayName: JSONSerialize
@@ -1708,12 +1726,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.particlesystem@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.modules.particlesystem@1.0.0
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.modules.particlesystem@1.0.0
   assetPath: Packages/com.unity.modules.particlesystem
   name: com.unity.modules.particlesystem
   displayName: Particle System
@@ -1763,12 +1782,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.physics@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.modules.physics@1.0.0
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.modules.physics@1.0.0
   assetPath: Packages/com.unity.modules.physics
   name: com.unity.modules.physics
   displayName: Physics
@@ -1818,12 +1838,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.physics2d@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.modules.physics2d@1.0.0
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.modules.physics2d@1.0.0
   assetPath: Packages/com.unity.modules.physics2d
   name: com.unity.modules.physics2d
   displayName: Physics 2D
@@ -1873,12 +1894,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.screencapture@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.modules.screencapture@1.0.0
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.modules.screencapture@1.0.0
   assetPath: Packages/com.unity.modules.screencapture
   name: com.unity.modules.screencapture
   displayName: Screen Capture
@@ -1932,12 +1954,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.terrain@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.modules.terrain@1.0.0
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.modules.terrain@1.0.0
   assetPath: Packages/com.unity.modules.terrain
   name: com.unity.modules.terrain
   displayName: Terrain
@@ -1987,12 +2010,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.terrainphysics@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.modules.terrainphysics@1.0.0
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.modules.terrainphysics@1.0.0
   assetPath: Packages/com.unity.modules.terrainphysics
   name: com.unity.modules.terrainphysics
   displayName: Terrain Physics
@@ -2050,12 +2074,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.tilemap@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.modules.tilemap@1.0.0
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.modules.tilemap@1.0.0
   assetPath: Packages/com.unity.modules.tilemap
   name: com.unity.modules.tilemap
   displayName: Tilemap
@@ -2108,12 +2133,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.ui@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.modules.ui@1.0.0
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.modules.ui@1.0.0
   assetPath: Packages/com.unity.modules.ui
   name: com.unity.modules.ui
   displayName: UI
@@ -2163,12 +2189,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.uielements@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.modules.uielements@1.0.0
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.modules.uielements@1.0.0
   assetPath: Packages/com.unity.modules.uielements
   name: com.unity.modules.uielements
   displayName: UIElements
@@ -2230,12 +2257,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.umbra@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.modules.umbra@1.0.0
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.modules.umbra@1.0.0
   assetPath: Packages/com.unity.modules.umbra
   name: com.unity.modules.umbra
   displayName: Umbra
@@ -2285,12 +2313,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.unityanalytics@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.modules.unityanalytics@1.0.0
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.modules.unityanalytics@1.0.0
   assetPath: Packages/com.unity.modules.unityanalytics
   name: com.unity.modules.unityanalytics
   displayName: Unity Analytics
@@ -2348,12 +2377,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.unitywebrequest@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.modules.unitywebrequest@1.0.0
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.modules.unitywebrequest@1.0.0
   assetPath: Packages/com.unity.modules.unitywebrequest
   name: com.unity.modules.unitywebrequest
   displayName: Unity Web Request
@@ -2403,12 +2433,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.unitywebrequestassetbundle@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.modules.unitywebrequestassetbundle@1.0.0
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0
   assetPath: Packages/com.unity.modules.unitywebrequestassetbundle
   name: com.unity.modules.unitywebrequestassetbundle
   displayName: Unity Web Request Asset Bundle
@@ -2466,12 +2497,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.unitywebrequestaudio@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.modules.unitywebrequestaudio@1.0.0
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0
   assetPath: Packages/com.unity.modules.unitywebrequestaudio
   name: com.unity.modules.unitywebrequestaudio
   displayName: Unity Web Request Audio
@@ -2529,12 +2561,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.unitywebrequesttexture@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.modules.unitywebrequesttexture@1.0.0
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.modules.unitywebrequesttexture@1.0.0
   assetPath: Packages/com.unity.modules.unitywebrequesttexture
   name: com.unity.modules.unitywebrequesttexture
   displayName: Unity Web Request Texture
@@ -2592,12 +2625,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.unitywebrequestwww@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.modules.unitywebrequestwww@1.0.0
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0
   assetPath: Packages/com.unity.modules.unitywebrequestwww
   name: com.unity.modules.unitywebrequestwww
   displayName: Unity Web Request WWW
@@ -2671,12 +2705,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.vehicles@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.modules.vehicles@1.0.0
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.modules.vehicles@1.0.0
   assetPath: Packages/com.unity.modules.vehicles
   name: com.unity.modules.vehicles
   displayName: Vehicles
@@ -2730,12 +2765,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.video@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.modules.video@1.0.0
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.modules.video@1.0.0
   assetPath: Packages/com.unity.modules.video
   name: com.unity.modules.video
   displayName: Video
@@ -2797,12 +2833,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.vr@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.modules.vr@1.0.0
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.modules.vr@1.0.0
   assetPath: Packages/com.unity.modules.vr
   name: com.unity.modules.vr
   displayName: VR
@@ -2866,12 +2903,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.wind@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.modules.wind@1.0.0
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.modules.wind@1.0.0
   assetPath: Packages/com.unity.modules.wind
   name: com.unity.modules.wind
   displayName: Wind
@@ -2921,12 +2959,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.xr@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.modules.xr@1.0.0
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.modules.xr@1.0.0
   assetPath: Packages/com.unity.modules.xr
   name: com.unity.modules.xr
   displayName: XR
@@ -2988,12 +3027,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.subsystems@1.0.0
   testable: 0
   isDirectDependency: 0
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.modules.subsystems@1.0.0
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.modules.subsystems@1.0.0
   assetPath: Packages/com.unity.modules.subsystems
   name: com.unity.modules.subsystems
   displayName: Subsystems
@@ -3047,12 +3087,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.ext.nunit@1.0.6
   testable: 0
   isDirectDependency: 0
   version: 1.0.6
   source: 1
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.ext.nunit@1.0.6
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.ext.nunit@1.0.6
   assetPath: Packages/com.unity.ext.nunit
   name: com.unity.ext.nunit
   displayName: Custom NUnit
@@ -3118,12 +3159,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-- packageId: com.unity.2d.animation@9.0.4
+  fingerprint: 
+- packageId: com.unity.2d.animation@9.1.1
   testable: 0
   isDirectDependency: 0
-  version: 9.0.4
+  version: 9.1.1
   source: 1
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.2d.animation@9.0.4
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.2d.animation@9.1.1
   assetPath: Packages/com.unity.2d.animation
   name: com.unity.2d.animation
   displayName: 2D Animation
@@ -3264,15 +3306,14 @@ m_ResolvedPackages:
     - 10.1.0
     - 10.1.1
     - 10.1.2
+    - 10.1.3
     compatible:
-    - 9.0.4
-    - 9.1.0
     - 9.1.1
-    recommended: 9.0.4
+    recommended: 9.1.1
     deprecated: []
   dependencies:
   - name: com.unity.2d.common
-    version: 8.0.1
+    version: 8.0.2
   - name: com.unity.2d.sprite
     version: 1.0.0
   - name: com.unity.collections
@@ -3283,7 +3324,7 @@ m_ResolvedPackages:
     version: 1.0.0
   resolvedDependencies:
   - name: com.unity.2d.common
-    version: 8.0.1
+    version: 8.0.3
   - name: com.unity.2d.sprite
     version: 1.0.0
   - name: com.unity.mathematics
@@ -3299,7 +3340,7 @@ m_ResolvedPackages:
   - name: com.unity.modules.animation
     version: 1.0.0
   - name: com.unity.burst
-    version: 1.8.9
+    version: 1.8.17
   - name: com.unity.collections
     version: 1.2.4
   - name: com.unity.test-framework
@@ -3319,28 +3360,29 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638320873940000000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.2d.animation@9.0/manual/index.html
+  datePublishedTicks: 638515171890000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.2d.animation@9.1/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/2d.git
-    revision: be60dd1716d39b00d03d87668a09a4fc1d4102b6
+    revision: c76edf174a772eda3d3152a9d38ad8c364cce43e
     path: 
   unityLifecycle:
-    version: 9.0.4
+    version: 9.1.1
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.2d.pixel-perfect@5.0.3
   testable: 0
   isDirectDependency: 0
   version: 5.0.3
   source: 1
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.2d.pixel-perfect@5.0.3
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.2d.pixel-perfect@5.0.3
   assetPath: Packages/com.unity.2d.pixel-perfect
   name: com.unity.2d.pixel-perfect
   displayName: 2D Pixel Perfect
@@ -3418,12 +3460,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-- packageId: com.unity.2d.psdimporter@8.0.2
+  fingerprint: 
+- packageId: com.unity.2d.psdimporter@8.0.5
   testable: 0
   isDirectDependency: 0
-  version: 8.0.2
+  version: 8.0.5
   source: 1
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.2d.psdimporter@8.0.2
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.2d.psdimporter@8.0.5
   assetPath: Packages/com.unity.2d.psdimporter
   name: com.unity.2d.psdimporter
   displayName: 2D PSD Importer
@@ -3432,7 +3475,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 2D
-  type: asset
+  type: assets
   description: A ScriptedImporter for importing Adobe Photoshop PSB (Photoshop Big)
     file format. The ScriptedImporter is currently targeted for users who wants to
     create multi Sprite character animation using Unity 2D Animation Package.
@@ -3520,24 +3563,21 @@ m_ResolvedPackages:
     - 9.0.2
     - 9.0.3
     compatible:
-    - 8.0.2
-    - 8.0.3
-    - 8.0.4
     - 8.0.5
     recommended: 8.0.5
     deprecated: []
   dependencies:
   - name: com.unity.2d.animation
-    version: 9.0.1
+    version: 9.1.1
   - name: com.unity.2d.common
-    version: 8.0.1
+    version: 8.0.2
   - name: com.unity.2d.sprite
     version: 1.0.0
   resolvedDependencies:
   - name: com.unity.2d.animation
-    version: 9.0.4
+    version: 9.1.1
   - name: com.unity.2d.common
-    version: 8.0.1
+    version: 8.0.3
   - name: com.unity.2d.sprite
     version: 1.0.0
   - name: com.unity.mathematics
@@ -3553,7 +3593,7 @@ m_ResolvedPackages:
   - name: com.unity.modules.animation
     version: 1.0.0
   - name: com.unity.burst
-    version: 1.8.9
+    version: 1.8.17
   - name: com.unity.collections
     version: 1.2.4
   - name: com.unity.test-framework
@@ -3574,28 +3614,29 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638067518780000000
+  datePublishedTicks: 638515171920000000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.2d.psdimporter@8.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/2d.git
-    revision: fc4212736e8bcb753039f1a18964b98d929e4093
+    revision: c76edf174a772eda3d3152a9d38ad8c364cce43e
     path: 
   unityLifecycle:
-    version: 8.0.2
+    version: 8.0.5
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.2d.sprite@1.0.0
   testable: 0
   isDirectDependency: 0
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.2d.sprite@1.0.0
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.2d.sprite@1.0.0
   assetPath: Packages/com.unity.2d.sprite
   name: com.unity.2d.sprite
   displayName: 2D Sprite
@@ -3648,12 +3689,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-- packageId: com.unity.2d.spriteshape@9.0.2
+  fingerprint: 
+- packageId: com.unity.2d.spriteshape@9.0.4
   testable: 0
   isDirectDependency: 0
-  version: 9.0.2
+  version: 9.0.4
   source: 1
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.2d.spriteshape@9.0.2
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.2d.spriteshape@9.0.4
   assetPath: Packages/com.unity.2d.spriteshape
   name: com.unity.2d.spriteshape
   displayName: 2D SpriteShape
@@ -3662,7 +3704,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 2D
-  type: asset
+  type: assets
   description: SpriteShape Runtime & Editor Package contains the tooling and the
     runtime component that allows you to create very organic looking spline based
     2D worlds. It comes with intuitive configurator and a highly performant renderer.
@@ -3748,6 +3790,7 @@ m_ResolvedPackages:
     - 9.0.1
     - 9.0.2
     - 9.0.3
+    - 9.0.4
     - 10.0.0-pre.1
     - 10.0.0-pre.2
     - 10.0.0
@@ -3758,22 +3801,21 @@ m_ResolvedPackages:
     - 10.0.5
     - 10.0.6
     compatible:
-    - 9.0.2
-    - 9.0.3
-    recommended: 9.0.3
+    - 9.0.4
+    recommended: 9.0.4
     deprecated: []
   dependencies:
   - name: com.unity.mathematics
     version: 1.1.0
   - name: com.unity.2d.common
-    version: 8.0.1
+    version: 8.0.3
   - name: com.unity.modules.physics2d
     version: 1.0.0
   resolvedDependencies:
   - name: com.unity.mathematics
     version: 1.2.6
   - name: com.unity.2d.common
-    version: 8.0.1
+    version: 8.0.3
   - name: com.unity.2d.sprite
     version: 1.0.0
   - name: com.unity.modules.uielements
@@ -3787,7 +3829,7 @@ m_ResolvedPackages:
   - name: com.unity.modules.animation
     version: 1.0.0
   - name: com.unity.burst
-    version: 1.8.9
+    version: 1.8.17
   - name: com.unity.modules.physics2d
     version: 1.0.0
   keywords:
@@ -3807,28 +3849,29 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638150103540000000
+  datePublishedTicks: 638567250110000000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.2d.spriteshape@9.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/2d.git
-    revision: ff926a6d093212af31bc3c835f61abfbb1b3f163
+    revision: 317cb5a2d84ec8711e66cbcce61bc6179da9d791
     path: 
   unityLifecycle:
-    version: 9.0.2
+    version: 9.0.4
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.2d.tilemap@1.0.0
   testable: 0
   isDirectDependency: 0
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.2d.tilemap@1.0.0
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.2d.tilemap@1.0.0
   assetPath: Packages/com.unity.2d.tilemap
   name: com.unity.2d.tilemap
   displayName: 2D Tilemap Editor
@@ -3896,12 +3939,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.2d.tilemap.extras@3.1.2
   testable: 0
   isDirectDependency: 0
   version: 3.1.2
   source: 1
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.2d.tilemap.extras@3.1.2
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.2d.tilemap.extras@3.1.2
   assetPath: Packages/com.unity.2d.tilemap.extras
   name: com.unity.2d.tilemap.extras
   displayName: 2D Tilemap Extras
@@ -4024,12 +4068,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-- packageId: com.unity.2d.aseprite@1.0.1
+  fingerprint: 
+- packageId: com.unity.2d.aseprite@1.1.4
   testable: 0
   isDirectDependency: 0
-  version: 1.0.1
+  version: 1.1.4
   source: 1
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.2d.aseprite@1.0.1
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.2d.aseprite@1.1.4
   assetPath: Packages/com.unity.2d.aseprite
   name: com.unity.2d.aseprite
   displayName: 2D Aseprite Importer
@@ -4057,13 +4102,8 @@ m_ResolvedPackages:
     - 1.1.3
     - 1.1.4
     compatible:
-    - 1.0.1
-    - 1.1.0
-    - 1.1.1
-    - 1.1.2
-    - 1.1.3
     - 1.1.4
-    recommended: 1.0.1
+    recommended: 1.1.4
     deprecated: []
   dependencies:
   - name: com.unity.2d.sprite
@@ -4078,7 +4118,7 @@ m_ResolvedPackages:
   - name: com.unity.2d.sprite
     version: 1.0.0
   - name: com.unity.2d.common
-    version: 8.0.1
+    version: 8.0.3
   - name: com.unity.mathematics
     version: 1.2.6
   - name: com.unity.modules.uielements
@@ -4092,7 +4132,7 @@ m_ResolvedPackages:
   - name: com.unity.modules.animation
     version: 1.0.0
   - name: com.unity.burst
-    version: 1.8.9
+    version: 1.8.17
   keywords:
   - 2d
   - Aseprite
@@ -4109,28 +4149,29 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638285549780000000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.2d.aseprite@1.0/manual/index.html
+  datePublishedTicks: 638509289520000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.2d.aseprite@1.1/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/AsepriteImporter.git
-    revision: f35a0fd1f63d861882dcf1ab563fa2e23f8566ae
+    revision: 331d65bad3469b434c81f625682efc587a1e9258
     path: 
   unityLifecycle:
-    version: 1.0.1
+    version: 1.1.4
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-- packageId: com.unity.2d.common@8.0.1
+  fingerprint: 
+- packageId: com.unity.2d.common@8.0.3
   testable: 0
   isDirectDependency: 0
-  version: 8.0.1
+  version: 8.0.3
   source: 1
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.2d.common@8.0.1
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.2d.common@8.0.3
   assetPath: Packages/com.unity.2d.common
   name: com.unity.2d.common
   displayName: 2D Common
@@ -4139,7 +4180,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 2D
-  type: asset
+  type: assets
   description: 2D Common is a package that contains shared functionalities that are
     used by most of the other 2D packages.
   status: 0
@@ -4193,6 +4234,7 @@ m_ResolvedPackages:
     - 8.0.0
     - 8.0.1
     - 8.0.2
+    - 8.0.3
     - 9.0.0-pre.1
     - 9.0.0-pre.2
     - 9.0.0
@@ -4201,10 +4243,10 @@ m_ResolvedPackages:
     - 9.0.3
     - 9.0.4
     - 9.0.5
+    - 9.0.6
     compatible:
-    - 8.0.1
-    - 8.0.2
-    recommended: 8.0.2
+    - 8.0.3
+    recommended: 8.0.3
     deprecated: []
   dependencies:
   - name: com.unity.2d.sprite
@@ -4233,7 +4275,7 @@ m_ResolvedPackages:
   - name: com.unity.modules.animation
     version: 1.0.0
   - name: com.unity.burst
-    version: 1.8.9
+    version: 1.8.17
   keywords:
   - 2d
   registry:
@@ -4246,28 +4288,29 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638029769550000000
-  documentationUrl: 
+  datePublishedTicks: 638567250090000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.2d.common@8.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/2d.git
-    revision: 6fc635d83d4bb0b2640893b8d4a0f3934044aeb5
+    revision: 317cb5a2d84ec8711e66cbcce61bc6179da9d791
     path: 
   unityLifecycle:
-    version: 8.0.1
+    version: 8.0.3
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.mathematics@1.2.6
   testable: 0
   isDirectDependency: 0
   version: 1.2.6
   source: 1
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.mathematics@1.2.6
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.mathematics@1.2.6
   assetPath: Packages/com.unity.mathematics
   name: com.unity.mathematics
   displayName: Mathematics
@@ -4338,12 +4381,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.collections@1.2.4
   testable: 0
   isDirectDependency: 0
   version: 1.2.4
   source: 1
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.collections@1.2.4
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.collections@1.2.4
   assetPath: Packages/com.unity.collections
   name: com.unity.collections
   displayName: Collections
@@ -4426,6 +4470,7 @@ m_ResolvedPackages:
     - 2.4.1
     - 2.4.2
     - 2.5.0-exp.1
+    - 2.5.0-pre.2
     compatible:
     - 1.2.4
     - 1.3.1
@@ -4449,7 +4494,8 @@ m_ResolvedPackages:
     - 2.4.1
     - 2.4.2
     - 2.5.0-exp.1
-    recommended: 1.2.4
+    - 2.5.0-pre.2
+    recommended: 2.4.2
     deprecated: []
   dependencies:
   - name: com.unity.burst
@@ -4458,16 +4504,16 @@ m_ResolvedPackages:
     version: 1.1.31
   resolvedDependencies:
   - name: com.unity.burst
-    version: 1.8.9
+    version: 1.8.17
   - name: com.unity.mathematics
     version: 1.2.6
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
   - name: com.unity.test-framework
     version: 1.1.33
   - name: com.unity.ext.nunit
     version: 1.0.6
   - name: com.unity.modules.imgui
-    version: 1.0.0
-  - name: com.unity.modules.jsonserialize
     version: 1.0.0
   keywords:
   - dots
@@ -4494,17 +4540,18 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.2.4
     nextVersion: 
-    recommendedVersion: 
+    recommendedVersion: 2.4.0
     isDeprecated: 0
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-- packageId: com.unity.burst@1.8.9
+  fingerprint: 
+- packageId: com.unity.burst@1.8.17
   testable: 0
   isDirectDependency: 0
-  version: 1.8.9
+  version: 1.8.17
   source: 1
-  resolvedPath: /Users/kirby1/Project2dRPGgame/Project2dRPG/Library/PackageCache/com.unity.burst@1.8.9
+  resolvedPath: C:\x68\Project2dRPGgame\Project2dRPG\Library\PackageCache\com.unity.burst@1.8.17
   assetPath: Packages/com.unity.burst
   name: com.unity.burst
   displayName: Burst
@@ -4651,23 +4698,21 @@ m_ResolvedPackages:
     - 1.8.14
     - 1.8.15
     - 1.8.16
+    - 1.8.17
     compatible:
-    - 1.8.9
-    - 1.8.10
-    - 1.8.11
-    - 1.8.12
-    - 1.8.13
-    - 1.8.14
-    - 1.8.15
-    - 1.8.16
-    recommended: 1.8.16
+    - 1.8.17
+    recommended: 1.8.17
     deprecated: []
   dependencies:
   - name: com.unity.mathematics
     version: 1.2.1
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
   resolvedDependencies:
   - name: com.unity.mathematics
     version: 1.2.6
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
   keywords: []
   registry:
     id: main
@@ -4679,19 +4724,21 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638314141790000000
+  datePublishedTicks: 638573293750000000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.burst@1.8/manual/index.html
   hasRepository: 1
   repository:
     type: git
-    url: git@github.cds.internal.unity3d.com:unity/burst
-    revision: 1aa8f2db606554f28aa01007e92600cd24643852
+    url: https://github.cds.internal.unity3d.com/unity/burst.git
+    revision: 234303811291ae524719609ac4e9ca24be4b58dd
     path: 
   unityLifecycle:
-    version: 1.8.9
+    version: 1.8.17
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
+m_BuiltInPackagesHash: 447c529ded2afe09b824ea0307935623cfbe191d

@@ -43,3 +43,14 @@ The following packages were updated:
   com.unity.ide.visualstudio from version 2.0.17 to 2.0.22
   com.unity.timeline from version 1.7.3 to 1.7.6
   com.unity.visualscripting from version 1.8.0 to 1.9.1
+
+=== Mon Aug 12 18:16:41 2024
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were 更新済:
+  com.unity.collab-proxy をバージョン 2.3.1 から 2.4.4 へ
+  com.unity.feature.2d をバージョン 2.0.0 から 2.0.1 へ
+  com.unity.ide.rider をバージョン 3.0.26 から 3.0.31 へ
+  com.unity.visualscripting をバージョン 1.9.1 から 1.9.4 へ
