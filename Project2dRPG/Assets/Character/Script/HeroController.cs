@@ -40,7 +40,7 @@ public class HeroController : MonoBehaviour
 
        //playerの移動（velocityはRigidBodyの速度ベクトル、normalizedは正規化をしています：詳しく知りたい方は動画の方を確認してね）
         rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * moveSpeed;
-
+		playerAnim.SetFloat("Speed",1.0f);
         //速度が0出ない時、キー入力に合わせてアニメーション用のパラメーターを更新する
         if(rb.velocity != Vector2.zero)
         {
@@ -108,5 +108,6 @@ public class HeroController : MonoBehaviour
 
 	void stop(){
 		rb.velocity = new Vector2(0,0);
+		playerAnim.SetFloat("Speed",0.0f);
 	}
 }
