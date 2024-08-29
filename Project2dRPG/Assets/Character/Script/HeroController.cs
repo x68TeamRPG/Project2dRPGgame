@@ -29,22 +29,7 @@ public class HeroController : MonoBehaviour
     // Update is called once per frame
 	void Update(){
 		if(Input.GetAxisRaw("Horizontal")!=0 || Input.GetAxisRaw("Vertical")!=0){
-			step();
-		}
-		else{
-			stop();
-		}
-	}
-    void step()
-    {
-
-       //playerの移動（velocityはRigidBodyの速度ベクトル、normalizedは正規化をしています：詳しく知りたい方は動画の方を確認してね）
-        rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * moveSpeed;
-		playerAnim.SetFloat("Speed",1.0f);
-        //速度が0出ない時、キー入力に合わせてアニメーション用のパラメーターを更新する
-        if(rb.velocity != Vector2.zero)
-        {
-            if(Input.GetAxisRaw("Horizontal") != 0 & Input.GetAxisRaw("Vertical") == 0)
+			if(Input.GetAxisRaw("Horizontal") != 0 & Input.GetAxisRaw("Vertical") == 0)
             {
                 if(Input.GetAxisRaw("Horizontal") > 0)
                 {
@@ -93,7 +78,19 @@ public class HeroController : MonoBehaviour
 					playerAnim.SetFloat("X", -1);
             	}
 			}
-        }
+			step();
+		}
+		else{
+			stop();
+		}
+	}
+    void step()
+    {
+
+       //playerの移動（velocityはRigidBodyの速度ベクトル、normalizedは正規化をしています：詳しく知りたい方は動画の方を確認してね）
+        rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * moveSpeed;
+		playerAnim.SetFloat("Speed",1.0f);
+        //速度が0出ない時、キー入力に合わせてアニメーション用のパラメーターを更新する
 
 		nowposition = transform.position;
 		if(Mathf.Abs(nowposition.y-lastposition.y)>=steplength){
