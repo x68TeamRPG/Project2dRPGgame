@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class HeroController : MonoBehaviour
 {
+
+	private bool Moving;
 [SerializeField]
-    private int moveSpeed;
+	public int movespeed = 1;
 
     [SerializeField]
     private Animator playerAnim;
@@ -14,7 +16,7 @@ public class HeroController : MonoBehaviour
 
 	private HeroStatus herostatus;
 
-	private Vector2 lastposition, nowposition;
+	private Vector3 lastposition, nowposition;
 
 	public float steplength=1;
    
@@ -22,12 +24,15 @@ public class HeroController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+		Moving = false;
+		Application.targetFrameRate = 60;
 		herostatus = GetComponent<HeroStatus>();
 		lastposition = transform.position;
     }
 
     // Update is called once per frame
 	void Update(){
+		if(!Moving){
 		if(Input.GetAxisRaw("Horizontal")!=0 || Input.GetAxisRaw("Vertical")!=0){
 			if(Input.GetAxisRaw("Horizontal") != 0 & Input.GetAxisRaw("Vertical") == 0)
             {
@@ -78,33 +83,36 @@ public class HeroController : MonoBehaviour
 					playerAnim.SetFloat("X", -1);
             	}
 			}
-			step();
-		}
-		else{
-			stop();
-		}
+			StartCoroutine(step());
+		}}
 	}
-    void step()
+    IEnumerator step()
     {
-
-       //playerの移動（velocityはRigidBodyの速度ベクトル、normalizedは正規化をしています：詳しく知りたい方は動画の方を確認してね）
-        rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * moveSpeed;
+		Moving = true;
+		lastposition = transform.position;
+		float ver = Input.GetAxisRaw("Vertical");
+		float hori = Input.GetAxisRaw("Horizontal");
 		playerAnim.SetFloat("Speed",1.0f);
-        //速度が0出ない時、キー入力に合わせてアニメーション用のパラメーターを更新する
-
-		nowposition = transform.position;
-		if(Mathf.Abs(nowposition.y-lastposition.y)>=steplength){
-			herostatus.SubStepCount(1);
-			lastposition=nowposition;
+		for(int i=0; i<movespeed; i++){
+			Vector3 v = new Vector3(hori/movespeed,ver/movespeed,0);
+			transform.position += v;
+			yield return null;
 		}
-		if(Mathf.Abs(nowposition.x-lastposition.x)>=steplength){
+		Moving = false;
+		Vector3 pos = transform.position;
+    	pos.x = Mathf.Round(pos.x);
+    	pos.y = Mathf.Round(pos.y);
+    	pos.z = Mathf.Round(pos.z);
+    	transform.position = pos;
+		stop();
+		if(lastposition != transform.position){
 			herostatus.SubStepCount(1);
-			lastposition=nowposition;
 		}
     }
 
 	void stop(){
-		rb.velocity = new Vector2(0,0);
+		if(Input.GetAxisRaw("Horizontal")==0 && Input.GetAxisRaw("Vertical")==0){
 		playerAnim.SetFloat("Speed",0.0f);
+		}
 	}
 }
