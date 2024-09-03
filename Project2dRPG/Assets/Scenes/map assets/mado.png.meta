@@ -1,0 +1,1170 @@
+fileFormatVersion: 2
+guid: b453c0e86ecd9c64ea0ef00d95cd0d62
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mado_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80.833336
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dfce14cb00e6c644856811f6cd6989d
+      internalID: 950923992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80.833336
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8498230b0ebe8cd47954cd58d41629fa
+      internalID: -1178202626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80.833336
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bced524fbeaf1df4982dcd562d6017b0
+      internalID: 396593643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 80.833336
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abcf16bcf3f0c024886e0b2f5c607f75
+      internalID: 1013060136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 80.833336
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36bba2de6445f5c4695f79ffdc14b4b2
+      internalID: 1443519570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80.833336
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4877ddafe54868f428466548c9e09f9b
+      internalID: -1810031748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 80.833336
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b3e43feeaf9c7641aad1a7c8d3ea373
+      internalID: 283976715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 80.833336
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91e8801de35b2734b843b6d9bb38ef2e
+      internalID: -693653857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64.833336
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cef5a50809d9e1943a273c4560ffc895
+      internalID: -6406955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_9
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64.833336
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 353199155bd232f4585540f307166779
+      internalID: -1254795293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_10
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64.833336
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7ad80ae091f3e64785f197f3a6bf48d
+      internalID: -1768706633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_11
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64.833336
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4213013892a6b5544b42fdd9217b0103
+      internalID: -1980602725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_12
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64.833336
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a39453e3ab2d7cf488d28f9a94385731
+      internalID: 269380841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_13
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64.833336
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36411e0fe540d0248a3d2410d0a407a6
+      internalID: -425616956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_14
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64.833336
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 492c2e74263456c4b879797cc5306ea6
+      internalID: 1091712829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_15
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 64.833336
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 848b70405e36ed645a414423816c5e1e
+      internalID: 1309067588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48.833336
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76a249d4d8b017942990425998375115
+      internalID: -1149090891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_17
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48.833336
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5749c844c91b8f4bb07b50579538665
+      internalID: 852317639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_18
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48.833336
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd9db83fceca2b6448ea2b42c3fe0f10
+      internalID: -766281353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_19
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48.833336
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8ebac44d0fedb241a42c963f8c5659d
+      internalID: 359775460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_20
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48.833336
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb84aef0d1774444397a18a685cba19e
+      internalID: -1316778995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_21
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 48.833336
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac88966f2e90df94287412608d531c9f
+      internalID: -1368906782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_22
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48.833336
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72bd0847d799ba64182ba425b89f8534
+      internalID: -307124344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_23
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 48.833336
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eec0d81048ae2d74284561275cf1eeb3
+      internalID: -1632599283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32.833336
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4066100fe9ad314a9d3d5e51039c15c
+      internalID: -1831733578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_25
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32.833336
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da25af7cb0269f44dac14c1ca43b7a1d
+      internalID: -1769271743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_26
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32.833336
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6347a656f1af53142b5c243a9abb6299
+      internalID: 686887098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_27
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32.833336
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b441ef4e6eadd7846939994ab6ec824c
+      internalID: 819579980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_28
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32.833336
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e301550796395c44ae2a1bbfbc7757a
+      internalID: -1194572580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_29
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 32.833336
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 416d782cf55aa994d994d30bf877dab7
+      internalID: 22270485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_30
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32.833336
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f69cfee3e94c6e4abcebf6717b7ca69
+      internalID: -1647742032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_31
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 32.833336
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc6e5f911d1c0b943b796110565ada33
+      internalID: 2117463434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16.833334
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ed00481a5029cb41a8aca6af49d1f80
+      internalID: 1214748920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_33
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16.833334
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14dc512d5bdfabf449d47ecc3ad3feeb
+      internalID: -1293473345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_34
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16.833334
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad7b1145e1f14804bb11f61467ea345b
+      internalID: 1013938957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_35
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16.833334
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dfa27909a962e14a98d51ee0a013a49
+      internalID: -1576261408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_36
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16.833334
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae71c7a11be55ad49af019a7db4b1d23
+      internalID: -2014356933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_37
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 16.833334
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad7e480b54b0559469531f0b5bb8fd80
+      internalID: -247618196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_38
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 16.833334
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fae5b52d76ea1e049ab6e78015e54491
+      internalID: 1304074024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_39
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 16.833334
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4956634128fe77469580791f85045bb
+      internalID: -1251685463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.83333397
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36d280feb16acef4993b6f1511b90919
+      internalID: -817723296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_41
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0.83333397
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f63c97c0d97541f478bce23ba3df12c2
+      internalID: 412101911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_42
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0.83333397
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e0f1736b09af864c887a776293a4969
+      internalID: 1465300048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_43
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0.83333397
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd3875cabd1ce744fa709d5f11e1b0c1
+      internalID: -1305261632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_44
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0.83333397
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31c03a1ce38d174428e67f84bd06b68d
+      internalID: 1074555664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_45
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0.83333397
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cc4172ff8a00a4468dc27f0aab6a39e
+      internalID: -493844262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_46
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0.83333397
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69d086406b7ae8543af245e8a14bb728
+      internalID: -1539738571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mado_47
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0.83333397
+        width: 16
+        height: 16.166666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1514cd7fd76c04e43b45396ee0d98970
+      internalID: -523037895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      mado_0: 950923992
+      mado_1: -1178202626
+      mado_10: -1768706633
+      mado_11: -1980602725
+      mado_12: 269380841
+      mado_13: -425616956
+      mado_14: 1091712829
+      mado_15: 1309067588
+      mado_16: -1149090891
+      mado_17: 852317639
+      mado_18: -766281353
+      mado_19: 359775460
+      mado_2: 396593643
+      mado_20: -1316778995
+      mado_21: -1368906782
+      mado_22: -307124344
+      mado_23: -1632599283
+      mado_24: -1831733578
+      mado_25: -1769271743
+      mado_26: 686887098
+      mado_27: 819579980
+      mado_28: -1194572580
+      mado_29: 22270485
+      mado_3: 1013060136
+      mado_30: -1647742032
+      mado_31: 2117463434
+      mado_32: 1214748920
+      mado_33: -1293473345
+      mado_34: 1013938957
+      mado_35: -1576261408
+      mado_36: -2014356933
+      mado_37: -247618196
+      mado_38: 1304074024
+      mado_39: -1251685463
+      mado_4: 1443519570
+      mado_40: -817723296
+      mado_41: 412101911
+      mado_42: 1465300048
+      mado_43: -1305261632
+      mado_44: 1074555664
+      mado_45: -493844262
+      mado_46: -1539738571
+      mado_47: -523037895
+      mado_5: -1810031748
+      mado_6: 283976715
+      mado_7: -693653857
+      mado_8: -6406955
+      mado_9: -1254795293
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
