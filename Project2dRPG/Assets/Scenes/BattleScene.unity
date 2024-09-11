@@ -4285,13 +4285,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80a06f16dfe873145b832f2e87bdfb88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: "\u96FB\u901A\u592A\u90CE"
-  hp: 30
+  name: a
+  hp: 50
   selectCommand: {fileID: 0}
   target: {fileID: 381016180}
   commands:
   - {fileID: 11400000, guid: 826e61664db429b48b4d5cdd79ff1e6b, type: 2}
-  - {fileID: 11400000, guid: 1443bdfee65178f4a80170e6cceffa91, type: 2}
 --- !u!4 &2109914848
 Transform:
   m_ObjectHideFlags: 0
