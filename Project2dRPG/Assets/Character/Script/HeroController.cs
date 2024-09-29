@@ -90,8 +90,8 @@ public class HeroController : MonoBehaviour
     {
 		Moving = true;
 		lastposition = transform.position;
-		float ver = Input.GetAxisRaw("Vertical");
-		float hori = Input.GetAxisRaw("Horizontal");
+		float ver = Input.GetAxisRaw("Vertical")/2;
+		float hori = Input.GetAxisRaw("Horizontal")/2;
 		playerAnim.SetFloat("Speed",1.0f);
 		for(int i=0; i<movespeed; i++){
 			Vector3 v = new Vector3(hori/movespeed,ver/movespeed,0);
@@ -100,9 +100,12 @@ public class HeroController : MonoBehaviour
 		}
 		Moving = false;
 		Vector3 pos = transform.position;
-    	pos.x = Mathf.Round(pos.x);
-    	pos.y = Mathf.Round(pos.y);
-    	pos.z = Mathf.Round(pos.z);
+    	pos.x = Mathf.Round(pos.x*10f)/10;
+    	pos.y = Mathf.Round(pos.y*10f)/10;
+    	pos.z = Mathf.Round(pos.z*10f)/10;
+		pos.x = Mathf.Round(pos.x*2f)/2;
+    	pos.y = Mathf.Round(pos.y*2f)/2;
+    	pos.z = Mathf.Round(pos.z*2f)/2;
     	transform.position = pos;
 		stop();
 		if(lastposition != transform.position){
