@@ -7,6 +7,8 @@ public class BattleManager : MonoBehaviour
 {
   [SerializeField] character player = default;
   [SerializeField] character enemy = default;
+
+  public Button AttackButton;
     enum Phase
     {
         Start,
@@ -25,16 +27,17 @@ public class BattleManager : MonoBehaviour
             switch(phase)
             {
                 case Phase.Start:
+                //スタートウィンドウパネルが消失されたら
                     phase = Phase.Command;
                     break;
                 case Phase.Command:
-
+            
                     phase = Phase.Execute;
                     break;
                 case Phase.Execute:
                     player.selectCommand.Execute(player,player.target);
                     enemy.selectCommand.Execute(enemy,enemy.target);
-                    //どっちか死ぬまで
+                //どっちか死ぬまで
                     if (player.hp <= 0 || enemy.hp <= 0)
                     {
                         phase = Phase.Result;

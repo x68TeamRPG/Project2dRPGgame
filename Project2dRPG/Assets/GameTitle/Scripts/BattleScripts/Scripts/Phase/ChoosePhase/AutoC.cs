@@ -5,9 +5,9 @@ using UnityEngine.EventSystems;
 
 public class AutoC : MonoBehaviour
 {
-    public GameObject button; // Inspectorでボタンを指定します
+    public GameObject button; 
 
-    void Start()
+    void start()
     {
         // ボタンを選択状態にする
         EventSystem.current.SetSelectedGameObject(button);

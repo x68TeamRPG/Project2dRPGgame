@@ -33,6 +33,8 @@ public class Status : MonoBehaviour
    public int Def;
    public int Spd;
    public int Step;
+   
+
 
    
    void Start()
