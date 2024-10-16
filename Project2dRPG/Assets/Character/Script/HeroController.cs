@@ -118,4 +118,12 @@ public class HeroController : MonoBehaviour
 		playerAnim.SetFloat("Speed",0.0f);
 		}
 	}
+
+	public void isMoving(){
+		Moving=true;
+	}
+
+	public void notMoving(){
+		Moving=false;
+	}
 }
