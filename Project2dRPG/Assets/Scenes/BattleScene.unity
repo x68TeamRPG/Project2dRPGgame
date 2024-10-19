@@ -384,6 +384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 876201236}
+  panel: {fileID: 32489317}
 --- !u!1 &38096353
 GameObject:
   m_ObjectHideFlags: 0
@@ -2318,6 +2319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 621933684}
+  panel: {fileID: 184901108}
 --- !u!1 &196463511
 GameObject:
   m_ObjectHideFlags: 0
@@ -5053,6 +5055,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 643109091}
+  panel: {fileID: 599313531}
 --- !u!1 &600770472
 GameObject:
   m_ObjectHideFlags: 0
@@ -12464,6 +12467,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1444020287}
+  panel: {fileID: 1557160939}
 --- !u!114 &1557160942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14580,23 +14584,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d572ac3d1c91e48428df66235e256e3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: "\u96FB\u901A\u592A\u90CE"
-  Leveltext: {fileID: 491361436}
-  Hptext: {fileID: 1547119187}
-  Mptext: {fileID: 1094619881}
-  Atktext: {fileID: 165870739}
-  Deftext: {fileID: 136913625}
-  Spdtext: {fileID: 301042871}
-  Steptext: {fileID: 50951091}
-  Hptext2: {fileID: 570343291}
-  Mptext2: {fileID: 710778894}
-  Level: 1
-  Hp: 30
-  Mp: 5
-  Atk: 10
-  Def: 5
-  Spd: 10
-  Step: 50
 --- !u!1 &1877096655
 GameObject:
   m_ObjectHideFlags: 0
@@ -16325,6 +16312,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 6471406}
+  panel: {fileID: 2065404750}
 --- !u!114 &2065404753
 MonoBehaviour:
   m_ObjectHideFlags: 0
