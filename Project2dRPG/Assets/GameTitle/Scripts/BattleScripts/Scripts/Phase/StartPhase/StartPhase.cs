@@ -27,12 +27,34 @@ public class NovelWriter : MonoBehaviour
 
     /// 書くスピード(短いほど早い)
     public float writeSpeed = 0.2f;
-
     /// 書いている途中かどうか
     public bool isWriting = false;
-
     /// 文章の番号は Key で表す
     public int key = 0;
+
+    // コンストラクタ(他クラスから呼び出すときにkeyを指定するためのもの)
+    public NovelWriter (int key)
+    {
+        this.key = key;
+        Clean();
+        messagePanel.SetActive (false);
+    }
+
+    // キーの値を変更するメソッド
+    public void SetKey (int key)
+    {
+        this.key = key;
+    }
+
+    public void SetMessagePanelActive (bool active)
+    {
+        messagePanel.SetActive (active);
+    }
+
+    public void SetCommandPanelActive (bool active)
+    {
+        commandPanel.SetActive (active);
+    }
 
     /// テキストを書くメソッド
     public void Write (string s)
@@ -99,12 +121,10 @@ public class NovelWriter : MonoBehaviour
                 case 999:
                     // 999 を書いた後-------------------
 
-                    //メッセージパネルを消す
+                    // メッセージパネルを消す
                     messagePanel.SetActive (false);
+                    // コマンドパネルを表示する
                     commandPanel.SetActive (true);
-
-                    
-
                     break;
 
                 default:
@@ -112,10 +132,8 @@ public class NovelWriter : MonoBehaviour
 
                     //番号を 1 増やす
                     key++;
-
                     //メッセージを書く
                     Write (message[key]);
-
                     break;
             }
         }
