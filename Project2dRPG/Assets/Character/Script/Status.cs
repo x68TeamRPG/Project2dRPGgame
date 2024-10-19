@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Status : MonoBehaviour
 {
-    int Attack=10;
-    int Deffence=10;
-    int Speed=10;
+    public int Attack=10;
+    public int Deffence=10;
+    public int Speed=10;
     public int MaxHP=10;
     public int CurrentHP=10;
     public int MaxMP=10;
