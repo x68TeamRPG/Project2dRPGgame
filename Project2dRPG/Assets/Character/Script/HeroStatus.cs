@@ -1,11 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 public class HeroStatus : Status
 {
-    int StepCount=10;
-    int Exp;
-    int Lv;
+    public int StepCount=10;
+    public int Exp;
+    public int Lv;
+
+    public new string name;
+   // レベルの数値
+   public Text Leveltext;
+   //体力の数値
+   public Text Hptext;
+   //マジックポイントの数値
+   public Text Mptext;
+   // 攻撃力の数値
+   public Text Atktext;
+   //防御力の数値
+   public Text Deftext;
+   //速さの数値
+   public Text Spdtext;
+   //歩数の数値
+   public Text Steptext;
+      //体力の数値
+   public Text Hptext2;
+   //マジックポイントの数値
+   public Text Mptext2;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +36,15 @@ public class HeroStatus : Status
     // Update is called once per frame
     void Update()
     {
-        
+        Leveltext.text = string.Format("{0}" , Lv);
+        Hptext.text = string.Format("{0}" , CurrentHP);
+        Mptext.text = string.Format("{0}" , CurrentMP);
+        Atktext.text = string.Format("{0}" , Attack);
+        Deftext.text = string.Format("{0}" , Deffence);
+        Spdtext.text = string.Format("{0}" , Speed);
+        Steptext.text = string.Format("{0}" , StepCount);
+        Hptext2.text = string.Format("{0}" , CurrentHP);
+        Mptext2.text = string.Format("{0}" , CurrentMP);
     }
 
     public void AddStepCount(int n){

@@ -31,7 +31,6 @@ public class BattleManager : MonoBehaviour
                     phase = Phase.Command;
                     break;
                 case Phase.Command:
-            
                     phase = Phase.Execute;
                     break;
                 case Phase.Execute:
