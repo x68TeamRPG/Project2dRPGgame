@@ -9,6 +9,8 @@ public class AutoC : MonoBehaviour
     public GameObject button; 
     public GameObject panel;
 
+    private GameObject CurrentButton;
+
     bool flag;
 
     void Start()
@@ -18,7 +20,16 @@ public class AutoC : MonoBehaviour
 
     void Update()
     {
-        GameObject CurrentButton = EventSystem.current.currentSelectedGameObject;
+        if (EventSystem.current.currentSelectedGameObject != null)
+        {
+            CurrentButton = EventSystem.current.currentSelectedGameObject;
+        }
+        else
+        {
+            CurrentButton = null;
+            EventSystem.current.SetSelectedGameObject(button);
+        }
+
         if(panel.activeSelf && flag == false)
         {
             flag = true;
@@ -27,7 +38,7 @@ public class AutoC : MonoBehaviour
         }
 
         // 戻るボタンが選択された状態でそのパネルが非表示になったら
-        else if(CurrentButton.name == "Back" && CurrentButton.transform.parent.gameObject.activeInHierarchy == false)
+        else if(CurrentButton.transform.parent.gameObject.activeInHierarchy == false)
         {
             flag = false;
         }
