@@ -14581,9 +14581,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 1869754269}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d572ac3d1c91e48428df66235e256e3e, type: 3}
+  m_Script: {fileID: 11500000, guid: 23ddf3e3a86a8a9498586b1c817f7057, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Attack: 10
+  Deffence: 10
+  Speed: 10
+  MaxHP: 10
+  CurrentHP: 10
+  MaxMP: 10
+  CurrentMP: 10
+  StepCount: 10
+  Exp: 0
+  Lv: 0
+  name: 
+  Leveltext: {fileID: 491361436}
+  Hptext: {fileID: 1547119187}
+  Mptext: {fileID: 1094619881}
+  Atktext: {fileID: 165870739}
+  Deftext: {fileID: 136913625}
+  Spdtext: {fileID: 301042871}
+  Steptext: {fileID: 50951091}
+  Hptext2: {fileID: 570343291}
+  Mptext2: {fileID: 710778894}
 --- !u!1 &1877096655
 GameObject:
   m_ObjectHideFlags: 0
