@@ -40,7 +40,7 @@ public class CommandBasis : MonoBehaviour
             Debug.Log("MPが足りない");
         }
         //歩数が0より下
-        if (player.StepCount <　UsedStepCount)
+        if (player.StepCount < UsedStepCount)
         {
             Debug.Log("歩数が足りない");
         }
