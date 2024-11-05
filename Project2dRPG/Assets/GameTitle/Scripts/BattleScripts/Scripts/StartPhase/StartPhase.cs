@@ -34,9 +34,36 @@ public class NovelWriter : MonoBehaviour
     /// 文章の番号は Key で表す
     public int key = 0;
 
+    public NovelWriter(GameObject messagePanel, GameObject commandPanel, string text="", int key=0)
+    {
+        this.messagePanel = messagePanel;
+        this.commandPanel = commandPanel;
+        this.text.text = text;
+        this.key = key;
+
+        Debug.Log(this.messagePanel == null ? "messagePanel is null" : "messagePanel is set");
+        Debug.Log(this.commandPanel == null ? "commandPanel is null" : "commandPanel is set");
+        Debug.Log(this.text == null ? "text is null" : "text is set");
+        Debug.Log(this.key == null ? "key is null" : "key is set");
+        Debug.Log("NovelWriter is created");
+    }
+
     /// テキストを書くメソッド
+    
+    public void SetKey(int key)
+    {
+        this.key = key;
+    }
+
+    public void SetText(string text)
+    {
+        this.text.text = text;
+    }
     public void Write (string s)
     {
+        //メッセージパネルを表示する
+        messagePanel.SetActive (true);
+        Clean();
         //毎回、書くスピードを 0.2 に戻す------<戻したくない場合はここを消す>
         writeSpeed = 0.2f;
 
@@ -56,9 +83,8 @@ public class NovelWriter : MonoBehaviour
     static Dictionary<int, string> message = new Dictionary<int, string> ()
     { 
         //----\nは改行を表す----
-        { 1, "敵が現れた"}, 
-        { 2, "\n戦闘開始!"},
-        { 999, "\n" },
+        { 1, "敵が現れた\n"}, 
+        { 2, "戦闘開始!"},
     };
 
     //*******************************************************************
@@ -87,23 +113,7 @@ public class NovelWriter : MonoBehaviour
 
                     //一旦ここで溜まった文字を消す
                     Clean ();
-
-                    //番号を 999 にする
-                    key = 999;
-
-                    //メッセージを書く
-                    Write (message[key]);
-
-                    break;
-
-                case 999:
-                    // 999 を書いた後-------------------
-
-                    //メッセージパネルを消す
-                    messagePanel.SetActive (false);
                     commandPanel.SetActive (true);
-
-                    
 
                     break;
 
