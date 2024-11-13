@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class BattleManager : MonoBehaviour
 {
-  [SerializeField] character player = default;
-  [SerializeField] character enemy = default;
+  [SerializeField] HeroStatus  player = default;
+  [SerializeField] EnemyStatus enemy = default;
 
   public Button AttackButton;
     enum Phase
@@ -34,10 +34,9 @@ public class BattleManager : MonoBehaviour
                     phase = Phase.Execute;
                     break;
                 case Phase.Execute:
-                    player.selectCommand.Execute(player,player.target);
-                    enemy.selectCommand.Execute(enemy,enemy.target);
+                   
                 //どっちか死ぬまで
-                    if (player.hp <= 0 || enemy.hp <= 0)
+                    if (player.CurrentHP <= 0 || enemy.CurrentHP <= 0)
                     {
                         phase = Phase.Result;
                     }
