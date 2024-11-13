@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+
 public class HeroStatus : Status
 {
     public int StepCount=10;
@@ -64,8 +66,20 @@ public class HeroStatus : Status
         Debug.Log(StepCount);
     }
     public void SubStepCount(int n){
-        if(StepCount<=0){}
-        StepCount-=n;
-        Debug.Log(StepCount);
+        if(StepCount<=0){
+            SubHP(1);
+        }
+        else{
+            StepCount-=n;
+            Debug.Log(StepCount);
+        }
+    }
+
+    public void SubHP(int n){
+        CurrentHP-=n;
+        Debug.Log(CurrentHP);
+        if(CurrentHP<=0){
+            SceneManager.LoadScene("GameOverScene");
+        }
     }
 }
