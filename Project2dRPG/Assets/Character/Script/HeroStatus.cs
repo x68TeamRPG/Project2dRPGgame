@@ -40,7 +40,7 @@ public class HeroStatus : Status
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -61,10 +61,12 @@ public class HeroStatus : Status
         MaxMptext2.text = string.Format("{0}" , MaxMP);
     }
 
-    public void AddStepCount(int n){
-        StepCount+=n;
+    public void AddStepCount(int n)
+    {
+        StepCount += n;
         Debug.Log(StepCount);
     }
+
     public void SubStepCount(int n){
         if(StepCount<=0){
             SubHP(1);
