@@ -263,6 +263,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8718720885052639207, guid: 2cba6d05666dc854dba4183327c3208a, type: 3}
+      propertyPath: hero
+      value: 
+      objectReference: {fileID: 1723352387}
+    - target: {fileID: 8718720885052639207, guid: 2cba6d05666dc854dba4183327c3208a, type: 3}
       propertyPath: words.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -302,6 +306,11 @@ PrefabInstance:
 --- !u!20 &1324131634 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 1573957545432357963, guid: 2cba6d05666dc854dba4183327c3208a, type: 3}
+  m_PrefabInstance: {fileID: 1324131633}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1723352387 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7041583807606040360, guid: 2cba6d05666dc854dba4183327c3208a, type: 3}
   m_PrefabInstance: {fileID: 1324131633}
   m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
