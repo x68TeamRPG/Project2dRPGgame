@@ -7,14 +7,17 @@ public class NPCController : MonoBehaviour
 {
     public GameObject dialogue;
     public Text Text;
+    private int stringnumber =0;
+    private HeroController herocontroller;
 
    [SerializeField] 
-   string words = "ここにセリフ";
+   string[] words;
+   public GameObject hero;
 
    private bool flag = true; //talkコルーチンのフラグ
 
    void Start(){
-    Text.text = words;
+    herocontroller = hero.GetComponent<HeroController>();
    }
 
    private bool stay = false;
@@ -44,13 +47,24 @@ public class NPCController : MonoBehaviour
     }
 
     IEnumerator talk(){
+        flag=false;
+        Text.text = words[stringnumber];
         dialogue.SetActive (true);
+        herocontroller.isMoving();
         yield return new WaitForSeconds(0.5f);
-        while(flag){
+        while(!flag){
         if(Input.GetKey(KeyCode.Return)){
-            flag=false;
-            StartCoroutine(talkend());
-            break;
+            if(stringnumber+1 < words.Length){
+                Debug.Log("通ったよ！");
+                stringnumber=stringnumber+1;
+                Text.text = words[stringnumber];
+                yield return new WaitForSeconds(0.5f);
+            }
+            else{
+                //flag=true;
+                StartCoroutine(talkend());
+                break;
+            }
         }
         yield return null;
         }
@@ -58,8 +72,10 @@ public class NPCController : MonoBehaviour
 
 IEnumerator talkend()
 {
+    Debug.Log("falseです");
     dialogue.SetActive(false);
-    Debug.Log("通ったよ！");
+    stringnumber=0;
+    herocontroller.notMoving();
     yield return new WaitForSeconds(1.0f);
     flag=true;
     yield return null;
