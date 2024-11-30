@@ -1,15 +1,22 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Scene_change : MonoBehaviour
+public class Scene_chenge : MonoBehaviour
 {
+    public string targetSceneName; // 移動先シーンの名前
+    public Vector3 spawnPosition; // 移動先の座標
 
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene("Mori");//移動先のシーンの名前を必ずafterにしてください！
+            // 移動先の座標を保存してシーンを移動
+            PlayerPrefs.SetFloat("SpawnX", spawnPosition.x);
+            PlayerPrefs.SetFloat("SpawnY", spawnPosition.y);
+            PlayerPrefs.SetFloat("SpawnZ", spawnPosition.z);
+
+            // シーン移動
+            SceneManager.LoadScene(targetSceneName);
         }
     }
-
 }

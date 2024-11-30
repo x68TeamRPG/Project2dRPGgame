@@ -5,10 +5,7 @@ using UnityEngine;
 public class HosuuUI : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Awake()
-    {
-        DontDestroyOnLoad(this.gameObject);
-    }
+
     void Start()
     {
 
