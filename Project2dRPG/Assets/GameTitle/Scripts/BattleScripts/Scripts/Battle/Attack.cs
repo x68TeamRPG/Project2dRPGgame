@@ -8,19 +8,38 @@ public class Attack : MonoBehaviour
     [SerializeField] HeroStatus  player = default;
     [SerializeField] EnemyStatus enemy = default;
 
-    public Button button;
+    [SerializeField] Button button1;
+
     // Start is called before the first frame update
     void Start()
     {
-        //ボタン押されたときの関数登録
-        button.onClick.AddListener(OnClickButton);
+        button1.onClick.AddListener(OnClick);
     }
 
-    // Update is called once per frame
-    void OnClickButton()
+    void OnClick()
     {
-        enemy.CurrentHP -= player.Attack - enemy.Deffence;
-        Debug.Log($"敵に{player.Attack - enemy.Deffence}のダメージ");
+        StartCoroutine(Battle());
+    }
+
+    IEnumerator Battle()
+    {  
+            if (0 < enemy.CurrentHP)
+            {
+                var m = enemy.CurrentHP - (player.Attack - enemy.Deffence);
+                var w = 2/m;
+                while (m < enemy.CurrentHP)
+                {
+                    enemy.CurrentHP -= 1;
+                    //停止
+                    yield return new WaitForSeconds(w);
+                }
+                Debug.Log($"敵に{player.Attack - enemy.Deffence}のダメージ");
+            }
+            else
+            {
+                Debug.Log($"敵はいない");
+            }
+        
     }
 }
 
