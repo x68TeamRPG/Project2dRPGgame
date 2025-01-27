@@ -25,13 +25,14 @@ public class Attack : MonoBehaviour
     {  
             if (0 < enemy.CurrentHP)
             {
-                var m = enemy.CurrentHP - (player.Attack - enemy.Deffence);
-                var w = 2/m;
-                while (m < enemy.CurrentHP)
+                var HP = enemy.CurrentHP;
+                var damage = player.Attack - enemy.Deffence;
+                float damage1 = (1/damage);
+                while (HP - damage < enemy.CurrentHP)
                 {
                     enemy.CurrentHP -= 1;
                     //停止
-                    yield return new WaitForSeconds(w);
+                    yield return new WaitForSeconds(damage1);
                 }
                 Debug.Log($"敵に{player.Attack - enemy.Deffence}のダメージ");
             }
