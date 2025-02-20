@@ -160,8 +160,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 53.670044}
-  m_SizeDelta: {x: 30, y: -66.2066}
+  m_AnchoredPosition: {x: 17.6173, y: 53.670044}
+  m_SizeDelta: {x: 125.3912, y: -66.2066}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &903977
 MonoBehaviour:
@@ -183,7 +183,7 @@ MonoBehaviour:
   m_ChildAlignment: 4
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 30, y: 30}
+  m_CellSize: {x: 60, y: 30}
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 1
   m_ConstraintCount: 3
@@ -2044,7 +2044,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -5230,7 +5230,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '  /'
+  m_Text: '    /'
 --- !u!222 &559228670
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6536,7 +6536,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1869754271}
   enemy: {fileID: 1742644653}
-  button: {fileID: 643109093}
+  button1: {fileID: 643109093}
 --- !u!1 &654951396
 GameObject:
   m_ObjectHideFlags: 0
@@ -14748,8 +14748,8 @@ MonoBehaviour:
   Attack: 10
   Deffence: 5
   Speed: 10
-  MaxHP: 10
-  CurrentHP: 10
+  MaxHP: 100
+  CurrentHP: 100
   MaxMP: 10
   CurrentMP: 10
   Hptext: {fileID: 245098877}
