@@ -84,4 +84,14 @@ public class HeroStatus : Status
             SceneManager.LoadScene("GameOverScene");
         }
     }
+
+    public void AddHP(int n)
+    {
+        CurrentHP += n;
+        if (CurrentHP > MaxHP)
+        {
+            CurrentHP = MaxHP;
+        }
+        Debug.Log("Player healed: " + n + ". Current HP: " + CurrentHP);
+    }
 }
