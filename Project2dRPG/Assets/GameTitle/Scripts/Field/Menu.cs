@@ -19,7 +19,7 @@ public class ToggleUIVisibility : MonoBehaviour
 
     void Update()
     {
-        
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             // 表示状態を切り替える
