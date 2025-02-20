@@ -29,4 +29,10 @@ public class HeroStatus : Status
         StepCount -= n;
         Debug.Log(StepCount);
     }
+
+    public void LoadData(int hp, int stepcount)
+    {
+        CurrentHP = hp;
+        StepCount = stepcount;
+    }
 }

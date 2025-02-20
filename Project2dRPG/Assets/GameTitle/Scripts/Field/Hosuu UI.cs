@@ -5,15 +5,18 @@ using UnityEngine;
 public class HosuuUI : MonoBehaviour
 {
     // Start is called before the first frame update
-
-    void Start()
+    private static HosuuUI instance;
+    private void Awake()
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        // シングルトンパターン: オブジェクトが重複して生成されないようにする
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject); // シーンをまたいでも削除されないように設定
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 }

@@ -11,8 +11,9 @@ public class StepCountUI : MonoBehaviour
 
 
     void Start()
-    {herostatus = hero.GetComponent<HeroStatus>();
-        
+    {
+        herostatus = hero.GetComponent<HeroStatus>();
+
     }
 
     void Update()

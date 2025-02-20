@@ -1,0 +1,88 @@
+using UnityEngine;
+using CI.QuickSave;
+using CI.QuickSave.Core.Storage;
+using System;
+
+
+
+public class UserData : MonoBehaviour
+{
+    private static UserData instance;
+
+    //ベストスコア
+
+    public GameObject Hero;
+    private HeroStatus herostatus;
+
+    private String SaveFile;
+    //セーブ設定
+    QuickSaveSettings m_saveSettings;
+
+    public void Start()
+    {
+        // QuickSaveSettingsのインスタンスを作成
+        m_saveSettings = new QuickSaveSettings();
+        // 暗号化の方法 
+        m_saveSettings.SecurityMode = SecurityMode.Aes;
+        // Aesの暗号化キー
+        m_saveSettings.Password = "Password";
+        // 圧縮の方法
+        m_saveSettings.CompressionMode = CompressionMode.Gzip;
+
+        herostatus = Hero.GetComponent<HeroStatus>();
+    }
+    public void FileNameChange(String s) { SaveFile = s; }
+    /// <summary>
+    /// セーブデータ読み込み
+    /// </summary>
+    public void LoadUserData()
+    {
+        //ファイルが無ければ無視
+        if (QuickSaveRaw.Exists(SaveFile))
+        {
+            Debug.Log("returnされました");
+            return;
+        }
+
+        // QuickSaveReaderのインスタンスを作成
+        QuickSaveReader reader = QuickSaveReader.Create(SaveFile, m_saveSettings);
+        Debug.Log("StepCount=" + reader.Read<int>("StepCount"));
+
+        // データを読み込む
+
+        herostatus.Attack = reader.Read<int>("Attack");
+        herostatus.StepCount = reader.Read<int>("StepCount");
+        herostatus.Deffence = reader.Read<int>("Deffence");
+        herostatus.Speed = reader.Read<int>("Speed");
+        herostatus.MaxHP = reader.Read<int>("MaxHP");
+        herostatus.CurrentHP = reader.Read<int>("HP");
+        herostatus.CurrentMP = reader.Read<int>("MP");
+        herostatus.MaxMP = reader.Read<int>("MaxMP");
+
+
+
+    }
+
+    /// <summary>
+    /// データセーブ
+    /// </summary>
+    public void SaveUserData()
+    {
+        Debug.Log("セーブデータ保存先:" + Application.persistentDataPath + SaveFile);
+
+        // QuickSaveWriterのインスタンスを作成
+        QuickSaveWriter writer = QuickSaveWriter.Create(SaveFile, m_saveSettings);
+
+        // データを書き込む
+        writer.Write("HP", herostatus.CurrentHP);
+        writer.Write("StepCount", herostatus.StepCount);
+        writer.Write("Attack", herostatus.Attack);
+        writer.Write("Deffence", herostatus.Deffence);
+        writer.Write("Speed", herostatus.Speed);
+        writer.Write("MaxHP", herostatus.MaxHP);
+        writer.Write("MP", herostatus.CurrentMP);
+        writer.Write("MaxMP", herostatus.MaxMP);
+        // 変更を反映
+        writer.Commit();
+    }
+}
