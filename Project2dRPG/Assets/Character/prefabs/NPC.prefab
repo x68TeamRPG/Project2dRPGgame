@@ -215,6 +215,7 @@ MonoBehaviour:
   dialogue: {fileID: 0}
   Text: {fileID: 0}
   words: Hello World!!
+  hero: {fileID: 3181028328281590493, guid: 1aac86390ac84464186a5fc79ecdd336, type: 3}
 --- !u!50 &7724927509960755878
 Rigidbody2D:
   serializedVersion: 4
