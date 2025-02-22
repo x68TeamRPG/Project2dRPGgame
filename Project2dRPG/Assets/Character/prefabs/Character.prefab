@@ -608,6 +608,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1441658162728677096}
     - target: {fileID: 11384019395473991, guid: 62f940a38dc620a4d84b6aec6beae567, type: 3}
+      propertyPath: hero
+      value: 
+      objectReference: {fileID: 7041583807606040360}
+    - target: {fileID: 11384019395473991, guid: 62f940a38dc620a4d84b6aec6beae567, type: 3}
       propertyPath: dialogue
       value: 
       objectReference: {fileID: 7059488062089674551}

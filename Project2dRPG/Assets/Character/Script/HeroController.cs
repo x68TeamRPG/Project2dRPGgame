@@ -127,8 +127,17 @@ public class HeroController : MonoBehaviour
 			playerAnim.SetFloat("Speed", 0.0f);
 		}
 	}
+
 	public void SetPosition(Vector3 newPosition)
 	{
 		transform.position = newPosition;
+  }
+
+	public void isMoving(){
+		Moving=true;
+	}
+
+	public void notMoving(){
+		Moving=false;
 	}
 }
