@@ -69,8 +69,10 @@ public class CommandBasis : MonoBehaviour
         {
             Debug.Log("歩数が足りない");
         }
-        //敵の行動(仮)
+    }
+    public void enemydamage()
+    {
         player.CurrentHP -= HpDamage;
         Debug.Log($"プレイヤーに{HpDamage}のダメージ");
-    }
+    } 
 }
