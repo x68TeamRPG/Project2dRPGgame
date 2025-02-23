@@ -13,7 +13,7 @@ public class CommandBasis : MonoBehaviour
     public int UsedMp;
     //使用する歩数
     public int UsedStepCount;
-    //敵に与えるダメージ
+    //与えるダメージ
     public int HpDamage;
     // メッセージウィンドウ
     public GameObject messagePanel;
@@ -69,6 +69,8 @@ public class CommandBasis : MonoBehaviour
         {
             Debug.Log("歩数が足りない");
         }
-
+        //敵の行動(仮)
+        player.CurrentHP -= HpDamage;
+        Debug.Log($"プレイヤーに{HpDamage}のダメージ");
     }
 }
