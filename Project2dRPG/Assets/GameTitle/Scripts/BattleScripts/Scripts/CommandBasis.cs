@@ -20,7 +20,7 @@ public class CommandBasis : MonoBehaviour
     // コマンドパネル
     public GameObject commandPanel;
     // NovelWriterクラスの初期化
-    public NovelWriter novelWriter;
+    public TextControl textControl;
 
     // Start is called before the first frame update
     void Start()
@@ -30,7 +30,7 @@ public class CommandBasis : MonoBehaviour
 
         //ボタン押されたときの関数登録
         button.onClick.AddListener(OnClickButton);
-        novelWriter = new NovelWriter(messagePanel, commandPanel, "", 0);
+        textControl = new TextControl(messagePanel, commandPanel, "", 0);
     }
 
     // Update is called once per frame
@@ -48,18 +48,16 @@ public class CommandBasis : MonoBehaviour
             Debug.Log($"MPが{UsedMp}減少");
             Debug.Log($"歩数が{UsedStepCount}減少");
             Debug.Log("Novelwriter :");
-            Debug.Log(novelWriter == null);
+            Debug.Log(textControl == null);
             Debug.Log("Novelwriter.messagePanel :");
-            Debug.Log(novelWriter.messagePanel == null);
+            Debug.Log(textControl.TextWindow == null);
             Debug.Log("Novelwriter.commandPanel :");
-            Debug.Log(novelWriter.commandPanel == null);
+            Debug.Log(textControl.CommandPanel == null);
             Debug.Log("Novelwriter.text :");
-            Debug.Log(novelWriter.text == null);
-            Debug.Log("Novelwriter.key :");
-            Debug.Log(novelWriter.key == null);
+            Debug.Log(textControl.text == null);
 
             // ウィンドウに書き込み
-            novelWriter.Write("敵に" + HpDamage.ToString() + "のダメージ");
+            textControl.Write("敵に" + HpDamage.ToString() + "のダメージ");
         }
         //MPが0より下
         if (player.CurrentMP < UsedMp)

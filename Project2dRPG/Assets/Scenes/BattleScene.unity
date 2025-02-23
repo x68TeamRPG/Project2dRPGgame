@@ -8799,7 +8799,7 @@ MonoBehaviour:
   HpDamage: 0
   messagePanel: {fileID: 0}
   commandPanel: {fileID: 0}
-  novelWriter: {fileID: 0}
+  textControl: {fileID: 0}
 --- !u!1 &888095838
 GameObject:
   m_ObjectHideFlags: 0
@@ -11219,7 +11219,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 7
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -14675,12 +14675,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f2c3c61fca05b4479091b198970e615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  messagePanel: {fileID: 1768730910}
+  TextWindow: {fileID: 1768730910}
+  CommandPanel: {fileID: 599313531}
   text: {fileID: 1318374177}
-  commandPanel: {fileID: 599313531}
-  writeSpeed: 0.2
-  isWriting: 0
-  key: 0
+  WriteSpeed: 0.2
+  IsWriting: 0
+  TextLists: []
 --- !u!224 &1723137403
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15033,7 +15033,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
