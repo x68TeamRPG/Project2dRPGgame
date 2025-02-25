@@ -40,34 +40,67 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    IEnumerator Battle()
+    IEnumerator Battle(string skill="attack")
     {
         if (CompareSpeed() == "player")
         {
-            StartCoroutine(PlayerTurn());
-            yield return new WaitForSeconds(3.0f);
-            StartCoroutine(EnemyTurn());
+            yield return StartCoroutine(PlayerTurn(skill));  // プレイヤーターンが終わるまで待つ
+            yield return StartCoroutine(EnemyTurn());
         }
         else if (CompareSpeed() == "enemy")
         {
-            StartCoroutine(EnemyTurn());
-            yield return new WaitForSeconds(3.0f);
-            StartCoroutine(PlayerTurn());
+            yield return StartCoroutine(EnemyTurn());
+            yield return StartCoroutine(PlayerTurn(skill));
         }
+        commandController.gameObject.SetActive(true);
     }
 
-    IEnumerator PlayerTurn()
+    IEnumerator PlayerTurn(string skill="Attack")
     {
-        yield return new WaitForSeconds(1.0f);
         textController.Write("プレイヤーのターン");
-        yield return new WaitForSeconds(1.0f);
+        yield return StartCoroutine(PlayerAttack());
     }
 
     IEnumerator EnemyTurn()
     {
-        yield return new WaitForSeconds(1.0f);
         textController.Write("敵のターン");
         yield return new WaitForSeconds(1.0f);
+    }
+
+    IEnumerator PlayerAttack()
+    {  
+        if (0 < enemy.CurrentHP)
+        {
+            int HP = enemy.CurrentHP;
+            int damage = player.Attack - enemy.Deffence;
+            float damage1 = (1/damage);
+            while (HP - damage < enemy.CurrentHP)
+            {
+                enemy.CurrentHP -= 1;
+                //停止
+                yield return new WaitForSeconds(damage1);
+            }
+            Debug.Log($"敵に{player.Attack - enemy.Deffence}のダメージ");
+            textController.Write($"敵に{player.Attack - enemy.Deffence}のダメージ");
+        }
+    }
+
+    IEnumerator EnemyAttack()
+    {
+        if (0 < player.CurrentHP)
+        {
+            int HP = player.CurrentHP;
+            int damage = player.Attack - player.Deffence;
+            float damage1 = (1/damage);
+            while (HP - damage < player.CurrentHP)
+            {
+                player.CurrentHP -= 1;
+                //停止
+                yield return new WaitForSeconds(damage1);
+            }
+            Debug.Log($"敵に{player.Attack - player.Deffence}のダメージ");
+            textController.Write($"敵に{player.Attack - player.Deffence}のダメージ");
+        }
     }
 
 }
