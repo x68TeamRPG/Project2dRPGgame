@@ -20,7 +20,7 @@ public class CommandBasis : MonoBehaviour
     // コマンドパネル
     public GameObject commandPanel;
     // NovelWriterクラスの初期化
-    public TextControl textControl;
+    public TextController textControl;
 
     // Start is called before the first frame update
     void Start()
@@ -30,7 +30,6 @@ public class CommandBasis : MonoBehaviour
 
         //ボタン押されたときの関数登録
         button.onClick.AddListener(OnClickButton);
-        textControl = new TextControl(messagePanel, commandPanel, "", 0);
     }
 
     // Update is called once per frame

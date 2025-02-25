@@ -8,12 +8,27 @@ public class Attack : MonoBehaviour
     [SerializeField] HeroStatus  player = default;
     [SerializeField] EnemyStatus enemy = default;
 
-    [SerializeField] Button button1;
+    [SerializeField] Button EnemyButton;
+    [SerializeField] Button TextWindow;
+    [SerializeField] Text text;
+    [SerializeField] GameObject CommandPanel;
 
     // Start is called before the first frame update
     void Start()
     {
-        button1.onClick.AddListener(OnClick);
+        EnemyButton.onClick.AddListener(OnClick);
+    }
+
+    void Update()
+    {
+        if (EnemyButton.gameObject == UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject)
+        {
+            // ボタンが現在選択されているなら…
+            if (Input.GetKeyDown(KeyCode.X))
+            {
+                OnButtonClickX();
+            }
+        }
     }
 
     void OnClick()
@@ -21,26 +36,32 @@ public class Attack : MonoBehaviour
         StartCoroutine(Battle());
     }
 
+    private void OnButtonClickX()
+    {
+        Debug.Log("Button clicked by X");
+        EnemyButton.interactable = false;
+        CommandPanel.SetActive(true);
+    }
+
     IEnumerator Battle()
     {  
-            if (0 < enemy.CurrentHP)
+        if (0 < enemy.CurrentHP)
+        {
+            var HP = enemy.CurrentHP;
+            var damage = player.Attack - enemy.Deffence;
+            float damage1 = (1/damage);
+            while (HP - damage < enemy.CurrentHP)
             {
-                var HP = enemy.CurrentHP;
-                var damage = player.Attack - enemy.Deffence;
-                float damage1 = (1/damage);
-                while (HP - damage < enemy.CurrentHP)
-                {
-                    enemy.CurrentHP -= 1;
-                    //停止
-                    yield return new WaitForSeconds(damage1);
-                }
-                Debug.Log($"敵に{player.Attack - enemy.Deffence}のダメージ");
+                enemy.CurrentHP -= 1;
+                //停止
+                yield return new WaitForSeconds(damage1);
             }
-            else
-            {
-                Debug.Log($"敵はいない");
-            }
-        
+            Debug.Log($"敵に{player.Attack - enemy.Deffence}のダメージ");
+        }
+        else
+        {
+            Debug.Log($"敵はいない");
+        }
     }
 }
 

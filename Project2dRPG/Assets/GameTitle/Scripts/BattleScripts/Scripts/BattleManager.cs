@@ -5,55 +5,70 @@ using UnityEngine.UI;
 
 public class BattleManager : MonoBehaviour
 {
-  [SerializeField] HeroStatus  player = default;
-  [SerializeField] EnemyStatus enemy = default;
 
-  public Button AttackButton;
-    enum Phase
+    public CommandController commandController;
+    public TextController textController;
+    public AttackButton attackButton;
+
+    [SerializeField] HeroStatus  player = default;
+    [SerializeField] EnemyStatus enemy = default;
+
+    private int turn;
+
+    void Start()
     {
-        Start,
-        Command,
-        Execute,
-        Result,
-        End,
+        turn = 0;
+        attackButton.AttackSelected += ExecTurn;
     }
-    Phase phase;
-    IEnumerator Battle()
+    
+    public void ExecTurn()
     {
-        while (phase != Phase.End)
+        Debug.Log("turn: " + turn);
+        StartCoroutine(Battle());
+        turn++;
+    }
+
+    public string CompareSpeed()
+    {
+        if (player.Speed >= enemy.Speed)
         {
-            yield return null;
-            Debug.Log(phase);
-            switch(phase)
-            {
-                case Phase.Start:
-                //スタートウィンドウパネルが消失されたら
-                    phase = Phase.Command;
-                    break;
-                case Phase.Command:
-                    phase = Phase.Execute;
-                    break;
-                case Phase.Execute:
-                   
-                //どっちか死ぬまで
-                    if (player.CurrentHP <= 0 || enemy.CurrentHP <= 0)
-                    {
-                        phase = Phase.Result;
-                    }
-                    else
-                    {
-                        phase = Phase.Command;
-                    }
-                    break;
-                case Phase.Result:
-                    phase = Phase.End;
-                    break;
-                case Phase.End:
-                    break;
-            }
+            return "player";
+        }
+        else
+        {
+            return "enemy";
         }
     }
 
+    IEnumerator Battle()
+    {
+        if (CompareSpeed() == "player")
+        {
+            StartCoroutine(PlayerTurn());
+            yield return new WaitForSeconds(3.0f);
+            StartCoroutine(EnemyTurn());
+        }
+        else if (CompareSpeed() == "enemy")
+        {
+            StartCoroutine(EnemyTurn());
+            yield return new WaitForSeconds(3.0f);
+            StartCoroutine(PlayerTurn());
+        }
+    }
+
+    IEnumerator PlayerTurn()
+    {
+        yield return new WaitForSeconds(1.0f);
+        textController.Write("プレイヤーのターン");
+        yield return new WaitForSeconds(1.0f);
+    }
+
+    IEnumerator EnemyTurn()
+    {
+        yield return new WaitForSeconds(1.0f);
+        textController.Write("敵のターン");
+        yield return new WaitForSeconds(1.0f);
+    }
 
 }
 

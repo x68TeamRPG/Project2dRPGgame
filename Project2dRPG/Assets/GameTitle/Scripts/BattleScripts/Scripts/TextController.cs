@@ -6,7 +6,7 @@ using UnityEngine.UI;
 /*
  * Unity で、1文字ずつ表示するためのコード
  */
-public class TextControl : MonoBehaviour
+public class TextController : MonoBehaviour
 {
 
     //*******************************************************************
@@ -14,8 +14,10 @@ public class TextControl : MonoBehaviour
     //*******************************************************************
 
     /// メッセージパネル（ボタン）
-    public GameObject TextWindow;
+    public Button TextWindow;
     public GameObject CommandPanel;
+    public Button Enemy;
+    public Button Attack;
 
     /// テキスト
     public Text text;
@@ -38,26 +40,13 @@ public class TextControl : MonoBehaviour
     void Start ()
     {
         //メッセージパネルに書かれている文字を消す
+        TextWindow.onClick.AddListener (OnClickTextWindow);
+        Attack.onClick.AddListener (OnClickAttack);
+        Enemy.GetComponent<Button>().interactable = false;
+
         Clean ();
         TextLists.Add("敵が現れた！\n");
         TextLists.Add("戦闘開始！");
-    }
-
-    public TextControl(GameObject TextWindow, GameObject CommandPanel, string text="", float WriteSpeed=0.2f, bool IsWriting=false)
-    {
-        this.TextWindow = TextWindow;
-        this.CommandPanel = CommandPanel;
-        this.text.text = text;
-        this.WriteSpeed = WriteSpeed;
-        this.IsWriting = IsWriting;
-
-        Debug.Log(this.TextWindow == null ? "TextWindow is null" : "TextWindow is set");
-        Debug.Log(this.CommandPanel == null ? "CommandPanel is null" : "CommandPanel is set");
-        Debug.Log(this.text == null ? "text is null" : "text is set");
-        Debug.Log(this.WriteSpeed == 0.2f ? "WriteSpeed is default" : "WriteSpeed is set");
-        Debug.Log(this.IsWriting == false ? "IsWriting is default" : "IsWriting is set");
-        Debug.Log(this.TextLists == null ? "TextLists is null" : "TextLists is set");
-        Debug.Log("NovelWriter is created");
     }
 
     public void SetText (string text)
@@ -71,6 +60,7 @@ public class TextControl : MonoBehaviour
         WriteSpeed = 0.2f;
         Clean();
         StartCoroutine (IEWrite (text));
+        Debug.Log(text);
     }
 
     public void Clean ()
@@ -79,17 +69,14 @@ public class TextControl : MonoBehaviour
         text.text = "";
     }
 
-    public void OnClick ()
+    public void OnClickTextWindow ()
     {
-        //*******************************************************************
-        //                メッセージパネルがクリックされた時の処理
-        //*******************************************************************
+        //メッセージパネルがクリックされた時の処理
         
         //前のメッセージを書いている途中かどうかで分ける
         if (IsWriting)
         {
             //書いている途中にクリックされた時------------------------------
-
             //スピード(かかる時間)を 0 にして、すぐに最後まで書く
             WriteSpeed = 0f;
         }
@@ -98,22 +85,27 @@ public class TextControl : MonoBehaviour
             //書き終わったあとでクリックされた時----------------------------
             if (TextLists.Count == 0)
             {
-                //メッセージが全部終わった時---------------------------
                 TextWindow.GetComponent<Button>().interactable = false;
                 Clean ();
-                //コマンドパネルを表示する
                 CommandPanel.SetActive (true);
             }
             else
             {
                 //メッセージが残っている時---------------------------
-
-                //メッセージを書く
                 Clean ();
                 Write (TextLists[0]);
                 TextLists.RemoveAt (0);
             }
         }
+    }
+
+    public void OnClickAttack ()
+    {
+        //敵がクリックされた時の処理
+        Enemy.GetComponent<Button>().interactable = true;
+        CommandPanel.SetActive(false);
+        Clean ();
+        Write ("敵を選択");
     }
 
     /// 書くためのコルーチン
@@ -132,5 +124,7 @@ public class TextControl : MonoBehaviour
         //書いている途中の状態を解除する
         IsWriting = false;
     }
+
+
 
 }
