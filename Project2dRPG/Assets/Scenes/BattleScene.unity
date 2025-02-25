@@ -237,7 +237,6 @@ GameObject:
   - component: {fileID: 6471411}
   - component: {fileID: 6471410}
   - component: {fileID: 6471409}
-  - component: {fileID: 6471408}
   m_Layer: 5
   m_Name: StepWaza (1)
   m_TagString: Untagged
@@ -265,19 +264,6 @@ RectTransform:
   m_AnchoredPosition: {x: 80, y: -75}
   m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &6471408
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6471406}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 6471409}
 --- !u!114 &6471409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -659,7 +645,6 @@ GameObject:
   - component: {fileID: 53174834}
   - component: {fileID: 53174833}
   - component: {fileID: 53174832}
-  - component: {fileID: 53174831}
   m_Layer: 5
   m_Name: Back
   m_TagString: Untagged
@@ -687,19 +672,6 @@ RectTransform:
   m_AnchoredPosition: {x: 80, y: -325}
   m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &53174831
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 53174829}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 53174833}
 --- !u!114 &53174832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -994,7 +966,6 @@ GameObject:
   - component: {fileID: 95190631}
   - component: {fileID: 95190630}
   - component: {fileID: 95190629}
-  - component: {fileID: 95190628}
   m_Layer: 5
   m_Name: StepWaza (2)
   m_TagString: Untagged
@@ -1022,19 +993,6 @@ RectTransform:
   m_AnchoredPosition: {x: 180, y: -75}
   m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &95190628
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 95190626}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 95190629}
 --- !u!114 &95190629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1209,7 +1167,6 @@ GameObject:
   - component: {fileID: 111192101}
   - component: {fileID: 111192100}
   - component: {fileID: 111192103}
-  - component: {fileID: 111192104}
   m_Layer: 5
   m_Name: Back
   m_TagString: Untagged
@@ -1356,19 +1313,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _key: 120
---- !u!114 &111192104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 111192098}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 111192100}
 --- !u!1 &120271823
 GameObject:
   m_ObjectHideFlags: 0
@@ -1381,7 +1325,6 @@ GameObject:
   - component: {fileID: 120271827}
   - component: {fileID: 120271826}
   - component: {fileID: 120271825}
-  - component: {fileID: 120271828}
   m_Layer: 5
   m_Name: Waza (7)
   m_TagString: Untagged
@@ -1491,19 +1434,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 120271823}
   m_CullTransparentMesh: 1
---- !u!114 &120271828
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 120271823}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 120271825}
 --- !u!1 &120865680
 GameObject:
   m_ObjectHideFlags: 0
@@ -1619,7 +1549,6 @@ GameObject:
   - component: {fileID: 128753881}
   - component: {fileID: 128753880}
   - component: {fileID: 128753879}
-  - component: {fileID: 128753882}
   m_Layer: 5
   m_Name: Next
   m_TagString: Untagged
@@ -1753,19 +1682,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 128753877}
   m_CullTransparentMesh: 1
---- !u!114 &128753882
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 128753877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 128753879}
 --- !u!1 &136913623
 GameObject:
   m_ObjectHideFlags: 0
@@ -1857,7 +1773,6 @@ GameObject:
   - component: {fileID: 143783247}
   - component: {fileID: 143783246}
   - component: {fileID: 143783245}
-  - component: {fileID: 143783248}
   m_Layer: 5
   m_Name: Waza (17)
   m_TagString: Untagged
@@ -1967,19 +1882,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 143783243}
   m_CullTransparentMesh: 1
---- !u!114 &143783248
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 143783243}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 143783245}
 --- !u!1 &156845850
 GameObject:
   m_ObjectHideFlags: 0
@@ -1992,6 +1894,7 @@ GameObject:
   - component: {fileID: 156845854}
   - component: {fileID: 156845853}
   - component: {fileID: 156845852}
+  - component: {fileID: 156845855}
   m_Layer: 5
   m_Name: Enemy
   m_TagString: Untagged
@@ -2043,8 +1946,8 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 1, g: 0.7688679, b: 0.7688679, a: 1}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -2058,7 +1961,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 156845853}
   m_OnClick:
     m_PersistentCalls:
@@ -2101,6 +2004,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 156845850}
   m_CullTransparentMesh: 1
+--- !u!114 &156845855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156845850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02f9b3ef3e7b123418123b915f21fa4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyButton: {fileID: 156845852}
+  CommandPanel: {fileID: 599313531}
 --- !u!1 &159654942
 GameObject:
   m_ObjectHideFlags: 0
@@ -2793,7 +2710,6 @@ GameObject:
   - component: {fileID: 220358924}
   - component: {fileID: 220358923}
   - component: {fileID: 220358922}
-  - component: {fileID: 220358921}
   m_Layer: 5
   m_Name: StepWaza (14)
   m_TagString: Untagged
@@ -2821,19 +2737,6 @@ RectTransform:
   m_AnchoredPosition: {x: 180, y: -125}
   m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &220358921
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 220358919}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 220358922}
 --- !u!114 &220358922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3007,7 +2910,6 @@ GameObject:
   - component: {fileID: 246464478}
   - component: {fileID: 246464477}
   - component: {fileID: 246464476}
-  - component: {fileID: 246464479}
   m_Layer: 5
   m_Name: Item
   m_TagString: Untagged
@@ -3117,19 +3019,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 246464474}
   m_CullTransparentMesh: 1
---- !u!114 &246464479
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 246464474}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 246464476}
 --- !u!1 &277843714
 GameObject:
   m_ObjectHideFlags: 0
@@ -3142,7 +3031,6 @@ GameObject:
   - component: {fileID: 277843719}
   - component: {fileID: 277843718}
   - component: {fileID: 277843717}
-  - component: {fileID: 277843716}
   m_Layer: 5
   m_Name: StepWaza (6)
   m_TagString: Untagged
@@ -3170,19 +3058,6 @@ RectTransform:
   m_AnchoredPosition: {x: 180, y: -175}
   m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &277843716
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 277843714}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 277843717}
 --- !u!114 &277843717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3591,7 +3466,6 @@ GameObject:
   - component: {fileID: 359074088}
   - component: {fileID: 359074087}
   - component: {fileID: 359074086}
-  - component: {fileID: 359074089}
   m_Layer: 5
   m_Name: Waza (12)
   m_TagString: Untagged
@@ -3701,19 +3575,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 359074084}
   m_CullTransparentMesh: 1
---- !u!114 &359074089
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 359074084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 359074086}
 --- !u!1 &361161907
 GameObject:
   m_ObjectHideFlags: 0
@@ -3885,7 +3746,6 @@ GameObject:
   - component: {fileID: 429482186}
   - component: {fileID: 429482185}
   - component: {fileID: 429482184}
-  - component: {fileID: 429482187}
   m_Layer: 5
   m_Name: Waza (18)
   m_TagString: Untagged
@@ -3995,19 +3855,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 429482182}
   m_CullTransparentMesh: 1
---- !u!114 &429482187
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 429482182}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 429482184}
 --- !u!1 &435346931
 GameObject:
   m_ObjectHideFlags: 0
@@ -4020,7 +3867,6 @@ GameObject:
   - component: {fileID: 435346936}
   - component: {fileID: 435346935}
   - component: {fileID: 435346934}
-  - component: {fileID: 435346933}
   m_Layer: 5
   m_Name: StepWaza (4)
   m_TagString: Untagged
@@ -4048,19 +3894,6 @@ RectTransform:
   m_AnchoredPosition: {x: 180, y: -125}
   m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &435346933
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 435346931}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 435346934}
 --- !u!114 &435346934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4550,7 +4383,6 @@ GameObject:
   - component: {fileID: 476479300}
   - component: {fileID: 476479299}
   - component: {fileID: 476479298}
-  - component: {fileID: 476479301}
   m_Layer: 5
   m_Name: Waza (15)
   m_TagString: Untagged
@@ -4660,19 +4492,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 476479296}
   m_CullTransparentMesh: 1
---- !u!114 &476479301
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 476479296}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 476479298}
 --- !u!1 &491361434
 GameObject:
   m_ObjectHideFlags: 0
@@ -4935,7 +4754,6 @@ GameObject:
   - component: {fileID: 544231123}
   - component: {fileID: 544231122}
   - component: {fileID: 544231121}
-  - component: {fileID: 544231124}
   m_Layer: 5
   m_Name: Waza (14)
   m_TagString: Untagged
@@ -5045,19 +4863,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 544231119}
   m_CullTransparentMesh: 1
---- !u!114 &544231124
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 544231119}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 544231121}
 --- !u!1 &551775806
 GameObject:
   m_ObjectHideFlags: 0
@@ -5869,7 +5674,6 @@ GameObject:
   - component: {fileID: 621933688}
   - component: {fileID: 621933687}
   - component: {fileID: 621933686}
-  - component: {fileID: 621933689}
   m_Layer: 5
   m_Name: Waza (11)
   m_TagString: Untagged
@@ -5979,19 +5783,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 621933684}
   m_CullTransparentMesh: 1
---- !u!114 &621933689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 621933684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 621933686}
 --- !u!1 &625100425
 GameObject:
   m_ObjectHideFlags: 0
@@ -6162,7 +5953,6 @@ GameObject:
   - component: {fileID: 630576116}
   - component: {fileID: 630576115}
   - component: {fileID: 630576114}
-  - component: {fileID: 630576117}
   m_Layer: 5
   m_Name: Escape
   m_TagString: Untagged
@@ -6272,19 +6062,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 630576112}
   m_CullTransparentMesh: 1
---- !u!114 &630576117
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 630576112}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 630576114}
 --- !u!1 &637862821
 GameObject:
   m_ObjectHideFlags: 0
@@ -6297,6 +6074,7 @@ GameObject:
   - component: {fileID: 637862825}
   - component: {fileID: 637862824}
   - component: {fileID: 637862823}
+  - component: {fileID: 637862826}
   m_Layer: 5
   m_Name: EnemyPanel
   m_TagString: Untagged
@@ -6386,6 +6164,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 637862821}
   m_CullTransparentMesh: 1
+--- !u!114 &637862826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637862821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9070b4c300333b141acf58a6e323749e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 156845850}
+  panel: {fileID: 637862821}
 --- !u!1 &643109091
 GameObject:
   m_ObjectHideFlags: 0
@@ -6398,8 +6190,6 @@ GameObject:
   - component: {fileID: 643109095}
   - component: {fileID: 643109094}
   - component: {fileID: 643109093}
-  - component: {fileID: 643109096}
-  - component: {fileID: 643109097}
   m_Layer: 5
   m_Name: Attack
   m_TagString: Untagged
@@ -6470,7 +6260,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 643109094}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 156845852}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+        m_MethodName: set_interactable
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 599313531}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &643109094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6509,34 +6323,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 643109091}
   m_CullTransparentMesh: 1
---- !u!114 &643109096
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 643109091}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 643109093}
---- !u!114 &643109097
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 643109091}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a601f05172f89894ab579a586710a1ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1869754271}
-  enemy: {fileID: 1742644653}
-  button1: {fileID: 643109093}
 --- !u!1 &654951396
 GameObject:
   m_ObjectHideFlags: 0
@@ -6549,7 +6335,6 @@ GameObject:
   - component: {fileID: 654951401}
   - component: {fileID: 654951400}
   - component: {fileID: 654951399}
-  - component: {fileID: 654951398}
   m_Layer: 5
   m_Name: StepWaza (19)
   m_TagString: Untagged
@@ -6577,19 +6362,6 @@ RectTransform:
   m_AnchoredPosition: {x: 80, y: -275}
   m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &654951398
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 654951396}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 654951399}
 --- !u!114 &654951399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6842,7 +6614,6 @@ GameObject:
   - component: {fileID: 674600164}
   - component: {fileID: 674600163}
   - component: {fileID: 674600162}
-  - component: {fileID: 674600165}
   m_Layer: 5
   m_Name: Waza
   m_TagString: Untagged
@@ -6976,19 +6747,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 674600160}
   m_CullTransparentMesh: 1
---- !u!114 &674600165
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 674600160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 674600162}
 --- !u!1 &687915021
 GameObject:
   m_ObjectHideFlags: 0
@@ -7499,7 +7257,6 @@ GameObject:
   - component: {fileID: 738130458}
   - component: {fileID: 738130457}
   - component: {fileID: 738130456}
-  - component: {fileID: 738130459}
   m_Layer: 5
   m_Name: Waza (5)
   m_TagString: Untagged
@@ -7609,19 +7366,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 738130454}
   m_CullTransparentMesh: 1
---- !u!114 &738130459
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 738130454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 738130456}
 --- !u!1 &757215366
 GameObject:
   m_ObjectHideFlags: 0
@@ -7713,7 +7457,6 @@ GameObject:
   - component: {fileID: 777821131}
   - component: {fileID: 777821130}
   - component: {fileID: 777821129}
-  - component: {fileID: 777821132}
   m_Layer: 5
   m_Name: StepWaza
   m_TagString: Untagged
@@ -7847,19 +7590,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 777821127}
   m_CullTransparentMesh: 1
---- !u!114 &777821132
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 777821127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 777821129}
 --- !u!1 &789741504
 GameObject:
   m_ObjectHideFlags: 0
@@ -7957,7 +7687,6 @@ GameObject:
   - component: {fileID: 805535215}
   - component: {fileID: 805535214}
   - component: {fileID: 805535213}
-  - component: {fileID: 805535216}
   m_Layer: 5
   m_Name: Status
   m_TagString: Untagged
@@ -8091,19 +7820,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 805535211}
   m_CullTransparentMesh: 1
---- !u!114 &805535216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 805535211}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 805535213}
 --- !u!1 &813727139
 GameObject:
   m_ObjectHideFlags: 0
@@ -8148,7 +7864,6 @@ GameObject:
   - component: {fileID: 815580742}
   - component: {fileID: 815580741}
   - component: {fileID: 815580740}
-  - component: {fileID: 815580739}
   m_Layer: 5
   m_Name: StepWaza (20)
   m_TagString: Untagged
@@ -8176,19 +7891,6 @@ RectTransform:
   m_AnchoredPosition: {x: 180, y: -275}
   m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &815580739
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 815580737}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 815580740}
 --- !u!114 &815580740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8362,7 +8064,6 @@ GameObject:
   - component: {fileID: 850474282}
   - component: {fileID: 850474281}
   - component: {fileID: 850474280}
-  - component: {fileID: 850474279}
   m_Layer: 5
   m_Name: StepWaza (3)
   m_TagString: Untagged
@@ -8390,19 +8091,6 @@ RectTransform:
   m_AnchoredPosition: {x: 80, y: -125}
   m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &850474279
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 850474277}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 850474280}
 --- !u!114 &850474280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8655,7 +8343,6 @@ GameObject:
   - component: {fileID: 876201240}
   - component: {fileID: 876201239}
   - component: {fileID: 876201238}
-  - component: {fileID: 876201241}
   - component: {fileID: 876201242}
   m_Layer: 5
   m_Name: Waza (1)
@@ -8766,19 +8453,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 876201236}
   m_CullTransparentMesh: 1
---- !u!114 &876201241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 876201236}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 876201238}
 --- !u!114 &876201242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8812,7 +8486,6 @@ GameObject:
   - component: {fileID: 888095842}
   - component: {fileID: 888095841}
   - component: {fileID: 888095840}
-  - component: {fileID: 888095843}
   m_Layer: 5
   m_Name: Waza (19)
   m_TagString: Untagged
@@ -8922,19 +8595,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 888095838}
   m_CullTransparentMesh: 1
---- !u!114 &888095843
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 888095838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 888095840}
 --- !u!1 &921305988
 GameObject:
   m_ObjectHideFlags: 0
@@ -9027,7 +8687,6 @@ GameObject:
   - component: {fileID: 925854713}
   - component: {fileID: 925854712}
   - component: {fileID: 925854711}
-  - component: {fileID: 925854710}
   m_Layer: 5
   m_Name: Back
   m_TagString: Untagged
@@ -9055,19 +8714,6 @@ RectTransform:
   m_AnchoredPosition: {x: 80, y: -325}
   m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &925854710
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 925854708}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 925854712}
 --- !u!114 &925854711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9515,7 +9161,6 @@ GameObject:
   - component: {fileID: 1022437030}
   - component: {fileID: 1022437029}
   - component: {fileID: 1022437028}
-  - component: {fileID: 1022437027}
   m_Layer: 5
   m_Name: StepWaza (12)
   m_TagString: Untagged
@@ -9543,19 +9188,6 @@ RectTransform:
   m_AnchoredPosition: {x: 180, y: -75}
   m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1022437027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1022437025}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 1022437028}
 --- !u!114 &1022437028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9650,7 +9282,6 @@ GameObject:
   - component: {fileID: 1041298632}
   - component: {fileID: 1041298631}
   - component: {fileID: 1041298630}
-  - component: {fileID: 1041298629}
   m_Layer: 5
   m_Name: StepWaza (8)
   m_TagString: Untagged
@@ -9678,19 +9309,6 @@ RectTransform:
   m_AnchoredPosition: {x: 180, y: -225}
   m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1041298629
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1041298627}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 1041298630}
 --- !u!114 &1041298630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10050,7 +9668,6 @@ GameObject:
   - component: {fileID: 1110989885}
   - component: {fileID: 1110989884}
   - component: {fileID: 1110989883}
-  - component: {fileID: 1110989882}
   m_Layer: 5
   m_Name: StepWaza (9)
   m_TagString: Untagged
@@ -10078,19 +9695,6 @@ RectTransform:
   m_AnchoredPosition: {x: 80, y: -275}
   m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1110989882
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1110989880}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 1110989883}
 --- !u!114 &1110989883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10185,7 +9789,6 @@ GameObject:
   - component: {fileID: 1132706491}
   - component: {fileID: 1132706490}
   - component: {fileID: 1132706489}
-  - component: {fileID: 1132706492}
   m_Layer: 5
   m_Name: Waza (13)
   m_TagString: Untagged
@@ -10295,19 +9898,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1132706487}
   m_CullTransparentMesh: 1
---- !u!114 &1132706492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1132706487}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 1132706489}
 --- !u!1 &1153188208
 GameObject:
   m_ObjectHideFlags: 0
@@ -10557,7 +10147,6 @@ GameObject:
   - component: {fileID: 1236917913}
   - component: {fileID: 1236917912}
   - component: {fileID: 1236917911}
-  - component: {fileID: 1236917914}
   m_Layer: 5
   m_Name: Waza (16)
   m_TagString: Untagged
@@ -10667,19 +10256,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1236917909}
   m_CullTransparentMesh: 1
---- !u!114 &1236917914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1236917909}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 1236917911}
 --- !u!1 &1252116915
 GameObject:
   m_ObjectHideFlags: 0
@@ -11404,7 +10980,6 @@ GameObject:
   - component: {fileID: 1334896475}
   - component: {fileID: 1334896474}
   - component: {fileID: 1334896473}
-  - component: {fileID: 1334896472}
   m_Layer: 5
   m_Name: StepWaza (13)
   m_TagString: Untagged
@@ -11432,19 +11007,6 @@ RectTransform:
   m_AnchoredPosition: {x: 80, y: -125}
   m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1334896472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1334896470}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 1334896473}
 --- !u!114 &1334896473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11934,7 +11496,6 @@ GameObject:
   - component: {fileID: 1421684011}
   - component: {fileID: 1421684010}
   - component: {fileID: 1421684009}
-  - component: {fileID: 1421684008}
   m_Layer: 5
   m_Name: StepWaza (18)
   m_TagString: Untagged
@@ -11962,19 +11523,6 @@ RectTransform:
   m_AnchoredPosition: {x: 180, y: -225}
   m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1421684008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1421684006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 1421684009}
 --- !u!114 &1421684009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12148,7 +11696,6 @@ GameObject:
   - component: {fileID: 1435706134}
   - component: {fileID: 1435706133}
   - component: {fileID: 1435706132}
-  - component: {fileID: 1435706135}
   m_Layer: 5
   m_Name: Waza (8)
   m_TagString: Untagged
@@ -12258,19 +11805,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1435706130}
   m_CullTransparentMesh: 1
---- !u!114 &1435706135
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1435706130}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 1435706132}
 --- !u!1 &1438546633
 GameObject:
   m_ObjectHideFlags: 0
@@ -12362,7 +11896,6 @@ GameObject:
   - component: {fileID: 1444020292}
   - component: {fileID: 1444020291}
   - component: {fileID: 1444020290}
-  - component: {fileID: 1444020289}
   m_Layer: 5
   m_Name: StepWaza (11)
   m_TagString: Untagged
@@ -12390,19 +11923,6 @@ RectTransform:
   m_AnchoredPosition: {x: 80, y: -75}
   m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1444020289
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1444020287}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 1444020290}
 --- !u!114 &1444020290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13135,7 +12655,6 @@ GameObject:
   - component: {fileID: 1514539075}
   - component: {fileID: 1514539074}
   - component: {fileID: 1514539073}
-  - component: {fileID: 1514539072}
   m_Layer: 5
   m_Name: StepWaza (5)
   m_TagString: Untagged
@@ -13163,19 +12682,6 @@ RectTransform:
   m_AnchoredPosition: {x: 80, y: -175}
   m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1514539072
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1514539070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 1514539073}
 --- !u!114 &1514539073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13270,7 +12776,6 @@ GameObject:
   - component: {fileID: 1534325869}
   - component: {fileID: 1534325868}
   - component: {fileID: 1534325867}
-  - component: {fileID: 1534325866}
   m_Layer: 5
   m_Name: StepWaza (10)
   m_TagString: Untagged
@@ -13298,19 +12803,6 @@ RectTransform:
   m_AnchoredPosition: {x: 180, y: -275}
   m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1534325866
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1534325864}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 1534325867}
 --- !u!114 &1534325867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13405,7 +12897,6 @@ GameObject:
   - component: {fileID: 1538856968}
   - component: {fileID: 1538856967}
   - component: {fileID: 1538856966}
-  - component: {fileID: 1538856969}
   m_Layer: 5
   m_Name: Waza (20)
   m_TagString: Untagged
@@ -13515,19 +13006,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1538856964}
   m_CullTransparentMesh: 1
---- !u!114 &1538856969
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1538856964}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 1538856966}
 --- !u!1 &1547119185
 GameObject:
   m_ObjectHideFlags: 0
@@ -13825,7 +13303,6 @@ GameObject:
   - component: {fileID: 1589270892}
   - component: {fileID: 1589270891}
   - component: {fileID: 1589270890}
-  - component: {fileID: 1589270893}
   m_Layer: 5
   m_Name: Waza (4)
   m_TagString: Untagged
@@ -13935,19 +13412,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1589270888}
   m_CullTransparentMesh: 1
---- !u!114 &1589270893
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1589270888}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 1589270890}
 --- !u!1 &1593610808
 GameObject:
   m_ObjectHideFlags: 0
@@ -14041,7 +13505,6 @@ GameObject:
   - component: {fileID: 1607592129}
   - component: {fileID: 1607592128}
   - component: {fileID: 1607592127}
-  - component: {fileID: 1607592130}
   m_Layer: 5
   m_Name: Waza (3)
   m_TagString: Untagged
@@ -14151,19 +13614,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1607592125}
   m_CullTransparentMesh: 1
---- !u!114 &1607592130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1607592125}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 1607592127}
 --- !u!1 &1691042728
 GameObject:
   m_ObjectHideFlags: 0
@@ -14176,7 +13626,6 @@ GameObject:
   - component: {fileID: 1691042732}
   - component: {fileID: 1691042731}
   - component: {fileID: 1691042730}
-  - component: {fileID: 1691042733}
   m_Layer: 5
   m_Name: Waza (10)
   m_TagString: Untagged
@@ -14286,19 +13735,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1691042728}
   m_CullTransparentMesh: 1
---- !u!114 &1691042733
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1691042728}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 1691042730}
 --- !u!1 &1694321974
 GameObject:
   m_ObjectHideFlags: 0
@@ -14675,8 +14111,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f2c3c61fca05b4479091b198970e615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TextWindow: {fileID: 1768730910}
+  TextWindow: {fileID: 1768730912}
   CommandPanel: {fileID: 599313531}
+  Enemy: {fileID: 156845852}
+  Attack: {fileID: 643109093}
   text: {fileID: 1318374177}
   WriteSpeed: 0.2
   IsWriting: 0
@@ -14766,7 +14204,6 @@ GameObject:
   - component: {fileID: 1752295050}
   - component: {fileID: 1752295049}
   - component: {fileID: 1752295048}
-  - component: {fileID: 1752295047}
   m_Layer: 5
   m_Name: StepWaza (16)
   m_TagString: Untagged
@@ -14794,19 +14231,6 @@ RectTransform:
   m_AnchoredPosition: {x: 180, y: -175}
   m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1752295047
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1752295045}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 1752295048}
 --- !u!114 &1752295048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14980,7 +14404,6 @@ GameObject:
   - component: {fileID: 1768730914}
   - component: {fileID: 1768730913}
   - component: {fileID: 1768730912}
-  - component: {fileID: 1768730915}
   m_Layer: 5
   m_Name: TextWindow
   m_TagString: Untagged
@@ -15053,8 +14476,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1723137402}
-        m_TargetAssemblyTypeName: NovelWriter, Assembly-CSharp
-        m_MethodName: OnClick
+        m_TargetAssemblyTypeName: TextControl, Assembly-CSharp
+        m_MethodName: OnClickTextWindow
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15102,19 +14525,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1768730910}
   m_CullTransparentMesh: 1
---- !u!114 &1768730915
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1768730910}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a45762d949655047a202e41451a328b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _key: 122
 --- !u!1 &1778049417
 GameObject:
   m_ObjectHideFlags: 0
@@ -15127,7 +14537,6 @@ GameObject:
   - component: {fileID: 1778049422}
   - component: {fileID: 1778049421}
   - component: {fileID: 1778049420}
-  - component: {fileID: 1778049419}
   m_Layer: 5
   m_Name: Next
   m_TagString: Untagged
@@ -15155,19 +14564,6 @@ RectTransform:
   m_AnchoredPosition: {x: 180, y: -325}
   m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1778049419
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1778049417}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 1778049420}
 --- !u!114 &1778049420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16361,7 +15757,6 @@ GameObject:
   - component: {fileID: 1919726187}
   - component: {fileID: 1919726186}
   - component: {fileID: 1919726185}
-  - component: {fileID: 1919726188}
   m_Layer: 5
   m_Name: Waza (9)
   m_TagString: Untagged
@@ -16471,19 +15866,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1919726183}
   m_CullTransparentMesh: 1
---- !u!114 &1919726188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1919726183}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 1919726185}
 --- !u!1 &1962652285
 GameObject:
   m_ObjectHideFlags: 0
@@ -16880,7 +16262,6 @@ GameObject:
   - component: {fileID: 1998636886}
   - component: {fileID: 1998636885}
   - component: {fileID: 1998636884}
-  - component: {fileID: 1998636883}
   m_Layer: 5
   m_Name: StepWaza (7)
   m_TagString: Untagged
@@ -16908,19 +16289,6 @@ RectTransform:
   m_AnchoredPosition: {x: 80, y: -225}
   m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1998636883
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1998636881}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 1998636884}
 --- !u!114 &1998636884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17411,7 +16779,6 @@ GameObject:
   - component: {fileID: 2058342952}
   - component: {fileID: 2058342951}
   - component: {fileID: 2058342954}
-  - component: {fileID: 2058342955}
   m_Layer: 5
   m_Name: Back
   m_TagString: Untagged
@@ -17558,19 +16925,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _key: 120
---- !u!114 &2058342955
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2058342949}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 2058342951}
 --- !u!1 &2065285026
 GameObject:
   m_ObjectHideFlags: 0
@@ -17790,7 +17144,6 @@ GameObject:
   - component: {fileID: 2066035191}
   - component: {fileID: 2066035190}
   - component: {fileID: 2066035189}
-  - component: {fileID: 2066035192}
   m_Layer: 5
   m_Name: Waza (2)
   m_TagString: Untagged
@@ -17900,19 +17253,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2066035187}
   m_CullTransparentMesh: 1
---- !u!114 &2066035192
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2066035187}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 2066035189}
 --- !u!1 &2069065188
 GameObject:
   m_ObjectHideFlags: 0
@@ -18068,6 +17408,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2077996763}
   m_CullTransparentMesh: 1
+--- !u!1 &2084381854
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2084381855}
+  - component: {fileID: 2084381856}
+  m_Layer: 0
+  m_Name: BattleManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2084381855
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084381854}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 602.47156, y: 264.81003, z: 630.29156}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2084381856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084381854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd359b663e1f5e0458dd1efa2f4ebcd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  commandController: {fileID: 599313536}
+  textController: {fileID: 1723137402}
+  attackButton: {fileID: 156845855}
+  player: {fileID: 1869754271}
+  enemy: {fileID: 1742644653}
 --- !u!1 &2092150887
 GameObject:
   m_ObjectHideFlags: 0
@@ -18183,7 +17572,6 @@ GameObject:
   - component: {fileID: 2098873631}
   - component: {fileID: 2098873630}
   - component: {fileID: 2098873629}
-  - component: {fileID: 2098873628}
   m_Layer: 5
   m_Name: StepWaza (17)
   m_TagString: Untagged
@@ -18211,19 +17599,6 @@ RectTransform:
   m_AnchoredPosition: {x: 80, y: -225}
   m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2098873628
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2098873626}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 2098873629}
 --- !u!114 &2098873629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18318,7 +17693,6 @@ GameObject:
   - component: {fileID: 2116324637}
   - component: {fileID: 2116324636}
   - component: {fileID: 2116324635}
-  - component: {fileID: 2116324634}
   m_Layer: 5
   m_Name: StepWaza (15)
   m_TagString: Untagged
@@ -18346,19 +17720,6 @@ RectTransform:
   m_AnchoredPosition: {x: 80, y: -175}
   m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2116324634
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2116324632}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 2116324635}
 --- !u!114 &2116324635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18690,7 +18051,6 @@ GameObject:
   - component: {fileID: 2138960757}
   - component: {fileID: 2138960756}
   - component: {fileID: 2138960755}
-  - component: {fileID: 2138960758}
   m_Layer: 5
   m_Name: Waza (6)
   m_TagString: Untagged
@@ -18800,19 +18160,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2138960753}
   m_CullTransparentMesh: 1
---- !u!114 &2138960758
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2138960753}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1574753bfe12dca42b36a9b5c72bc66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myButton: {fileID: 2138960755}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -18824,3 +18171,4 @@ SceneRoots:
   - {fileID: 1742644652}
   - {fileID: 120865681}
   - {fileID: 1077408818}
+  - {fileID: 2084381855}
