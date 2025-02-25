@@ -21,7 +21,7 @@ public class EnemySelect : MonoBehaviour
     {
         enemy.GetComponent<Button>().interactable = true;
         panel.SetActive(false);
-        textControl.Write("敵を選択");
+        StartCoroutine(textControl.Write("敵を選択"));
         Debug.Log("敵を選択");
     }
 

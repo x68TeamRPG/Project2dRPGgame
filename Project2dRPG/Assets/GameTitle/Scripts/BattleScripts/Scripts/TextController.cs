@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 /*
@@ -32,34 +33,27 @@ public class TextController : MonoBehaviour
 
     /// 書いている途中かどうか
     public bool IsWriting;
-
-    public List<string> TextLists = new List<string> ();
-    
     
     /// ゲームスタート時の処理
     void Start ()
     {
         //メッセージパネルに書かれている文字を消す
+        EventSystem.current.SetSelectedGameObject(TextWindow.gameObject);
         TextWindow.onClick.AddListener (OnClickTextWindow);
         Attack.onClick.AddListener (OnClickAttack);
         Enemy.GetComponent<Button>().interactable = false;
 
         Clean ();
-        TextLists.Add("敵が現れた！\n");
-        TextLists.Add("戦闘開始！");
+        StartCoroutine(StartBattle());
     }
 
-    public void SetText (string text)
-    {
-        this.text.text = text;
-    }
-
-    public void Write (string text)
+    public IEnumerator Write (string text)
     {
         /* テキストをテキストウィンドウに表示するメソッド */
         WriteSpeed = 0.2f;
         Clean();
-        StartCoroutine (IEWrite (text));
+        TextWindow.GetComponent<Button>().interactable = true;
+        yield return StartCoroutine (IEWrite (text));
         Debug.Log(text);
     }
 
@@ -67,6 +61,14 @@ public class TextController : MonoBehaviour
     {
         /* テキストを消すメソッド */
         text.text = "";
+    }
+    
+    IEnumerator StartBattle()
+    {
+        yield return StartCoroutine(Write("敵が現れた！\n"));
+        yield return StartCoroutine(Write("戦闘開始！"));
+        TextWindow.GetComponent<Button>().interactable = false;
+        CommandPanel.SetActive(true);
     }
 
     public void OnClickTextWindow ()
@@ -82,20 +84,7 @@ public class TextController : MonoBehaviour
         }
         else
         {
-            //書き終わったあとでクリックされた時----------------------------
-            if (TextLists.Count == 0)
-            {
-                TextWindow.GetComponent<Button>().interactable = false;
-                Clean ();
-                CommandPanel.SetActive (true);
-            }
-            else
-            {
-                //メッセージが残っている時---------------------------
-                Clean ();
-                Write (TextLists[0]);
-                TextLists.RemoveAt (0);
-            }
+            Clean();
         }
     }
 
@@ -105,7 +94,8 @@ public class TextController : MonoBehaviour
         Enemy.GetComponent<Button>().interactable = true;
         CommandPanel.SetActive(false);
         Clean ();
-        Write ("敵を選択");
+        StartCoroutine(Write ("敵を選択"));
+        TextWindow.GetComponent<Button>().interactable = false;
     }
 
     /// 書くためのコルーチン
