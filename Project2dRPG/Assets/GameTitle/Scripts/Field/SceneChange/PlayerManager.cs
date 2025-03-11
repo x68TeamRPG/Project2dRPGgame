@@ -9,38 +9,11 @@ using System.Threading.Tasks;//追加
 public class PlayerManager : MonoBehaviour
 {
     private static PlayerManager instance;
+    public FadeIn fadeIn;
 
-    public GameObject fadeCanvas;
     void Start()
     {
-        Invoke("findFadeObject", 0.02f);
-    }
-    private void Awake()
-    {
-        // シングルトンパターン: オブジェクトが重複して生成されないようにする
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject); // シーンをまたいでも削除されないように設定
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
 
-    public async void MoveToScene(string sceneName)
-    {
-        fadeCanvas.GetComponent<FadeManager>().fadeOut();//フェードアウトフラグを立てる
-        await Task.Delay(200);//暗転するまで待つ
-        SceneManager.LoadScene(sceneName);
-
-        fadeCanvas.GetComponent<FadeManager>().fadeIn();
-
-    }
-
-    public void PositionMove()
-    {
         Debug.Log("i");
         // 保存された位置があればその場所にプレイヤーを移動
         if (PlayerPrefs.HasKey("SpawnX") && PlayerPrefs.HasKey("SpawnY") && PlayerPrefs.HasKey("SpawnZ"))
@@ -55,10 +28,21 @@ public class PlayerManager : MonoBehaviour
             PlayerPrefs.DeleteKey("SpawnY");
             PlayerPrefs.DeleteKey("SpawnZ");
         }
+        fadeIn.CallCoroutine();
     }
-    void findFadeObject()
+    private void Awake()
     {
-        fadeCanvas = GameObject.FindGameObjectWithTag("Fade");//Canvasをみつける
-        fadeCanvas.GetComponent<FadeManager>().fadeIn();//フェードインフラグを立てる
+
+
     }
+
+    public async void MoveToScene(string sceneName)
+    {
+
+        SceneManager.LoadScene(sceneName);
+
+
+    }
+
+
 }
