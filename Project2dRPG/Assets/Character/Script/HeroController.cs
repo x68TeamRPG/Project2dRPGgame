@@ -22,11 +22,6 @@ public class HeroController : MonoBehaviour
 
 
 	// Start is called before the first frame update
-	void Awake()
-	{
-
-		DontDestroyOnLoad(this.gameObject);
-	}
 	void Start()
 	{
 		Moving = false;
