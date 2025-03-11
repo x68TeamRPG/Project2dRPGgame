@@ -6,6 +6,8 @@ public class HeroController : MonoBehaviour
 {
 
 	private bool Moving;
+	private bool Changing;
+
 	[SerializeField]
 	public int movespeed = 1;
 
@@ -21,11 +23,14 @@ public class HeroController : MonoBehaviour
 	public float steplength = 1;
 
 
+
+
 	// Start is called before the first frame update
-	
+
 	void Start()
 	{
 		Moving = false;
+		Changing = false;
 		Application.targetFrameRate = 60;
 		herostatus = GetComponent<HeroStatus>();
 		lastposition = transform.position;
@@ -34,7 +39,7 @@ public class HeroController : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		if (!Moving)
+		if (!Moving && !Changing)
 		{
 			if (Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0)
 			{
@@ -131,13 +136,21 @@ public class HeroController : MonoBehaviour
 	public void SetPosition(Vector3 newPosition)
 	{
 		transform.position = newPosition;
-  }
-
-	public void isMoving(){
-		Moving=true;
 	}
 
-	public void notMoving(){
-		Moving=false;
+	public void isMoving()
+	{
+		Moving = true;
 	}
+
+	public void notMoving()
+	{
+		Moving = false;
+	}
+
+	public void SceneChange()
+	{
+		Changing = true;
+	}
+
 }

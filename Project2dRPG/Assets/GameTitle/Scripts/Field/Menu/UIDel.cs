@@ -24,15 +24,6 @@ public class UIDel : MonoBehaviour
     // Update is called once per frame
     private void Awake()
     {
-        // シングルトンパターン: オブジェクトが重複して生成されないようにする
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject); // シーンをまたいでも削除されないように設定
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+       
     }
 }
