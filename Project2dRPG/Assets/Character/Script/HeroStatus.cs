@@ -99,4 +99,10 @@ public class HeroStatus : Status
         if(CurrentHP==MaxHP) return 0;
         else return 1;
     }
+        
+    public void LoadData(int hp, int stepcount)
+    {
+        CurrentHP = hp;
+        StepCount = stepcount;
+    }
 }
