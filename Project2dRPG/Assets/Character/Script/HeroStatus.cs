@@ -69,7 +69,7 @@ public class HeroStatus : Status
 
     public void SubStepCount(int n){
         if(StepCount<=0){
-            SubHP(1);
+            SubHP(n);
         }
         else{
             StepCount-=n;
@@ -93,5 +93,16 @@ public class HeroStatus : Status
             CurrentHP = MaxHP;
         }
         Debug.Log("Player healed: " + n + ". Current HP: " + CurrentHP);
+    }
+
+    public int CompareHP(){
+        if(CurrentHP==MaxHP) return 0;
+        else return 1;
+    }
+        
+    public void LoadData(int hp, int stepcount)
+    {
+        CurrentHP = hp;
+        StepCount = stepcount;
     }
 }
