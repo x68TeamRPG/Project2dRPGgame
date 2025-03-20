@@ -10,6 +10,8 @@ public class BattleManager : MonoBehaviour
     public CommandController commandController;
     public TextController textController;
     public AttackButton attackButton;
+    public ItemController itemController;
+    public ItemButton itemButton;
 
     [SerializeField] HeroStatus  player = default;
     [SerializeField] EnemyStatus enemy = default;
@@ -18,8 +20,10 @@ public class BattleManager : MonoBehaviour
 
     void Start()
     {
+        itemController = GetComponent<ItemController>();
         turn = 0;
         attackButton.AttackSelected += ExecTurn;
+        itemButton.ItemSelected += ExecTurn;
     }
     
     public void ExecTurn()
@@ -64,7 +68,8 @@ public class BattleManager : MonoBehaviour
     IEnumerator PlayerTurn(string skill="Attack")
     {
         yield return StartCoroutine(textController.Write("プレイヤーのターン"));
-        yield return StartCoroutine(PlayerAttack());
+        //yield return StartCoroutine(PlayerAttack());
+        yield return StartCoroutine(PlayerItem());
     }
 
     IEnumerator EnemyTurn()
@@ -89,6 +94,11 @@ public class BattleManager : MonoBehaviour
             Debug.Log($"敵に{damage}のダメージ");
             yield return StartCoroutine(textController.Write($"敵に{player.Attack - enemy.Deffence}のダメージ"));
         }
+    }
+    IEnumerator PlayerItem()
+    {
+        yield return new WaitForSeconds(1.0f);
+        itemController.UseItem("Potion");
     }
 
     IEnumerator EnemyAttack()
