@@ -14118,7 +14118,6 @@ MonoBehaviour:
   text: {fileID: 1318374177}
   WriteSpeed: 0.2
   IsWriting: 0
-  TextLists: []
 --- !u!224 &1723137403
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15309,7 +15308,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1869754270}
   - component: {fileID: 1869754271}
-  - component: {fileID: 1869754272}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -15369,20 +15367,6 @@ MonoBehaviour:
   Mptext2: {fileID: 710778894}
   MaxHptext2: {fileID: 1485750384}
   MaxMptext2: {fileID: 2120301251}
---- !u!114 &1869754272
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1869754269}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27b70cce07d571c43b7abf4eb4742f11, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1869754271}
-  enemy: {fileID: 1742644653}
 --- !u!1 &1877096655
 GameObject:
   m_ObjectHideFlags: 0

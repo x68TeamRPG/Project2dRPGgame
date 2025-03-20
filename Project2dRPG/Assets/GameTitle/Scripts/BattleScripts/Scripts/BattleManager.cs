@@ -11,6 +11,8 @@ public class BattleManager : MonoBehaviour
     public TextController textController;
     public AttackButton attackButton;
 
+    private WazaDB wazaDB;
+
     [SerializeField] HeroStatus  player = default;
     [SerializeField] EnemyStatus enemy = default;
 
@@ -18,6 +20,7 @@ public class BattleManager : MonoBehaviour
 
     void Start()
     {
+        wazaDB = new WazaDB();
         turn = 0;
         attackButton.AttackSelected += ExecTurn;
     }
@@ -58,6 +61,8 @@ public class BattleManager : MonoBehaviour
         }
         yield return new WaitForSeconds(1.0f);
         textController.Clean();
+        yield return FinishJudge();
+        yield return StartCoroutine(textController.Write("プレイヤーはどうする？"));
         commandController.gameObject.SetActive(true);
     }
 
@@ -109,6 +114,27 @@ public class BattleManager : MonoBehaviour
             }
             Debug.Log($"プレイヤーに{damage}のダメージ");
             yield return StartCoroutine(textController.Write($"プレイヤーに{damage}のダメージ"));
+        }
+    }
+
+    private IEnumerator FinishJudge()
+    {
+        if(player.CurrentHP == 0)
+        {
+            //テキストウィンドウ制御クラス「力尽きた」
+            yield return StartCoroutine(textController.Write("力尽きた"));
+            UnityEngine.SceneManagement.SceneManager.LoadScene("GameoverScene");//ゲームオーバーシーンに以降
+            yield return new WaitForSeconds(1.0f);
+        }
+        if(enemy.CurrentHP == 0)
+        {
+            //テキストウィンドウ制御クラス「敵に勝利」「お金をx,経験値をy,歩数をzを手に入れた」
+            //敵の技をもっているかの判定
+            yield return StartCoroutine(textController.Write("敵に勝利"));
+            yield return StartCoroutine(textController.Write("お金をx,経験値をy,歩数をzを手に入れた"));
+
+            UnityEngine.SceneManagement.SceneManager.LoadScene("FieldScene");//フィールドシーンに以降
+            yield return new WaitForSeconds(1.0f);
         }
     }
 
