@@ -39,21 +39,24 @@ public class ItemController : MonoBehaviour
         Debug.Log(item.itemName + "を取得しました！");
     }
 
-    public void UseItem(string itemName)//アイテム名を指定して、アイテムを使用する。
+    public bool UseItem(string itemName)//アイテム名を指定して、アイテムを使用する。
     {
+        bool success_to_use = false;
         item= Inventory.items.FirstOrDefault(i => i.itemName == itemName);
         if (item != null){
-        if (item.type == 1 && herostatus.CompareHP() == 1)
-        {
-            herostatus.AddHP(item.healAmount);
-            Inventory.items.Remove(item);
-            Debug.Log(item.itemName + "を使用しました！");
+            if (item.type == 1 && herostatus.CompareHP() == 1)
+            {
+                herostatus.AddHP(item.healAmount);
+                Inventory.items.Remove(item);
+                success_to_use = true;
+                Debug.Log(item.itemName + "を使用しました！");
+            }
+            else
+            {
+                Debug.Log("条件を満たさないため使用できませんでした。");
+            }
         }
-        else
-        {
-            Debug.Log("条件を満たさないため使用できませんでした。");
-        }
-    }
+        return success_to_use;
     }
 }
 
