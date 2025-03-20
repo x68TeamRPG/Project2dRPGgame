@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class AutoC : MonoBehaviour
+public class CommandController : MonoBehaviour
 {
     public GameObject button; 
     public GameObject panel;

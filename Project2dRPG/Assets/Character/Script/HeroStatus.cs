@@ -9,6 +9,7 @@ public class HeroStatus : Status
     public int StepCount=10;
     public int Exp;
     public int Lv;
+    public int Money;
 
     public new string name;
    // レベルの数値
