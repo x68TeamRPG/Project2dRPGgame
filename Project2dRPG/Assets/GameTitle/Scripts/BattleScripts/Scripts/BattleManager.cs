@@ -50,18 +50,21 @@ public class BattleManager : MonoBehaviour
         if (CompareSpeed() == "player")
         {
             yield return StartCoroutine(PlayerTurn(skill));  // プレイヤーターンが終わるまで待つ
+            yield return StartCoroutine(FinishJudge());  // 勝敗判定
             yield return new WaitForSeconds(2.0f);
             yield return StartCoroutine(EnemyTurn());
+            yield return StartCoroutine(FinishJudge());
         }
         else if (CompareSpeed() == "enemy")
         {
             yield return StartCoroutine(EnemyTurn());
+            yield return StartCoroutine(FinishJudge());
             yield return new WaitForSeconds(2.0f);
             yield return StartCoroutine(PlayerTurn(skill));
+            yield return StartCoroutine(FinishJudge());
         }
         yield return new WaitForSeconds(1.0f);
         textController.Clean();
-        yield return FinishJudge();
         yield return StartCoroutine(textController.Write("プレイヤーはどうする？"));
         commandController.gameObject.SetActive(true);
     }
@@ -119,22 +122,48 @@ public class BattleManager : MonoBehaviour
 
     private IEnumerator FinishJudge()
     {
-        if(player.CurrentHP == 0)
+        if(player.CurrentHP <= 0)
         {
             //テキストウィンドウ制御クラス「力尽きた」
-            yield return StartCoroutine(textController.Write("力尽きた"));
+            yield return StartCoroutine(textController.Write("勇者は力尽きた"));
             UnityEngine.SceneManagement.SceneManager.LoadScene("GameoverScene");//ゲームオーバーシーンに以降
             yield return new WaitForSeconds(1.0f);
         }
-        if(enemy.CurrentHP == 0)
+        if(enemy.CurrentHP <= 0)
         {
             //テキストウィンドウ制御クラス「敵に勝利」「お金をx,経験値をy,歩数をzを手に入れた」
             //敵の技をもっているかの判定
-            yield return StartCoroutine(textController.Write("敵に勝利"));
-            yield return StartCoroutine(textController.Write("お金をx,経験値をy,歩数をzを手に入れた"));
-
+            yield return StartCoroutine(WinProcess());
             UnityEngine.SceneManagement.SceneManager.LoadScene("FieldScene");//フィールドシーンに以降
             yield return new WaitForSeconds(1.0f);
+        }
+    }
+
+    private bool WazaChecker(EnemyStatus enemy)
+    {
+        if (wazaDB.HasWaza(enemy.waza.name))
+        {
+            return true;
+        }
+        return false;
+    }
+
+    private IEnumerator WinProcess()
+    {
+        //テキストウィンドウ制御クラス「敵に勝利」「お金をx,経験値をy,歩数をzを手に入れた」
+        //敵の技をもっているかの判定
+        yield return StartCoroutine(textController.Write("敵に勝利"));
+        player.Money += enemy.money;
+        player.Exp += enemy.exp;
+        player.AddStepCount(enemy.step);
+        yield return StartCoroutine(textController.Write("お金を " + enemy.money + " 手に入れた"));
+        yield return StartCoroutine(textController.Write("経験値を " + enemy.exp + " 手に入れた"));
+        yield return StartCoroutine(textController.Write("歩数を " + enemy.step + " 手に入れた"));
+
+        if (WazaChecker(enemy))
+        {
+            wazaDB.AddWaza(enemy.waza);
+            yield return StartCoroutine(textController.Write("新しく" + enemy.waza.name + "を覚えた"));
         }
     }
 
