@@ -19,7 +19,6 @@ public class ItemButton : MonoBehaviour
 
     void OnClickButton()
     {
-        itemButton.interactable = false;
         ItemPanel.SetActive(false);
         ItemSelected?.Invoke();
     }
