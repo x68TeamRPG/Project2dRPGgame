@@ -9,13 +9,17 @@ public class TreasureController : MonoBehaviour
     private GameObject inv;
     private ItemController ic;
     private int flag;
+    public int TresureNumber;//宝箱の番号
     
     // Start is called before the first frame update
     void Start()
     {
         inv = GameObject.Find("ItemController");
         ic = inv.GetComponent<ItemController>();
-        flag = PlayerPrefs.GetInt("treasure1", 0); // デフォルト値は0
+        flag = PlayerPrefs.GetInt("treasure"+TresureNumber, 0); // デフォルト値は0
+        if(flag==1){
+            anim.SetFloat("isOpen",1f);
+        }
     }
 
     // Update is called once per frame
@@ -33,6 +37,7 @@ public class TreasureController : MonoBehaviour
             anim.SetFloat("isOpen",1f);
             flag = 1;
             ic.AddItemByName("Potion");
+            PlayerPrefs.SetInt("tresure"+TresureNumber,1);
         }
     }
 }

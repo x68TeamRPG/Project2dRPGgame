@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4091204674569745889}
   - component: {fileID: 2591639709955482737}
   - component: {fileID: -1129433087923189864}
+  - component: {fileID: 3849451515059363506}
   m_Layer: 0
   m_Name: treasure_red_gold
   m_TagString: Untagged
@@ -198,3 +199,17 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3849451515059363506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6318440713502232949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e90e5c3b2521e6f4b81a110ba2296623, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: -1129433087923189864}
+  TresureNumber: 0
