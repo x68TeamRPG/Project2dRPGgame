@@ -30,16 +30,7 @@ public class MainMenu : MonoBehaviour
 
     private void Awake()
     {
-        // シングルトンパターン: オブジェクトが重複して生成されないようにする
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject); // シーンをまたいでも削除されないように設定
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+
     }
     void Update()
     {
@@ -61,6 +52,21 @@ public class MainMenu : MonoBehaviour
                 uiElement.SetActive(isVisible);
             }
         }
+    }
+    public void MenuChange()
+    {
+        isVisible = !isVisible;
+        if (!canvas.gameObject.activeSelf)
+        {
+            canvas.gameObject.SetActive(true);
+        }
+
+        // 表示状態に応じてすべてのUI要素の表示を切り替える
+        foreach (GameObject uiElement in uiElements)
+        {
+            uiElement.SetActive(isVisible);
+        }
+
     }
 }
 

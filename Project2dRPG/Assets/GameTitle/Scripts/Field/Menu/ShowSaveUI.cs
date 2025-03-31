@@ -6,6 +6,9 @@ public class ShowSaveUI : MonoBehaviour
 {
     public GameObject targetUI;
 
+    [SerializeField] private GameObject uiElement;
+
+    private bool isUIActive = false;
 
     void Start()
     {
@@ -17,5 +20,13 @@ public class ShowSaveUI : MonoBehaviour
         if (targetUI != null)
             targetUI.SetActive(!targetUI.activeSelf
             );
+    }
+    public void HideUI()
+    {
+        if (uiElement != null)
+        {
+            uiElement.SetActive(false);
+            isUIActive = false;
+        }
     }
 }
