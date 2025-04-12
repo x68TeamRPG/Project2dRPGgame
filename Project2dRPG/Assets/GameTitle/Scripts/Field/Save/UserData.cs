@@ -5,6 +5,7 @@ using System;
 using UnityEditorInternal.VersionControl;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
+using UnityEditor.Build.Content;
 
 
 
@@ -23,7 +24,7 @@ public class UserData : MonoBehaviour
 
     public Transform targetObject;
 
-    public void Start()
+    public void Awake()
     {
         // QuickSaveSettingsのインスタンスを作成
         m_saveSettings = new QuickSaveSettings();
@@ -63,7 +64,9 @@ public class UserData : MonoBehaviour
             herostatus.CurrentMP = reader.Read<int>("MP");
             herostatus.MaxMP = reader.Read<int>("MaxMP");
             Inventory.items = reader.Read<List<Item>>("MyList");
-
+            PlayerPrefs.SetInt("treasure0", reader.Read<int>("treasure0"));
+            PlayerPrefs.SetInt("treasure1", reader.Read<int>("treasure1"));
+            Debug.Log("宝箱１" + PlayerPrefs.GetInt("treasure1", 0));
 
             if (reader.Exists("position_x"))
             {
@@ -158,6 +161,8 @@ public class UserData : MonoBehaviour
         string sceneName = SceneManager.GetActiveScene().name;
         writer.Write("scene_name", sceneName);
         // 変更を反映
+        writer.Write("treasure0", PlayerPrefs.GetInt("treasure0", 0));
+        writer.Write("treasure1", PlayerPrefs.GetInt("treasure1", 0));
         writer.Commit();
     }
 }
