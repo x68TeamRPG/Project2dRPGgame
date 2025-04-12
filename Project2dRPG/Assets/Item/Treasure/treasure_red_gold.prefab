@@ -212,4 +212,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: -1129433087923189864}
-  TresureNumber: 0
+  TreasureNumber: 1
