@@ -1,6 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,11 +7,11 @@ public class BattleManager : MonoBehaviour
 
     public CommandController commandController;
     public TextController textController;
-    public AttackButton attackButton;
-
-    private WazaDB wazaDB;
     public ItemController itemController;
+    public AttackButton attackButton;
     public ItemButton itemButton;
+    public WazaButton wazaButton;
+    public BattleCommands battleCommands;
 
     [SerializeField] HeroStatus  player = default;
     [SerializeField] EnemyStatus enemy = default;
@@ -22,17 +20,18 @@ public class BattleManager : MonoBehaviour
 
     void Start()
     {
-        wazaDB = new WazaDB();
         itemController = GetComponent<ItemController>();
         turn = 0;
-        attackButton.AttackSelected += ExecTurn;
-        itemButton.ItemSelected += ExecTurn;
+        attackButton.AttackSelected += () =>ExecTurn("attack");
+        itemButton.ItemSelected += () => ExecTurn("item");
+        wazaButton.WazaSelected += (selectedWaza) => ExecTurn("waza", selectedWaza);
     }
     
-    public void ExecTurn()
+    public void ExecTurn(string skill, Waza waza = null)
     {
+        Debug.Log($"skill={skill}, waza={(waza!=null? waza.name:"<none>")}");
         Debug.Log("turn: " + turn);
-        StartCoroutine(Battle());
+        StartCoroutine(Battle(skill));
         turn++;
     }
 
@@ -73,61 +72,29 @@ public class BattleManager : MonoBehaviour
         commandController.gameObject.SetActive(true);
     }
 
-    IEnumerator PlayerTurn(string skill="Attack")
+    IEnumerator PlayerTurn(string skill="Attack", Waza waza = null)
     {
         yield return StartCoroutine(textController.Write("プレイヤーのターン"));
-        //yield return StartCoroutine(PlayerAttack());
-        yield return StartCoroutine(PlayerItem());
+        switch (skill)
+        {
+            case "attack":
+                yield return StartCoroutine(battleCommands.Attack(player, enemy));
+                break;
+            case "item":
+                yield return StartCoroutine(battleCommands.UseItem(player));
+                break;
+            case "waza":
+                yield return StartCoroutine(battleCommands.UseWaza(player, enemy, waza));
+                break;
+            default:
+                break;
+        }
     }
 
     IEnumerator EnemyTurn()
     {
         yield return StartCoroutine(textController.Write("敵のターン"));
-        yield return StartCoroutine(EnemyAttack());
-    }
-
-    IEnumerator PlayerAttack()
-    {  
-        if (0 < enemy.CurrentHP)
-        {
-            int HP = enemy.CurrentHP;
-            int damage = player.Attack - enemy.Deffence;
-            float damage1 = (1/damage);
-            while (HP - damage < enemy.CurrentHP)
-            {
-                enemy.CurrentHP -= 1;
-                //停止
-                yield return new WaitForSeconds(damage1);
-            }
-            Debug.Log($"敵に{damage}のダメージ");
-            yield return StartCoroutine(textController.Write($"敵に{player.Attack - enemy.Deffence}のダメージ"));
-        }
-    }
-    IEnumerator PlayerItem()
-    {
-        yield return new WaitForSeconds(1.0f);
-        itemController.UseItem("Potion");
-    }
-
-    IEnumerator EnemyAttack()
-    {
-        if (0 < player.CurrentHP)
-        {
-            int HP = player.CurrentHP;
-            int damage = 5;//enemy.Attack - player.Deffence;
-            if (damage > 0)
-            {
-                float damage1 = (1/damage);
-                while (HP - damage < player.CurrentHP)
-                {
-                    player.CurrentHP -= 1;
-                    //停止
-                    yield return new WaitForSeconds(damage1);
-                }
-            }
-            Debug.Log($"プレイヤーに{damage}のダメージ");
-            yield return StartCoroutine(textController.Write($"プレイヤーに{damage}のダメージ"));
-        }
+        yield return StartCoroutine(battleCommands.Attack(enemy, player));
     }
 
     private IEnumerator FinishJudge()
@@ -149,32 +116,11 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    private bool WazaChecker(EnemyStatus enemy)
-    {
-        if (wazaDB.HasWaza(enemy.waza.name))
-        {
-            return true;
-        }
-        return false;
-    }
-
     private IEnumerator WinProcess()
     {
         //テキストウィンドウ制御クラス「敵に勝利」「お金をx,経験値をy,歩数をzを手に入れた」
         //敵の技をもっているかの判定
         yield return StartCoroutine(textController.Write("敵に勝利"));
-        player.Money += enemy.money;
-        player.Exp += enemy.exp;
-        player.AddStepCount(enemy.step);
-        yield return StartCoroutine(textController.Write("お金を " + enemy.money + " 手に入れた"));
-        yield return StartCoroutine(textController.Write("経験値を " + enemy.exp + " 手に入れた"));
-        yield return StartCoroutine(textController.Write("歩数を " + enemy.step + " 手に入れた"));
-
-        if (WazaChecker(enemy))
-        {
-            wazaDB.AddWaza(enemy.waza);
-            yield return StartCoroutine(textController.Write("新しく" + enemy.waza.name + "を覚えた"));
-        }
     }
 
 }
