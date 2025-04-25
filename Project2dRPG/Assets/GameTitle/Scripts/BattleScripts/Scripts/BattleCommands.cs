@@ -16,7 +16,7 @@ public class BattleCommands : MonoBehaviour
     {
         yield return new WaitForSeconds(1.0f);
         int damage = attacker.Attack - blocker.Deffence;
-        DamageRoll(damage, blocker);
+        yield return StartCoroutine(DamageRoll(damage, blocker));
         yield return StartCoroutine(textController.Write($"{blocker.name}に{damage}のダメージ"));
     }
 
@@ -31,7 +31,7 @@ public class BattleCommands : MonoBehaviour
     {
         yield return new WaitForSeconds(1.0f);
         int damage = waza.CalculateDamage(attacker.Attack, blocker.Deffence);
-        DamageRoll(damage, blocker);
+        yield return StartCoroutine(DamageRoll(damage, blocker));
         yield return StartCoroutine(textController.Write($"{attacker.name}は{waza.name}を使用した！"));
         yield return StartCoroutine(textController.Write($"{blocker.name}に{damage}ダメージ！"));
     }

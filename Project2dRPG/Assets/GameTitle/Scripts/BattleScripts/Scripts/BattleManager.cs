@@ -111,7 +111,7 @@ public class BattleManager : MonoBehaviour
             //テキストウィンドウ制御クラス「敵に勝利」「お金をx,経験値をy,歩数をzを手に入れた」
             //敵の技をもっているかの判定
             yield return StartCoroutine(WinProcess());
-            UnityEngine.SceneManagement.SceneManager.LoadScene("FieldScene");//フィールドシーンに以降
+            //UnityEngine.SceneManagement.SceneManager.LoadScene("FieldScene");//フィールドシーンに以降
             yield return new WaitForSeconds(1.0f);
         }
     }

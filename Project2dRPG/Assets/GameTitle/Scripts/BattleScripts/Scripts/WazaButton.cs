@@ -3,20 +3,22 @@ using UnityEngine.UI;
 
 public class WazaButton : MonoBehaviour
 {
-    [SerializeField] Button wazaButton;
-    [SerializeField] GameObject WazaPanel;
-    [SerializeField] Waza waza = default;
+    private Button wazaButton;
+    private GameObject wazaPanel;
+    [SerializeField] Waza waza;
 
     public event System.Action<Waza> WazaSelected;
 
     void Start()
     {
+        wazaButton = GetComponent<Button>();
+        wazaPanel = transform.parent.gameObject;
         wazaButton.onClick.AddListener(OnClickButton);
     }
 
     void OnClickButton()
     {
-        WazaPanel.SetActive(false);
+        wazaPanel.SetActive(false);
         WazaSelected?.Invoke(waza);
     }
 
@@ -36,6 +38,6 @@ public class WazaButton : MonoBehaviour
     {
         Debug.Log("Button clicked by X");
         wazaButton.interactable = false;
-        WazaPanel.SetActive(true);
+        wazaPanel.SetActive(true);
     }
 }
