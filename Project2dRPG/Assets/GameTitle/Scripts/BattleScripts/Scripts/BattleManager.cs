@@ -10,7 +10,7 @@ public class BattleManager : MonoBehaviour
     public ItemController itemController;
     public AttackButton attackButton;
     public ItemButton itemButton;
-    public WazaButton wazaButton;
+    public WazaButton[] wazaButtonlist;
     public BattleCommands battleCommands;
 
     [SerializeField] HeroStatus  player = default;
@@ -24,14 +24,15 @@ public class BattleManager : MonoBehaviour
         turn = 0;
         attackButton.AttackSelected += () =>ExecTurn("attack");
         itemButton.ItemSelected += () => ExecTurn("item");
-        wazaButton.WazaSelected += (selectedWaza) => ExecTurn("waza", selectedWaza);
+        foreach (WazaButton wazaButton in wazaButtonlist)
+            wazaButton.WazaSelected += selectedWaza => ExecTurn("waza", selectedWaza);
     }
     
     public void ExecTurn(string skill, Waza waza = null)
     {
         Debug.Log($"skill={skill}, waza={(waza!=null? waza.name:"<none>")}");
         Debug.Log("turn: " + turn);
-        StartCoroutine(Battle(skill));
+        StartCoroutine(Battle(skill, waza));
         turn++;
     }
 
@@ -47,12 +48,12 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    IEnumerator Battle(string skill="attack")
+    IEnumerator Battle(string skill="attack", Waza waza = null)
     {
         textController.TextWindow.GetComponent<Button>().interactable = true;
         if (CompareSpeed() == "player")
         {
-            yield return StartCoroutine(PlayerTurn(skill));  // プレイヤーターンが終わるまで待つ
+            yield return StartCoroutine(PlayerTurn(skill, waza));  // プレイヤーターンが終わるまで待つ
             yield return StartCoroutine(FinishJudge());  // 勝敗判定
             yield return new WaitForSeconds(2.0f);
             yield return StartCoroutine(EnemyTurn());
@@ -74,6 +75,7 @@ public class BattleManager : MonoBehaviour
 
     IEnumerator PlayerTurn(string skill="Attack", Waza waza = null)
     {
+        Debug.Log("PlayerTurn, skill=" + skill + ", waza=" + (waza != null ? waza.name : "<none>"));
         yield return StartCoroutine(textController.Write("プレイヤーのターン"));
         switch (skill)
         {

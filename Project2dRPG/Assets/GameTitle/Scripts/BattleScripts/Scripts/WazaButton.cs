@@ -18,8 +18,8 @@ public class WazaButton : MonoBehaviour
 
     void OnClickButton()
     {
-        wazaPanel.SetActive(false);
         WazaSelected?.Invoke(waza);
+        wazaPanel.SetActive(false);
     }
 
     

@@ -6,6 +6,7 @@ public class BattleCommands : MonoBehaviour
 {
     public TextController textController;
     public ItemController itemController;
+    [SerializeField] private float totalDuration = 1.0f;
 
     void Start()
     {
@@ -30,7 +31,7 @@ public class BattleCommands : MonoBehaviour
     public IEnumerator UseWaza(Status attacker, Status blocker, Waza waza)
     {
         yield return new WaitForSeconds(1.0f);
-        int damage = waza.CalculateDamage(attacker.Attack, blocker.Deffence);
+        int damage = waza.Execute(attacker, blocker);
         yield return StartCoroutine(DamageRoll(damage, blocker));
         yield return StartCoroutine(textController.Write($"{attacker.name}は{waza.name}を使用した！"));
         yield return StartCoroutine(textController.Write($"{blocker.name}に{damage}ダメージ！"));
@@ -38,18 +39,20 @@ public class BattleCommands : MonoBehaviour
 
     protected IEnumerator DamageRoll(int damage, Status blocker)
     {
-        if (0 < blocker.CurrentHP)
+        // 現在HP分以上のダメージは与えられないように
+        int actualRolls = Mathf.Min(damage, blocker.CurrentHP);
+        Debug.Log($"DamageRoll: {actualRolls}を{blocker.name}に与えます");
+        // 1 回あたりの待機時間
+        float interval = totalDuration / actualRolls;
+
+        for (int i = 0; i < actualRolls; i++)
         {
-            int HP = blocker.CurrentHP;
-            float damage1 = 1/damage;
-            while (HP - damage < blocker.CurrentHP)
-            {
-                blocker.CurrentHP -= 1;
-                //停止
-                yield return new WaitForSeconds(damage1);
-            }
+            blocker.CurrentHP = Mathf.Max(0, blocker.CurrentHP - 1);
+            // ここでHPバーの更新アニメーションなどを呼ぶと◎
+            yield return new WaitForSeconds(interval);
         }
-        Debug.Log($"{damage}のダメージ");
+
+        Debug.Log($"{damage} のダメージを {totalDuration} 秒かけて与えました");
     }
 
 }

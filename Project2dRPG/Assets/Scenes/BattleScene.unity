@@ -2769,6 +2769,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 562302348}
   m_CullTransparentMesh: 1
+--- !u!1 &569208059
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 569208060}
+  - component: {fileID: 569208061}
+  m_Layer: 0
+  m_Name: waza3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &569208060
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569208059}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1136603142}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &569208061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569208059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 940a0a0547d22f441a7d921418914732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: 
+  damage: 0
+  usedMP: 0
 --- !u!1 &570343288
 GameObject:
   m_ObjectHideFlags: 0
@@ -4428,6 +4475,55 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &797194671
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 797194672}
+  - component: {fileID: 797194673}
+  m_Layer: 0
+  m_Name: waza2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &797194672
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797194671}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1136603142}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &797194673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797194671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f9fd5a0bba555546ad6c49c8e8bdbd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: 
+  damage: 0
+  usedMP: 0
+  buffTurns: 3
+  buffAttackPoint: 5
 --- !u!1 &805535211
 GameObject:
   m_ObjectHideFlags: 0
@@ -5097,7 +5193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd55f1185ff8e5c4a9c3ab22414ba8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waza: {fileID: 0}
+  waza: {fileID: 1917757622}
 --- !u!1 &930519632
 GameObject:
   m_ObjectHideFlags: 0
@@ -5788,6 +5884,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1917757621}
+  - {fileID: 797194672}
+  - {fileID: 569208060}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1153188208
@@ -8168,6 +8266,7 @@ GameObject:
   - component: {fileID: 1607592129}
   - component: {fileID: 1607592128}
   - component: {fileID: 1607592127}
+  - component: {fileID: 1607592130}
   m_Layer: 5
   m_Name: Waza (3)
   m_TagString: Untagged
@@ -8277,6 +8376,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1607592125}
   m_CullTransparentMesh: 1
+--- !u!114 &1607592130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607592125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd55f1185ff8e5c4a9c3ab22414ba8ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waza: {fileID: 569208061}
 --- !u!1 &1694321974
 GameObject:
   m_ObjectHideFlags: 0
@@ -9601,6 +9713,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1917757621}
+  - component: {fileID: 1917757622}
   m_Layer: 0
   m_Name: waza1
   m_TagString: Untagged
@@ -9623,6 +9736,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1136603142}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1917757622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917757620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c4ba0101d7f8ce43a432af4806f1311, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: MiddleAttack
+  damage: 10
+  usedMP: 0
 --- !u!1 &1962652285
 GameObject:
   m_ObjectHideFlags: 0
@@ -10298,6 +10426,7 @@ GameObject:
   - component: {fileID: 2066035191}
   - component: {fileID: 2066035190}
   - component: {fileID: 2066035189}
+  - component: {fileID: 2066035192}
   m_Layer: 5
   m_Name: Waza (2)
   m_TagString: Untagged
@@ -10407,6 +10536,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2066035187}
   m_CullTransparentMesh: 1
+--- !u!114 &2066035192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2066035187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd55f1185ff8e5c4a9c3ab22414ba8ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waza: {fileID: 797194673}
 --- !u!1 &2069065188
 GameObject:
   m_ObjectHideFlags: 0
@@ -10612,7 +10754,10 @@ MonoBehaviour:
   itemController: {fileID: 0}
   attackButton: {fileID: 156845855}
   itemButton: {fileID: 1197905173}
-  wazaButton: {fileID: 0}
+  wazaButtonlist:
+  - {fileID: 876201241}
+  - {fileID: 2066035192}
+  - {fileID: 1607592130}
   battleCommands: {fileID: 1266442068}
   player: {fileID: 1869754271}
   enemy: {fileID: 1742644653}

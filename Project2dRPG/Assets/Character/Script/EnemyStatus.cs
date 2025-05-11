@@ -18,7 +18,6 @@ public class EnemyStatus : Status
     // Start is called before the first frame update
     void Start()
     {
-        waza = new Waza("MiddleAttack", 10, 0, 0, true, true);
     }
 
     // Update is called once per frame
