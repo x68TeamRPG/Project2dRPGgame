@@ -9,7 +9,7 @@ public class BattleManager : MonoBehaviour
     public TextController textController;
     public ItemController itemController;
     public AttackButton attackButton;
-    public ItemButton itemButton;
+    public ItemButton[] itemButtonlist;
     public WazaButton[] wazaButtonlist;
     public BattleCommands battleCommands;
 
@@ -20,19 +20,19 @@ public class BattleManager : MonoBehaviour
 
     void Start()
     {
-        itemController = GetComponent<ItemController>();
         turn = 0;
         attackButton.AttackSelected += () =>ExecTurn("attack");
-        itemButton.ItemSelected += () => ExecTurn("item");
+        foreach (ItemButton itemButton in itemButtonlist)
+            itemButton.ItemSelected += selectedItem => ExecTurn("item", null, selectedItem);
         foreach (WazaButton wazaButton in wazaButtonlist)
-            wazaButton.WazaSelected += selectedWaza => ExecTurn("waza", selectedWaza);
+            wazaButton.WazaSelected += selectedWaza => ExecTurn("waza", selectedWaza, null);
     }
     
-    public void ExecTurn(string skill, Waza waza = null)
+    public void ExecTurn(string skill, Waza waza = null, Item item = null)
     {
-        Debug.Log($"skill={skill}, waza={(waza!=null? waza.name:"<none>")}");
+        Debug.Log($"skill={skill}, waza={(waza!=null? waza.name:"<none>")} item={(item!=null? item.name:"<none>")}");
         Debug.Log("turn: " + turn);
-        StartCoroutine(Battle(skill, waza));
+        StartCoroutine(Battle(skill, waza, item));
         turn++;
     }
 
@@ -48,12 +48,14 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    IEnumerator Battle(string skill="attack", Waza waza = null)
+    IEnumerator Battle(string skill="attack", Waza waza = null, Item item = null)
     {
         textController.TextWindow.GetComponent<Button>().interactable = true;
+        player.UpdateStatus();
+        enemy.UpdateStatus();
         if (CompareSpeed() == "player")
         {
-            yield return StartCoroutine(PlayerTurn(skill, waza));  // プレイヤーターンが終わるまで待つ
+            yield return StartCoroutine(PlayerTurn(skill, waza, item));  // プレイヤーターンが終わるまで待つ
             yield return StartCoroutine(FinishJudge());  // 勝敗判定
             yield return new WaitForSeconds(2.0f);
             yield return StartCoroutine(EnemyTurn());
@@ -64,7 +66,7 @@ public class BattleManager : MonoBehaviour
             yield return StartCoroutine(EnemyTurn());
             yield return StartCoroutine(FinishJudge());
             yield return new WaitForSeconds(2.0f);
-            yield return StartCoroutine(PlayerTurn(skill));
+            yield return StartCoroutine(PlayerTurn(skill, waza, item));  // プレイヤーターンが終わるまで待つ
             yield return StartCoroutine(FinishJudge());
         }
         yield return new WaitForSeconds(1.0f);
@@ -73,9 +75,9 @@ public class BattleManager : MonoBehaviour
         commandController.gameObject.SetActive(true);
     }
 
-    IEnumerator PlayerTurn(string skill="Attack", Waza waza = null)
+    IEnumerator PlayerTurn(string skill="Attack", Waza waza = null, Item item = null)
     {
-        Debug.Log("PlayerTurn, skill=" + skill + ", waza=" + (waza != null ? waza.name : "<none>"));
+        Debug.Log("PlayerTurn, skill=" + skill + ", waza=" + (waza != null ? waza.name : "<none>") + ", item=" + (item != null ? item.name : "<none>"));
         yield return StartCoroutine(textController.Write("プレイヤーのターン"));
         switch (skill)
         {
@@ -83,7 +85,7 @@ public class BattleManager : MonoBehaviour
                 yield return StartCoroutine(battleCommands.Attack(player, enemy));
                 break;
             case "item":
-                yield return StartCoroutine(battleCommands.UseItem(player));
+                yield return StartCoroutine(battleCommands.UseItem(player, item));
                 break;
             case "waza":
                 yield return StartCoroutine(battleCommands.UseWaza(player, enemy, waza));

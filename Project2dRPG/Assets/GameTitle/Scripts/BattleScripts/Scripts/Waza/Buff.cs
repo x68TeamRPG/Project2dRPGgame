@@ -7,6 +7,7 @@ public class Buff : Waza
     void Start()
     {
         name = "BuffAttack";
+        jpname = "バフ攻撃";
         damage = 0;
         usedMP = 5;
         buffTurns = 3;

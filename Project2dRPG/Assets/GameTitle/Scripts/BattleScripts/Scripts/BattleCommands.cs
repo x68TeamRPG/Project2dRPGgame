@@ -6,26 +6,27 @@ public class BattleCommands : MonoBehaviour
 {
     public TextController textController;
     public ItemController itemController;
-    [SerializeField] private float totalDuration = 1.0f;
+    [SerializeField] private float damageDuration = 1.0f;
 
     void Start()
-    {
-        itemController = GetComponent<ItemController>();
-    }
+    {}
 
     public IEnumerator Attack(Status attacker, Status blocker)
     {
         yield return new WaitForSeconds(1.0f);
-        int damage = attacker.Attack - blocker.Deffence;
+        Waza normalAttack = new Waza();
+        int damage = normalAttack.Execute(attacker, blocker);
         yield return StartCoroutine(DamageRoll(damage, blocker));
+        yield return StartCoroutine(textController.Write($"{attacker.name}の{normalAttack.jpname}！"));
         yield return StartCoroutine(textController.Write($"{blocker.name}に{damage}のダメージ"));
     }
 
-    public IEnumerator UseItem(Status Mono)
+    public IEnumerator UseItem(Status Target, Item item)
     {
         yield return new WaitForSeconds(1.0f);
-        itemController.UseItem("Potion");
-        yield return StartCoroutine(textController.Write($"{Mono.name}はポーションを使用した！"));
+        itemController.UseItem(item.name);
+        yield return StartCoroutine(textController.Write($"{Target.name}は{item.jpname}を使用した！"));
+        yield return StartCoroutine(textController.Write($"{Target.name}のHPが{item.healAmount}回復した！"));
     }
 
     public IEnumerator UseWaza(Status attacker, Status blocker, Waza waza)
@@ -33,7 +34,7 @@ public class BattleCommands : MonoBehaviour
         yield return new WaitForSeconds(1.0f);
         int damage = waza.Execute(attacker, blocker);
         yield return StartCoroutine(DamageRoll(damage, blocker));
-        yield return StartCoroutine(textController.Write($"{attacker.name}は{waza.name}を使用した！"));
+        yield return StartCoroutine(textController.Write($"{attacker.name}の{waza.jpname}！"));
         yield return StartCoroutine(textController.Write($"{blocker.name}に{damage}ダメージ！"));
     }
 
@@ -43,7 +44,7 @@ public class BattleCommands : MonoBehaviour
         int actualRolls = Mathf.Min(damage, blocker.CurrentHP);
         Debug.Log($"DamageRoll: {actualRolls}を{blocker.name}に与えます");
         // 1 回あたりの待機時間
-        float interval = totalDuration / actualRolls;
+        float interval = damageDuration / actualRolls;
 
         for (int i = 0; i < actualRolls; i++)
         {
@@ -52,7 +53,7 @@ public class BattleCommands : MonoBehaviour
             yield return new WaitForSeconds(interval);
         }
 
-        Debug.Log($"{damage} のダメージを {totalDuration} 秒かけて与えました");
+        Debug.Log($"{damage} のダメージを {damageDuration} 秒かけて与えました");
     }
 
 }

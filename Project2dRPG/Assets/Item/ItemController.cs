@@ -19,37 +19,37 @@ public class ItemController : MonoBehaviour
     }
 
 
-    public void AddItemByName(string itemName)//アイテム名で、アイテムをゲットする
+    public void AddItemByName(string name)//アイテム名で、アイテムをゲットする
     {
         // アイテム名で検索
-        Item itemToAdd = ItemDataBase.GetItemByName(itemName); // 仮想的にデータベースから取得
+        Item itemToAdd = ItemDataBase.GetItemByName(name); // 仮想的にデータベースから取得
         if (itemToAdd != null)
         {
             AddItem(itemToAdd);
         }
         else
         {
-            Debug.Log(itemName + "というアイテムは存在しません！");
+            Debug.Log(name + "というアイテムは存在しません！");
         }
     }
 
     public void AddItem(Item item)
     {
         Inventory.items.Add(item);
-        Debug.Log(item.itemName + "を取得しました！");
+        Debug.Log(item.name + "を取得しました！");
     }
 
-    public bool UseItem(string itemName)//アイテム名を指定して、アイテムを使用する。
+    public bool UseItem(string name)//アイテム名を指定して、アイテムを使用する。
     {
         bool success_to_use = false;
-        item= ItemDataBase.GetItemByName(itemName);
+        item= ItemDataBase.GetItemByName(name);
         if (item != null){
             if (item.type == 1 && herostatus.CompareHP() == 1)
             {
                 herostatus.AddHP(item.healAmount);
                 //Inventory.items.Remove(item);
                 success_to_use = true;
-                Debug.Log(item.itemName + "を使用しました！");
+                Debug.Log(item.jpname + "を使用しました！");
             }
             else
             {
