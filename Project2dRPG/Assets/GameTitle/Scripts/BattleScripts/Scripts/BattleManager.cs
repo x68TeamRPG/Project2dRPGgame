@@ -15,7 +15,7 @@ public class BattleManager : MonoBehaviour
     public ItemController itemController;
     public ItemButton itemButton;
 
-    [SerializeField] HeroStatus  player = default;
+    [SerializeField] HeroStatus player = default;
     [SerializeField] EnemyStatus enemy = default;
 
     private int turn;
@@ -28,7 +28,7 @@ public class BattleManager : MonoBehaviour
         attackButton.AttackSelected += ExecTurn;
         itemButton.ItemSelected += ExecTurn;
     }
-    
+
     public void ExecTurn()
     {
         Debug.Log("turn: " + turn);
@@ -48,7 +48,7 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    IEnumerator Battle(string skill="attack")
+    IEnumerator Battle(string skill = "attack")
     {
         textController.TextWindow.GetComponent<Button>().interactable = true;
         if (CompareSpeed() == "player")
@@ -73,7 +73,7 @@ public class BattleManager : MonoBehaviour
         commandController.gameObject.SetActive(true);
     }
 
-    IEnumerator PlayerTurn(string skill="Attack")
+    IEnumerator PlayerTurn(string skill = "Attack")
     {
         yield return StartCoroutine(textController.Write("プレイヤーのターン"));
         //yield return StartCoroutine(PlayerAttack());
@@ -87,12 +87,12 @@ public class BattleManager : MonoBehaviour
     }
 
     IEnumerator PlayerAttack()
-    {  
+    {
         if (0 < enemy.CurrentHP)
         {
             int HP = enemy.CurrentHP;
             int damage = player.Attack - enemy.Deffence;
-            float damage1 = (1/damage);
+            float damage1 = (1 / damage);
             while (HP - damage < enemy.CurrentHP)
             {
                 enemy.CurrentHP -= 1;
@@ -117,7 +117,7 @@ public class BattleManager : MonoBehaviour
             int damage = 5;//enemy.Attack - player.Deffence;
             if (damage > 0)
             {
-                float damage1 = (1/damage);
+                float damage1 = (1 / damage);
                 while (HP - damage < player.CurrentHP)
                 {
                     player.CurrentHP -= 1;
@@ -132,14 +132,14 @@ public class BattleManager : MonoBehaviour
 
     private IEnumerator FinishJudge()
     {
-        if(player.CurrentHP <= 0)
+        if (player.CurrentHP <= 0)
         {
             //テキストウィンドウ制御クラス「力尽きた」
             yield return StartCoroutine(textController.Write("勇者は力尽きた"));
             UnityEngine.SceneManagement.SceneManager.LoadScene("GameoverScene");//ゲームオーバーシーンに以降
             yield return new WaitForSeconds(1.0f);
         }
-        if(enemy.CurrentHP <= 0)
+        if (enemy.CurrentHP <= 0)
         {
             //テキストウィンドウ制御クラス「敵に勝利」「お金をx,経験値をy,歩数をzを手に入れた」
             //敵の技をもっているかの判定
@@ -165,7 +165,7 @@ public class BattleManager : MonoBehaviour
         yield return StartCoroutine(textController.Write("敵に勝利"));
         player.Money += enemy.money;
         player.Exp += enemy.exp;
-        player.AddStepCount(enemy.step);
+        //player.AddStepCount(enemy.step);
         yield return StartCoroutine(textController.Write("お金を " + enemy.money + " 手に入れた"));
         yield return StartCoroutine(textController.Write("経験値を " + enemy.exp + " 手に入れた"));
         yield return StartCoroutine(textController.Write("歩数を " + enemy.step + " 手に入れた"));

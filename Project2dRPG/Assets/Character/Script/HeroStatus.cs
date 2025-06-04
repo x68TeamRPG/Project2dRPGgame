@@ -55,31 +55,31 @@ public class HeroStatus : Status
         Atktext.text = string.Format("{0}", Attack);
         Deftext.text = string.Format("{0}", Deffence);
         Spdtext.text = string.Format("{0}", Speed);
-        Steptext.text = string.Format("{0}", StepCount);
+        //Steptext.text = string.Format("{0}", StepCount);
         Hptext2.text = string.Format("{0}", CurrentHP);
         Mptext2.text = string.Format("{0}", CurrentMP);
         MaxHptext2.text = string.Format("{0}", MaxHP);
         MaxMptext2.text = string.Format("{0}", MaxMP);
     }
 
-    public void AddStepCount(int n)
-    {
-        StepCount += n;
-        Debug.Log(StepCount);
-    }
+    // public void AddStepCount(int n)
+    // {
+    //     StepCount += n;
+    //     Debug.Log(StepCount);
+    // }
 
-    public void SubStepCount(int n)
-    {
-        if (StepCount <= 0)
-        {
-            SubHP(n);
-        }
-        else
-        {
-            StepCount -= n;
-            Debug.Log(StepCount);
-        }
-    }
+    // public void SubStepCount(int n)
+    // {
+    //     if (StepCount <= 0)
+    //     {
+    //         SubHP(n);
+    //     }
+    //     else
+    //     {
+    //         StepCount -= n;
+    //         Debug.Log(StepCount);
+    //     }
+    // }
 
     public void SubHP(int n)
     {

@@ -14,8 +14,25 @@ public class CameraFollow : MonoBehaviour
         diff = target.transform.position - this.transform.position; //カメラとプレイヤーの初期の距離を指定
     }
 
+    //void LateUpdate()
+    //{
+    //  transform.position = Vector3.Lerp(this.transform.position, target.transform.position - diff, Time.deltaTime * followSpeed); //線形補間関数によるカメラの移動
+    //}
     void LateUpdate()
     {
-        transform.position = Vector3.Lerp(this.transform.position, target.transform.position - diff, Time.deltaTime * followSpeed); //線形補間関数によるカメラの移動
+        // 現在のカメラ位置
+        Vector3 currentPos = this.transform.position;
+
+        // ターゲット（プレイヤー）の位置
+        Vector3 targetPos = target.transform.position - diff;
+        // XとZは今のままにして、Yだけターゲットに追従
+        Vector3 newPos = new Vector3(
+        currentPos.x,
+        Mathf.Lerp(currentPos.y, targetPos.y, Time.deltaTime * followSpeed),
+        currentPos.z
+        );
+
+        // 位置を更新
+        transform.position = newPos;
     }
 }

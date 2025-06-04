@@ -118,10 +118,10 @@ public class HeroController : MonoBehaviour
 		pos.z = Mathf.Round(pos.z * 2f) / 2;
 		transform.position = pos;
 		stop();
-		if (lastposition != transform.position)
-		{
-			herostatus.SubStepCount(1);
-		}
+		// if (lastposition != transform.position)
+		// {
+		// 	herostatus.SubStepCount(1);
+		// }
 	}
 
 	void stop()
