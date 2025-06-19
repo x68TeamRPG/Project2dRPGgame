@@ -4047,7 +4047,7 @@ GameObject:
   - component: {fileID: 643109094}
   - component: {fileID: 643109093}
   - component: {fileID: 643109096}
-  - component: {fileID: 643109098}
+  - component: {fileID: 643109097}
   m_Layer: 5
   m_Name: Attack
   m_TagString: Untagged
@@ -4143,18 +4143,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1942155142}
-        m_TargetAssemblyTypeName: EffectActive, Assembly-CSharp
-        m_MethodName: PlayEffect
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &643109094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4206,7 +4194,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Delegates: []
---- !u!114 &643109098
+--- !u!114 &643109097
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5724,8 +5712,8 @@ GameObject:
   - component: {fileID: 930519637}
   - component: {fileID: 930519636}
   - component: {fileID: 930519635}
-  - component: {fileID: 930519634}
   - component: {fileID: 930519638}
+  - component: {fileID: 930519639}
   m_Layer: 5
   m_Name: Back
   m_TagString: Untagged
@@ -5753,18 +5741,6 @@ RectTransform:
   m_AnchoredPosition: {x: 80, y: -325}
   m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &930519634
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 930519632}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d778ab9e0b063c24bb82e1aa08826f3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &930519635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5887,19 +5863,20 @@ MonoBehaviour:
   - eventID: 2
     callback:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1933804255}
-          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-          m_MethodName: PlayOneShot
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 8300000, guid: c95254bf2b9eb1a468012e4188b4bc3f, type: 3}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
+--- !u!114 &930519639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 930519632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4ff9475fc27e694e805f52025c68923, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: {fileID: 8300000, guid: c95254bf2b9eb1a468012e4188b4bc3f, type: 3}
 --- !u!1 &937229681
 GameObject:
   m_ObjectHideFlags: 0
@@ -6736,8 +6713,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9acdb344f9f23246978214576e8672a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemButton: {fileID: 1197905170}
-  ItemPanel: {fileID: 2141525303}
+  itemPanel: {fileID: 0}
+  item:
+    type: 0
+    name: 
+    jpname: 
+    description: 
+    healAmount: 0
 --- !u!114 &1197905174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9562,11 +9544,15 @@ MonoBehaviour:
   CurrentHP: 5
   MaxMP: 10
   CurrentMP: 10
+  IsBuffed: 0
+  BuffTurns: 0
+  BuffAttackPoint: 0
   Hptext: {fileID: 245098877}
   MaxHptext: {fileID: 159654943}
   money: 0
   exp: 0
   step: 0
+  waza: {fileID: 0}
 --- !u!1 &1751647151
 GameObject:
   m_ObjectHideFlags: 0
@@ -10564,6 +10550,9 @@ MonoBehaviour:
   CurrentHP: 10
   MaxMP: 10
   CurrentMP: 10
+  IsBuffed: 0
+  BuffTurns: 0
+  BuffAttackPoint: 0
   StepCount: 10
   Exp: 0
   Lv: 0
@@ -12271,9 +12260,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   commandController: {fileID: 599313536}
   textController: {fileID: 1723137402}
-  attackButton: {fileID: 156845855}
   itemController: {fileID: 0}
-  itemButton: {fileID: 1197905173}
+  attackButton: {fileID: 156845855}
+  itemButtonlist: []
+  wazaButtonlist: []
+  battleCommands: {fileID: 0}
   player: {fileID: 1869754271}
   enemy: {fileID: 1742644653}
 --- !u!114 &2084381857
