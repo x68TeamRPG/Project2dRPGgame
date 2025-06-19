@@ -1,23 +1,41 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Waza
+public class Waza : MonoBehaviour
 {
-    public string name;
+    public new string name;
+    public string jpname;
     public int damage;
     public int usedMP;
-    public int usedStep;
-    public bool isPlayerHas;
-    public bool isEnemyHas;
 
-    public Waza(string name, int damage, int usedMP, int usedStep, bool isPlayerHas, bool isEnemyHas)
+    public Waza()
+    {
+        name = "normalAttack";
+        jpname = "通常攻撃";
+        damage = 1;
+        usedMP = 0;
+    }
+
+    public Waza(string name, int damage, int usedMP)
     {
         this.name = name;
         this.damage = damage;
         this.usedMP = usedMP;
-        this.usedStep = usedStep;
-        this.isPlayerHas = isPlayerHas;
-        this.isEnemyHas = isEnemyHas;
+    }
+
+    public virtual int Execute(Status attacker, Status target)
+    {
+        // Perform the attack and return the damage dealt
+        int Attack = attacker.Attack + attacker.BuffAttackPoint;
+        int Defence = target.Deffence;
+        int Damage = CalculateDamage(damage, Attack, Defence);
+        return Damage;
+    }
+
+    public int CalculateDamage(int damage, int Attack, int Defence)
+    {
+        float r = Random.Range(0.8f, 1.0f);
+        int totalDamage = (int)(50 * damage * Attack / Defence / 25 * r);
+        Debug.Log($"Damage Calculation: 50 * {damage} * {Attack} / {Defence} / 25 * {r} = {totalDamage}");
+        return totalDamage;
     }
 }

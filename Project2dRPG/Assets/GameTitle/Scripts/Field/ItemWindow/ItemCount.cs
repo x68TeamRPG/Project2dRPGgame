@@ -19,7 +19,7 @@ public class ItemCount : MonoBehaviour
     void Update()
     {
         Item des = ItemDataBase.GetItemByName(itemname);
-        int ItemCount = Inventory.items.Count(item => item.itemName == itemname);
+        int ItemCount = Inventory.items.Count(item => item.name == itemname);
         VarText.text = itemname + " " + ItemCount + "    " + des.description;
 
     }

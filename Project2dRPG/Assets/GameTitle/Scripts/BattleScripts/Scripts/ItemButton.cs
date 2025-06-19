@@ -5,22 +5,23 @@ using UnityEngine.UI;
 
 public class ItemButton : MonoBehaviour
 {
-    [SerializeField] Button itemButton;
-    [SerializeField] GameObject ItemPanel;
+    private Button itemButton;
+    [SerializeField] GameObject itemPanel;
+    [SerializeField] Item item;
 
-    public delegate void OnItemClicked();
-
-    public event OnItemClicked ItemSelected;
+    public event System.Action<Item> ItemSelected;
 
     void Start()
     {
+        itemButton = GetComponent<Button>();
+        itemPanel = transform.parent.gameObject;
         itemButton.onClick.AddListener(OnClickButton);
     }
 
     void OnClickButton()
     {
-        ItemPanel.SetActive(false);
-        ItemSelected?.Invoke();
+        ItemSelected?.Invoke(item);
+        itemPanel.SetActive(false);
     }
 
     
@@ -39,6 +40,6 @@ public class ItemButton : MonoBehaviour
     {
         Debug.Log("Button clicked by X");
         itemButton.interactable = false;
-        ItemPanel.SetActive(true);
+        itemPanel.SetActive(true);
     }
 }
