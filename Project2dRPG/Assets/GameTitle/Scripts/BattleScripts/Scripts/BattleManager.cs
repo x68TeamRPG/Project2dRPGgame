@@ -13,7 +13,7 @@ public class BattleManager : MonoBehaviour
     public WazaButton[] wazaButtonlist;
     public BattleCommands battleCommands;
 
-    [SerializeField] HeroStatus  player = default;
+    [SerializeField] HeroStatus player = default;
     [SerializeField] EnemyStatus enemy = default;
 
     private int turn;
@@ -79,6 +79,7 @@ public class BattleManager : MonoBehaviour
     {
         Debug.Log("PlayerTurn, skill=" + skill + ", waza=" + (waza != null ? waza.name : "<none>") + ", item=" + (item != null ? item.name : "<none>"));
         yield return StartCoroutine(textController.Write("プレイヤーのターン"));
+        
         switch (skill)
         {
             case "attack":
@@ -103,14 +104,14 @@ public class BattleManager : MonoBehaviour
 
     private IEnumerator FinishJudge()
     {
-        if(player.CurrentHP <= 0)
+        if (player.CurrentHP <= 0)
         {
             //テキストウィンドウ制御クラス「力尽きた」
             yield return StartCoroutine(textController.Write("勇者は力尽きた"));
             UnityEngine.SceneManagement.SceneManager.LoadScene("GameoverScene");//ゲームオーバーシーンに以降
             yield return new WaitForSeconds(1.0f);
         }
-        if(enemy.CurrentHP <= 0)
+        if (enemy.CurrentHP <= 0)
         {
             //テキストウィンドウ制御クラス「敵に勝利」「お金をx,経験値をy,歩数をzを手に入れた」
             //敵の技をもっているかの判定
