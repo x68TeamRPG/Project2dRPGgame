@@ -13,24 +13,32 @@ public class EffectActive : MonoBehaviour
 
     void Start()
     {
+        /* AudioSourceを取得
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            Debug.LogWarning("AudioSourceがありません");
+        }*/
+    }
+
+    /*テスト用:ボタンから画面中央に再生
+    public void PlayEffect()
+    {
+        Vector3 centerPos = GetScreenCenterWorldPosition();
+        SpawnEffectAt(centerPos);
+    }*/
+
+    //本番用:真ん中にエフェクト＋音
+    public void PlayHitEffect()
+    {
         // AudioSourceを取得
         audioSource = GetComponent<AudioSource>();
         if (audioSource == null)
         {
             Debug.LogWarning("AudioSourceがありません");
         }
-    }
-
-    //テスト用:ボタンから画面中央に再生
-    public void PlayEffect()
-    {
-        Vector3 centerPos = GetScreenCenterWorldPosition();
-        SpawnEffectAt(centerPos);
-    }
-
-    //本番用:任意の位置にエフェクト＋音
-    public void PlayHitEffect(Vector3 position)
-    {
+        
+        Vector3 position = GetScreenCenterWorldPosition();
         SpawnEffectAt(position);
     }
 
