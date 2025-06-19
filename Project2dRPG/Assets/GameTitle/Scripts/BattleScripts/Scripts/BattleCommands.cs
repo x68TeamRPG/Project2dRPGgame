@@ -27,7 +27,7 @@ public class BattleCommands : MonoBehaviour
         yield return new WaitForSeconds(1.0f);
         yield return StartCoroutine(textController.Write($"{Target.name}は{item.jpname}を使用した！"));
         // エフェクト
-        yield return StartCoroutine(textController.Write($"{Target.name}のHPが{item.healAmount}回復した！"));        itemController.UseItem(item.name);
+        yield return StartCoroutine(textController.Write($"{Target.name}のHPが{item.healAmount}回復した！"));
         itemController.UseItem(item.name);
     }
 
