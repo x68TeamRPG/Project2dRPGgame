@@ -694,7 +694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitEffectPrefab: {fileID: 8762405910555896786, guid: fcb74f28d107e284e80af037bfec14ca, type: 3}
-  mainCamera: {fileID: 0}
+  mainCamera: {fileID: 519420031}
   hitSound: {fileID: 8300000, guid: f50d605418ccf0443aa28c988e58d484, type: 3}
 --- !u!1 &50951089
 GameObject:
@@ -1419,7 +1419,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitEffectPrefab: {fileID: 4515497926535975121, guid: bddb971e34eb14d48be30c7b922eb077, type: 3}
-  mainCamera: {fileID: 0}
+  mainCamera: {fileID: 519420031}
   hitSound: {fileID: 8300000, guid: 4d84d94f3ad8b6143863c1dd95c577f6, type: 3}
 --- !u!1 &120865680
 GameObject:
@@ -2276,7 +2276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitEffectPrefab: {fileID: 4515497926535975121, guid: bddb971e34eb14d48be30c7b922eb077, type: 3}
-  mainCamera: {fileID: 0}
+  mainCamera: {fileID: 519420031}
   hitSound: {fileID: 8300000, guid: 76d36d2f030226c4290a62c89ebd3a23, type: 3}
 --- !u!1 &224834488
 GameObject:
@@ -5922,7 +5922,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitEffectPrefab: {fileID: 4515497926535975121, guid: bddb971e34eb14d48be30c7b922eb077, type: 3}
-  mainCamera: {fileID: 0}
+  mainCamera: {fileID: 519420031}
   hitSound: {fileID: 8300000, guid: 1791962c6778faa469c904a00f2da757, type: 3}
 --- !u!1 &875939594
 GameObject:
@@ -6901,7 +6901,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitEffectPrefab: {fileID: 362261158077530393, guid: 20fda529c996a334da7fd65b48ea40df, type: 3}
-  mainCamera: {fileID: 0}
+  mainCamera: {fileID: 519420031}
   hitSound: {fileID: 8300000, guid: 2e369b1314575cc46a345b398aad4912, type: 3}
 --- !u!1 &1094619879
 GameObject:
@@ -7203,7 +7203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitEffectPrefab: {fileID: 1835355836541019294, guid: 4790206eadc817b4196e071640e653af, type: 3}
-  mainCamera: {fileID: 0}
+  mainCamera: {fileID: 519420031}
   hitSound: {fileID: 8300000, guid: 1811d13521837ba4cac19704f0d3bd92, type: 3}
 --- !u!1 &1121948010
 GameObject:
@@ -8054,6 +8054,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textController: {fileID: 1723137402}
   itemController: {fileID: 634595959}
+  Attackeffect: {fileID: 1102636626}
+  Middleeffect: {fileID: 39922258}
+  Buffeffect: {fileID: 1081122240}
+  Greateffect: {fileID: 2057423125}
+  effect: {fileID: 0}
   damageDuration: 1
 --- !u!4 &1266442069
 Transform:
@@ -12064,7 +12069,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitEffectPrefab: {fileID: 162584487599433031, guid: 39f852c28f9c3fd45a427c24f3564ba7, type: 3}
-  mainCamera: {fileID: 0}
+  mainCamera: {fileID: 519420031}
   hitSound: {fileID: 8300000, guid: 2481fde35e6e9bc4dbac2cd59d4f7d54, type: 3}
 --- !u!1 &2058342949
 GameObject:

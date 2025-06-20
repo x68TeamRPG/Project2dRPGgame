@@ -6,6 +6,20 @@ public class BattleCommands : MonoBehaviour
 {
     public TextController textController;
     public ItemController itemController;
+    //通常エフェクト
+    public EffectActive Attackeffect;
+    //技1(middle)エフェクト
+    public EffectActive Middleeffect;
+    //技2(buff)エフェクト
+    public EffectActive Buffeffect;
+    //技3(great)エフェクト
+    public EffectActive Greateffect;
+    //アイテム1(Potion)エフェクト
+    public EffectActive Potioneffect;
+    //アイテム2(Elixir)エフェクト
+    public EffectActive Elixireffect;
+    //アイテム3(Ether)エフェクト
+    public EffectActive Ethereffect;
     [SerializeField] private float damageDuration = 1.0f;
 
     void Start()
@@ -17,7 +31,8 @@ public class BattleCommands : MonoBehaviour
         Waza normalAttack = new Waza();
         int damage = normalAttack.Execute(attacker, blocker);
         yield return StartCoroutine(textController.Write($"{attacker.name}の{normalAttack.jpname}！"));
-        // エフェクト
+        //エフェクト
+        Attackeffect.PlayHitEffect();
         yield return StartCoroutine(textController.Write($"{blocker.name}に{damage}のダメージ"));
         yield return StartCoroutine(DamageRoll(damage, blocker));
     }
@@ -27,6 +42,18 @@ public class BattleCommands : MonoBehaviour
         yield return new WaitForSeconds(1.0f);
         yield return StartCoroutine(textController.Write($"{Target.name}は{item.jpname}を使用した！"));
         // エフェクト
+        if (item.name == "Potion")
+        {
+            Potioneffect.PlayHitEffect();
+        }
+        else if (item.name == "Elixir")
+        {
+            Elixireffect.PlayHitEffect();
+        }
+        else if (item.name == "Ether")
+        {
+            Ethereffect.PlayHitEffect();
+        }
         yield return StartCoroutine(textController.Write($"{Target.name}のHPが{item.healAmount}回復した！"));
         itemController.UseItem(item.name);
     }
@@ -37,6 +64,18 @@ public class BattleCommands : MonoBehaviour
         int damage = waza.Execute(attacker, blocker);
         yield return StartCoroutine(textController.Write($"{attacker.name}の{waza.jpname}！"));
         // エフェクト
+        if (waza.name == "MiddleAttack")
+        {
+            Middleeffect.PlayHitEffect();
+        }
+        else if (waza.name == "BuffAttack")
+        {
+            Buffeffect.PlayHitEffect();
+        }
+        else if (waza.name == "GreatAttack")
+        {
+            Greateffect.PlayHitEffect();
+        }
         yield return StartCoroutine(textController.Write($"{blocker.name}に{damage}ダメージ！"));
         yield return StartCoroutine(DamageRoll(damage, blocker));
     }
