@@ -23,7 +23,7 @@ public class BattleCommands : MonoBehaviour
     [SerializeField] private float damageDuration = 1.0f;
 
     void Start()
-    {}
+    { }
 
     public IEnumerator Attack(Status attacker, Status blocker)
     {
@@ -96,6 +96,10 @@ public class BattleCommands : MonoBehaviour
         }
 
         Debug.Log($"{damage} のダメージを {damageDuration} 秒かけて与えました");
+    }
+
+    protected void Run(Status player, Status enemy)
+    {
     }
 
 }
