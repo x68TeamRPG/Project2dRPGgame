@@ -1125,7 +1125,7 @@ GameObject:
   - component: {fileID: 156845854}
   - component: {fileID: 156845853}
   - component: {fileID: 156845852}
-  - component: {fileID: 156845855}
+  - component: {fileID: 156845856}
   m_Layer: 5
   m_Name: Enemy
   m_TagString: Untagged
@@ -1235,7 +1235,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 156845850}
   m_CullTransparentMesh: 1
---- !u!114 &156845855
+--- !u!114 &156845856
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1244,7 +1244,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 156845850}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02f9b3ef3e7b123418123b915f21fa4a, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c2181899a55685408c08324a33bde16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyButton: {fileID: 156845852}
@@ -1961,6 +1961,7 @@ GameObject:
   - component: {fileID: 247532640}
   - component: {fileID: 247532643}
   - component: {fileID: 247532644}
+  - component: {fileID: 247532645}
   m_Layer: 5
   m_Name: Item(2)
   m_TagString: Untagged
@@ -2082,6 +2083,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9acdb344f9f23246978214576e8672a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  battleManager: {fileID: 2084381856}
   itemPanel: {fileID: 2141525303}
   item:
     type: 1
@@ -2102,6 +2104,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sound: {fileID: 8300000, guid: ecc786fd5adf2a44080176119c564501, type: 3}
+--- !u!114 &247532645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 247532638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c2181899a55685408c08324a33bde16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyButton: {fileID: 156845852}
+  CommandPanel: {fileID: 2141525303}
 --- !u!1 &301042869
 GameObject:
   m_ObjectHideFlags: 0
@@ -2790,7 +2806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 940a0a0547d22f441a7d921418914732, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
+  engname: normalAttack
   jpname: "\u901A\u5E38\u653B\u6483"
   damage: 0
   usedMP: 0
@@ -3367,6 +3383,8 @@ GameObject:
   - component: {fileID: 630576116}
   - component: {fileID: 630576115}
   - component: {fileID: 630576114}
+  - component: {fileID: 630576118}
+  - component: {fileID: 630576119}
   - component: {fileID: 630576117}
   m_Layer: 5
   m_Name: Escape
@@ -3490,6 +3508,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sound: {fileID: 8300000, guid: ecc786fd5adf2a44080176119c564501, type: 3}
+--- !u!114 &630576118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630576112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77f243580cb0d9842bee9a6b3520d84f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  battleManager: {fileID: 2084381856}
+  CommandPanel: {fileID: 599313531}
+--- !u!114 &630576119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630576112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c2181899a55685408c08324a33bde16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyButton: {fileID: 156845852}
+  CommandPanel: {fileID: 599313531}
 --- !u!1 &634595958
 GameObject:
   m_ObjectHideFlags: 0
@@ -3664,6 +3710,7 @@ GameObject:
   - component: {fileID: 643109094}
   - component: {fileID: 643109093}
   - component: {fileID: 643109096}
+  - component: {fileID: 643109098}
   - component: {fileID: 643109097}
   m_Layer: 5
   m_Name: Attack
@@ -3735,31 +3782,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 643109094}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 156845852}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
-        m_MethodName: set_interactable
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 599313531}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &643109094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3824,6 +3847,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sound: {fileID: 8300000, guid: ecc786fd5adf2a44080176119c564501, type: 3}
+--- !u!114 &643109098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643109091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02f9b3ef3e7b123418123b915f21fa4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  battleManager: {fileID: 2084381856}
+  EnemyButton: {fileID: 156845852}
+  CommandPanel: {fileID: 599313531}
+  waza: {fileID: 1970529684}
 --- !u!1 &655278525
 GameObject:
   m_ObjectHideFlags: 0
@@ -4466,7 +4505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9fd5a0bba555546ad6c49c8e8bdbd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
+  engname: normalAttack
   jpname: "\u901A\u5E38\u653B\u6483"
   damage: 0
   usedMP: 0
@@ -5179,6 +5218,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd55f1185ff8e5c4a9c3ab22414ba8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  battleManager: {fileID: 2084381856}
+  EnemyButton: {fileID: 156845852}
   waza: {fileID: 1917757622}
 --- !u!114 &876201242
 MonoBehaviour:
@@ -6274,6 +6315,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1970529683}
   - {fileID: 1917757621}
   - {fileID: 797194672}
   - {fileID: 569208060}
@@ -6372,6 +6414,7 @@ GameObject:
   - component: {fileID: 1156999579}
   - component: {fileID: 1156999582}
   - component: {fileID: 1156999583}
+  - component: {fileID: 1156999584}
   m_Layer: 5
   m_Name: Item(3)
   m_TagString: Untagged
@@ -6493,6 +6536,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9acdb344f9f23246978214576e8672a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  battleManager: {fileID: 2084381856}
   itemPanel: {fileID: 2141525303}
   item:
     type: 2
@@ -6513,6 +6557,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sound: {fileID: 8300000, guid: ecc786fd5adf2a44080176119c564501, type: 3}
+--- !u!114 &1156999584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1156999577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c2181899a55685408c08324a33bde16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyButton: {fileID: 156845852}
+  CommandPanel: {fileID: 2141525303}
 --- !u!1 &1197905168
 GameObject:
   m_ObjectHideFlags: 0
@@ -6527,6 +6585,7 @@ GameObject:
   - component: {fileID: 1197905170}
   - component: {fileID: 1197905173}
   - component: {fileID: 1197905174}
+  - component: {fileID: 1197905175}
   m_Layer: 5
   m_Name: Item (1)
   m_TagString: Untagged
@@ -6648,6 +6707,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9acdb344f9f23246978214576e8672a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  battleManager: {fileID: 2084381856}
   itemPanel: {fileID: 2141525303}
   item:
     type: 1
@@ -6668,6 +6728,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sound: {fileID: 8300000, guid: ecc786fd5adf2a44080176119c564501, type: 3}
+--- !u!114 &1197905175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1197905168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c2181899a55685408c08324a33bde16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyButton: {fileID: 156845852}
+  CommandPanel: {fileID: 2141525303}
 --- !u!1 &1217124526
 GameObject:
   m_ObjectHideFlags: 0
@@ -8972,6 +9046,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd55f1185ff8e5c4a9c3ab22414ba8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  battleManager: {fileID: 2084381856}
+  EnemyButton: {fileID: 156845852}
   waza: {fileID: 569208061}
 --- !u!114 &1607592131
 MonoBehaviour:
@@ -10311,7 +10387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c4ba0101d7f8ce43a432af4806f1311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: MiddleAttack
+  engname: normalAttack
   jpname: "\u901A\u5E38\u653B\u6483"
   damage: 10
   usedMP: 0
@@ -10462,6 +10538,54 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1970529682
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1970529683}
+  - component: {fileID: 1970529684}
+  m_Layer: 0
+  m_Name: default
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1970529683
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970529682}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1136603142}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1970529684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970529682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14134c86a7329d4bbcd39a4820d5f07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  engname: normalAttack
+  jpname: "\u901A\u5E38\u653B\u6483"
+  damage: 1
+  usedMP: 0
 --- !u!1 &2010662777
 GameObject:
   m_ObjectHideFlags: 0
@@ -11150,6 +11274,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd55f1185ff8e5c4a9c3ab22414ba8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  battleManager: {fileID: 2084381856}
+  EnemyButton: {fileID: 156845852}
   waza: {fileID: 797194673}
 --- !u!114 &2066035193
 MonoBehaviour:
@@ -11329,6 +11455,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2084381855}
   - component: {fileID: 2084381856}
+  - component: {fileID: 2084381857}
   m_Layer: 0
   m_Name: BattleManager
   m_TagString: Untagged
@@ -11366,18 +11493,29 @@ MonoBehaviour:
   commandController: {fileID: 599313536}
   textController: {fileID: 1723137402}
   itemController: {fileID: 634595959}
-  attackButton: {fileID: 156845855}
-  itemButtonlist:
-  - {fileID: 1197905173}
-  - {fileID: 247532643}
-  - {fileID: 1156999582}
-  wazaButtonlist:
-  - {fileID: 876201241}
-  - {fileID: 2066035192}
-  - {fileID: 1607592130}
+  Buttonlist:
+  - {fileID: 156845856}
+  - {fileID: 1197905175}
+  - {fileID: 247532645}
+  - {fileID: 1156999584}
+  - {fileID: 630576119}
   battleCommands: {fileID: 1266442068}
   player: {fileID: 1869754271}
   enemy: {fileID: 1742644653}
+--- !u!114 &2084381857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084381854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a6d401db3353984690830b4056ae0d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WazaList:
+  - {fileID: 1970529684}
 --- !u!1 &2092150887
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class ItemButton : MonoBehaviour
 {
     private Button itemButton;
+    [SerializeField] BattleManager battleManager;
     [SerializeField] GameObject itemPanel;
     [SerializeField] Item item;
 
@@ -20,6 +21,7 @@ public class ItemButton : MonoBehaviour
 
     void OnClickButton()
     {
+        battleManager.selectedAction.SetAction("item", null, item);
         ItemSelected?.Invoke(item);
         itemPanel.SetActive(false);
     }

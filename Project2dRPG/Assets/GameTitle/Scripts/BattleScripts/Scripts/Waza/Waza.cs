@@ -2,14 +2,14 @@ using UnityEngine;
 
 public class Waza : MonoBehaviour
 {
-    public new string name;
+    public string engname;
     public string jpname;
     public int damage;
     public int usedMP;
 
     public Waza()
     {
-        name = "normalAttack";
+        engname = "normalAttack";
         jpname = "通常攻撃";
         damage = 1;
         usedMP = 0;
@@ -17,7 +17,7 @@ public class Waza : MonoBehaviour
 
     public Waza(string name, int damage, int usedMP)
     {
-        this.name = name;
+        this.engname = name;
         this.damage = damage;
         this.usedMP = usedMP;
     }

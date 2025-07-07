@@ -1,12 +1,10 @@
-using UnityEngine;
-
 public class Buff : Waza
 {
     public int buffTurns = 3;
     public int buffAttackPoint = 5;
     void Start()
     {
-        name = "BuffAttack";
+        engname = "BuffAttack";
         jpname = "バフ攻撃";
         damage = 0;
         usedMP = 5;

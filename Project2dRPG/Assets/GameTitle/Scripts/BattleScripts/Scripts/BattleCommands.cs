@@ -22,13 +22,23 @@ public class BattleCommands : MonoBehaviour
     public EffectActive Ethereffect;
     [SerializeField] private float damageDuration = 1.0f;
 
-    void Start()
-    { }
+    void Start() {}
 
-    public IEnumerator Attack(Status attacker, Status blocker)
+    public string CompareSpeed(Status player, Status enemy)
+    {
+        if (player.Speed >= enemy.Speed)
+        {
+            return "player";
+        }
+        else
+        {
+            return "enemy";
+        }
+    }
+
+    public IEnumerator Attack(Status attacker, Status blocker, Waza normalAttack = null)
     {
         yield return new WaitForSeconds(1.0f);
-        Waza normalAttack = new Waza();
         int damage = normalAttack.Execute(attacker, blocker);
         yield return StartCoroutine(textController.Write($"{attacker.name}の{normalAttack.jpname}！"));
         //エフェクト
@@ -64,15 +74,15 @@ public class BattleCommands : MonoBehaviour
         int damage = waza.Execute(attacker, blocker);
         yield return StartCoroutine(textController.Write($"{attacker.name}の{waza.jpname}！"));
         // エフェクト
-        if (waza.name == "MiddleAttack")
+        if (waza.engname == "MiddleAttack")
         {
             Middleeffect.PlayHitEffect();
         }
-        else if (waza.name == "BuffAttack")
+        else if (waza.engname == "BuffAttack")
         {
             Buffeffect.PlayHitEffect();
         }
-        else if (waza.name == "GreatAttack")
+        else if (waza.engname == "GreatAttack")
         {
             Greateffect.PlayHitEffect();
         }
@@ -96,10 +106,6 @@ public class BattleCommands : MonoBehaviour
         }
 
         Debug.Log($"{damage} のダメージを {damageDuration} 秒かけて与えました");
-    }
-
-    protected void Run(Status player, Status enemy)
-    {
     }
 
 }

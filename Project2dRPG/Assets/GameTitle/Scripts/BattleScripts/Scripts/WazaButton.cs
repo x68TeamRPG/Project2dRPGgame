@@ -3,11 +3,11 @@ using UnityEngine.UI;
 
 public class WazaButton : MonoBehaviour
 {
+    [SerializeField] private BattleManager battleManager;
+    [SerializeField] Button EnemyButton;
+    [SerializeField] Waza waza;
     private Button wazaButton;
     private GameObject wazaPanel;
-    [SerializeField] Waza waza;
-
-    public event System.Action<Waza> WazaSelected;
 
     void Start()
     {
@@ -18,8 +18,9 @@ public class WazaButton : MonoBehaviour
 
     void OnClickButton()
     {
-        WazaSelected?.Invoke(waza);
+        battleManager.selectedAction.SetAction("waza", waza, null);
         wazaPanel.SetActive(false);
+        EnemyButton.interactable = true;
     }
 
     
